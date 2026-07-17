@@ -33,4 +33,4 @@ Data: 17/07/2026
 
 ## Próxima tarefa
 
-Criar e configurar o projeto Supabase para o Farmstok AI.
+Implementar a feature 002 (configuração do Supabase) conforme `SPECS/features/002-supabase-setup.md`.

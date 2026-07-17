@@ -21,3 +21,21 @@ Exemplo:
 
 ```ts
 import { buildApp } from './app.js';
+```
+
+## Atualização obrigatória das SPECS
+
+Após qualquer tarefa concluída com sucesso, o agente deve atualizar automaticamente:
+
+- `SPECS/CURRENT_STATE.md`
+- `SPECS/ROADMAP.md`
+- `SPECS/CHANGELOG.md`
+
+### Regras
+
+- Atualizar somente depois de `typecheck` e testes passarem.
+- Não marcar como concluído o que não foi implementado.
+- Registrar somente mudanças reais.
+- Não reescrever arquivos inteiros sem necessidade.
+- Não alterar decisões arquiteturais sem autorização.
+- Manter a próxima tarefa registrada em `CURRENT_STATE.md`.

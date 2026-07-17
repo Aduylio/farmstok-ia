@@ -16,7 +16,7 @@
 - [x] Criar serviço com respostas simuladas.
 - [x] Criar rota POST /api/knowledge/ask.
 - [x] Validar entrada inválida.
-- [ ] Criar testes automatizados.
+- [x] Criar testes automatizados.
 - [ ] Documentar contrato final.
 
 ## Etapa 3 — Supabase

@@ -31,3 +31,8 @@
 - Nove modelos migrados para UUID nativo e tabelas/colunas snake_case.
 - Campos, enums, índices, constraints e políticas de exclusão do modelo de atendimento e conhecimento refinados.
 - Smoke test real de conexão adicionado por meio de `npm run db:check`.
+- Especificação 005 de ingestão inicial de conhecimento criada e implementada.
+- Endpoint `POST /api/knowledge/sources` adicionado com validação Zod e transação Prisma.
+- Chunking determinístico, hashes SHA-256, estimativa aproximada de tokens e deduplicação adicionados.
+- Tratamento seguro de payload inválido, conflitos e falhas internas adicionado.
+- Testes de ingestão, utilitários, conflito e rollback adicionados sem PostgreSQL real.

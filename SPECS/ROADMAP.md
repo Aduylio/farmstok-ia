@@ -41,12 +41,16 @@
 
 ## Etapa 4 — Ingestão
 
-- [ ] Ler transcrições.
-- [ ] Dividir conteúdo em chunks.
-- [ ] Registrar metadados.
+- [x] Criar especificação 005 de ingestão inicial.
+- [x] Criar endpoint para cadastro transacional de fontes e chunks.
+- [x] Dividir conteúdo em chunks por parágrafos.
+- [x] Calcular hash SHA-256 e estimativa aproximada de tokens.
+- [x] Evitar chunks duplicados dentro da mesma fonte.
+- [x] Registrar metadados básicos da fonte e dos chunks.
+- [ ] Ler transcrições automaticamente.
 - [ ] Gerar embeddings.
-- [ ] Evitar duplicações.
 - [ ] Permitir reprocessamento.
+- [ ] Definir idempotência no nível da fonte.
 
 ## Etapa 5 — Busca e IA
 

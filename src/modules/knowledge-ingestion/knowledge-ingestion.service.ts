@@ -1,0 +1,78 @@
+import type {
+  CreateKnowledgeSourceBody,
+  KnowledgeIngestionResponse,
+} from './knowledge-ingestion.schemas.js';
+import type {
+  KnowledgeIngestionRepository,
+  KnowledgeSourceInput,
+} from './knowledge-ingestion.repository.js';
+import {
+  chunkText,
+  createContentHash,
+  estimateTokenCount,
+} from './knowledge-ingestion.utils.js';
+
+function buildSourceInput(
+  input: CreateKnowledgeSourceBody,
+): KnowledgeSourceInput {
+  return {
+    type: input.type,
+    title: input.title,
+    course: input.course,
+    ...(input.module === undefined ? {} : { module: input.module }),
+    ...(input.lessonNumber === undefined
+      ? {}
+      : { lessonNumber: input.lessonNumber }),
+    ...(input.sourceUrl === undefined ? {} : { sourceUrl: input.sourceUrl }),
+    ...(input.recordedAt === undefined
+      ? {}
+      : { recordedAt: new Date(input.recordedAt) }),
+    ...(input.version === undefined ? {} : { version: input.version }),
+    ...(input.priority === undefined ? {} : { priority: input.priority }),
+    ...(input.isActive === undefined ? {} : { isActive: input.isActive }),
+    ...(input.storagePath === undefined
+      ? {}
+      : { storagePath: input.storagePath }),
+    ...(input.instructor === undefined
+      ? {}
+      : { instructor: input.instructor }),
+  };
+}
+
+export class KnowledgeIngestionService {
+  constructor(private readonly repository: KnowledgeIngestionRepository) {}
+
+  async ingest(
+    input: CreateKnowledgeSourceBody,
+  ): Promise<KnowledgeIngestionResponse> {
+    const uniqueChunks = new Map<
+      string,
+      { content: string; contentHash: string; tokenCount: number }
+    >();
+
+    for (const content of chunkText(input.content)) {
+      const contentHash = createContentHash(content);
+
+      if (!uniqueChunks.has(contentHash)) {
+        uniqueChunks.set(contentHash, {
+          content,
+          contentHash,
+          tokenCount: estimateTokenCount(content),
+        });
+      }
+    }
+
+    const result = await this.repository.createSourceWithChunks({
+      source: buildSourceInput(input),
+      chunks: [...uniqueChunks.values()],
+    });
+
+    return {
+      source: result.source,
+      ingestion: {
+        chunksCreated: result.chunksCreated,
+        charactersProcessed: input.content.length,
+      },
+    };
+  }
+}

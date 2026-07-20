@@ -1,6 +1,7 @@
 import Fastify from 'fastify';
 
 import { env } from './config/env.js';
+import { knowledgeIngestionRoutes } from './modules/knowledge-ingestion/knowledge-ingestion.routes.js';
 import { knowledgeRoutes } from './modules/knowledge/knowledge.routes.js';
 
 export function buildApp() {
@@ -20,6 +21,10 @@ export function buildApp() {
   });
 
   app.register(knowledgeRoutes, {
+    prefix: '/api/knowledge',
+  });
+
+  app.register(knowledgeIngestionRoutes, {
     prefix: '/api/knowledge',
   });
 

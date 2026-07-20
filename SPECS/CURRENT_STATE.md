@@ -28,12 +28,17 @@ Data: 20/07/2026
 - Smoke test real `npm run db:check` funcionando com `SELECT 1`.
 - `DATABASE_URL` obrigatória e validada com Zod.
 - UUID nativo e nomenclatura snake_case implementados no PostgreSQL.
+- Feature 005 de ingestão inicial implementada.
+- Rota POST `/api/knowledge/sources` cadastrando fonte e chunks em transação Prisma.
+- Chunking determinístico, SHA-256, estimativa aproximada de tokens e deduplicação implementados.
+- 19 testes automatizados passando, sem dependência de PostgreSQL real nos testes unitários.
 
 ## Ainda não implementado
 
 - Supabase.
 - pgvector.
 - Embeddings.
+- Reprocessamento e idempotência de fontes.
 - API de inteligência artificial.
 - WhatsApp.
 - Kommo.
@@ -41,4 +46,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Definir os contratos de validação e repositórios necessários antes da entrada de dados reais, mantendo integrações externas fora do escopo.
+Definir limites de payload, autenticação e estratégia de reprocessamento antes de ampliar a ingestão ou iniciar embeddings.

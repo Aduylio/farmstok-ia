@@ -7,143 +7,242 @@ datasource db {
   provider = "postgresql"
 }
 
+enum StudentStatus {
+  ACTIVE
+  INACTIVE
+  BLOCKED
+
+  @@map("student_status")
+}
+
 enum ConversationMode {
   AI
   HUMAN
   PAUSED
+
+  @@map("conversation_mode")
 }
 
 enum MessageSender {
   STUDENT
   AI
   CONSULTANT
+  SYSTEM
+
+  @@map("message_sender")
 }
 
 enum MessageDirection {
   INCOMING
   OUTGOING
+
+  @@map("message_direction")
+}
+
+enum MessageType {
+  TEXT
+  IMAGE
+  AUDIO
+  VIDEO
+  DOCUMENT
+  LOCATION
+  INTERACTIVE
+  UNKNOWN
+
+  @@map("message_type")
 }
 
 enum KnowledgeSourceType {
   AULA
   LIVE
+  MENTORIA
   PDF
+  FAQ
+  OUTRO
+
+  @@map("knowledge_source_type")
 }
 
 enum ConversationEventType {
   PAUSED
   RESUMED
   HUMAN_ASSUMED
+  AI_ASSUMED
+  CONSULTANT_CHANGED
+
+  @@map("conversation_event_type")
+}
+
+enum ChangeActor {
+  SYSTEM
+  AI
+  CONSULTANT
+  STUDENT
+
+  @@map("change_actor")
 }
 
 model Student {
-  id     String   @id @default(cuid())
-  name   String
-  phone  String   @unique
-  status String   @default("active")
-  access DateTime @default(now())
+  id              String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name            String
+  phone           String        @unique
+  whatsappId      String?       @unique @map("whatsapp_id")
+  status          StudentStatus @default(ACTIVE)
+  courseAccess    Json?         @map("course_access")
+  accessGrantedAt DateTime      @default(now()) @map("access_granted_at") @db.Timestamptz(3)
+  accessExpiresAt DateTime?     @map("access_expires_at") @db.Timestamptz(3)
+  createdAt       DateTime      @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime      @updatedAt @map("updated_at") @db.Timestamptz(3)
 
   conversations Conversation[]
-  messages      Message[]
-  answerLogs    AnswerLog[]
+
+  @@map("students")
 }
 
 model Consultant {
-  id   String @id @default(cuid())
-  name String
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name      String
+  phone     String?  @unique
+  email     String?  @unique
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
 
   conversations Conversation[]
+
+  @@map("consultants")
 }
 
 model Conversation {
-  id        String           @id @default(cuid())
-  mode      ConversationMode @default(AI)
-  createdAt DateTime         @default(now())
-  updatedAt DateTime         @updatedAt
+  id              String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  studentId       String           @map("student_id") @db.Uuid
+  consultantId    String?          @map("consultant_id") @db.Uuid
+  mode            ConversationMode @default(AI)
+  kommoLeadId     String?          @unique @map("kommo_lead_id")
+  lastMessageAt   DateTime?        @map("last_message_at") @db.Timestamptz(3)
+  modeChangedAt   DateTime?        @map("mode_changed_at") @db.Timestamptz(3)
+  modeChangedBy   ChangeActor?     @map("mode_changed_by")
+  createdAt       DateTime         @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime         @updatedAt @map("updated_at") @db.Timestamptz(3)
 
-  studentId    String
-  student      Student     @relation(fields: [studentId], references: [id])
-  consultantId String?
-  consultant   Consultant? @relation(fields: [consultantId], references: [id])
-
+  student    Student     @relation(fields: [studentId], references: [id], onDelete: Restrict)
+  consultant Consultant? @relation(fields: [consultantId], references: [id], onDelete: SetNull)
   messages   Message[]
   events     ConversationEvent[]
   answerLogs AnswerLog[]
+
+  @@index([studentId])
+  @@index([lastMessageAt])
+  @@map("conversations")
 }
 
 model Message {
-  id        String           @id @default(cuid())
-  content   String
-  sender    MessageSender
-  direction MessageDirection
-  createdAt DateTime         @default(now())
+  id                String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  conversationId    String           @map("conversation_id") @db.Uuid
+  direction         MessageDirection
+  sender            MessageSender
+  whatsappMessageId String?          @unique @map("whatsapp_message_id")
+  content           String
+  messageType       MessageType      @default(TEXT) @map("message_type")
+  createdAt         DateTime         @default(now()) @map("created_at") @db.Timestamptz(3)
 
-  conversationId String
-  conversation   Conversation @relation(fields: [conversationId], references: [id])
-  studentId      String?
-  student        Student?     @relation(fields: [studentId], references: [id])
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt])
+  @@map("messages")
 }
 
 model ConversationEvent {
-  id        String                @id @default(cuid())
-  type      ConversationEventType
-  metadata  Json?
-  createdAt DateTime              @default(now())
+  id             String                @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  conversationId String                @map("conversation_id") @db.Uuid
+  type           ConversationEventType
+  changedBy      ChangeActor?          @map("changed_by")
+  metadata       Json?
+  createdAt      DateTime              @default(now()) @map("created_at") @db.Timestamptz(3)
 
-  conversationId String
-  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt])
+  @@map("conversation_events")
 }
 
 model KnowledgeSource {
-  id        String              @id @default(cuid())
-  type      KnowledgeSourceType
-  title     String
-  module    String
-  url       String
-  createdAt DateTime            @default(now())
+  id           String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  type         KnowledgeSourceType
+  title        String
+  course       String
+  module       String?
+  lessonNumber Int?                @map("lesson_number")
+  sourceUrl    String?             @map("source_url")
+  recordedAt   DateTime?           @map("recorded_at") @db.Timestamptz(3)
+  version      Int                 @default(1)
+  priority     Int                 @default(0)
+  isActive     Boolean             @default(true) @map("is_active")
+  storagePath  String?             @map("storage_path")
+  instructor   String?
+  createdAt    DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt    DateTime            @updatedAt @map("updated_at") @db.Timestamptz(3)
 
   chunks KnowledgeChunk[]
+
+  @@index([isActive])
+  @@index([course])
+  @@map("knowledge_sources")
 }
 
 model KnowledgeChunk {
-  id        String  @id @default(cuid())
-  content   String
-  startTime String?
-  endTime   String?
-  metadata  Json?
-  embedding String?
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sourceId    String   @map("source_id") @db.Uuid
+  content     String
+  startTime   String?  @map("start_time")
+  endTime     String?  @map("end_time")
+  tokenCount  Int?     @map("token_count")
+  metadata    Json?
+  contentHash String   @map("content_hash")
+  embedding   String?
+  createdAt   DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt   DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
 
-  sourceId String
-  source   KnowledgeSource @relation(fields: [sourceId], references: [id])
-
+  source        KnowledgeSource @relation(fields: [sourceId], references: [id], onDelete: Restrict)
   answerSources AnswerSource[]
+
+  @@index([sourceId])
+  @@unique([sourceId, contentHash])
+  @@map("knowledge_chunks")
 }
 
 model AnswerLog {
-  id         String   @id @default(cuid())
-  question   String
-  answer     String
-  confidence Float
-  tokens     Int
-  createdAt  DateTime @default(now())
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  conversationId String   @map("conversation_id") @db.Uuid
+  question       String
+  answer         String
+  confidence     Float
+  needsHuman     Boolean  @default(false) @map("needs_human")
+  model          String?
+  inputTokens    Int?     @map("input_tokens")
+  outputTokens   Int?     @map("output_tokens")
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
 
-  conversationId String
-  conversation   Conversation @relation(fields: [conversationId], references: [id])
-  studentId      String
-  student        Student      @relation(fields: [studentId], references: [id])
+  conversation Conversation   @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  sources      AnswerSource[]
 
-  sources AnswerSource[]
+  @@index([conversationId, createdAt])
+  @@map("answer_logs")
 }
 
 model AnswerSource {
-  id         String @id @default(cuid())
-  ranking    Int
-  similarity Float
+  id               String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  answerLogId      String @map("answer_log_id") @db.Uuid
+  knowledgeChunkId String @map("knowledge_chunk_id") @db.Uuid
+  similarity       Float
+  ranking          Int
 
-  answerLogId      String
-  answerLog        AnswerLog      @relation(fields: [answerLogId], references: [id])
-  knowledgeChunkId String
-  knowledgeChunk   KnowledgeChunk @relation(fields: [knowledgeChunkId], references: [id])
+  answerLog      AnswerLog      @relation(fields: [answerLogId], references: [id], onDelete: Cascade)
+  knowledgeChunk KnowledgeChunk @relation(fields: [knowledgeChunkId], references: [id], onDelete: Restrict)
 
+  @@index([answerLogId])
+  @@index([knowledgeChunkId])
   @@unique([answerLogId, knowledgeChunkId])
+  @@unique([answerLogId, ranking])
+  @@map("answer_sources")
 }

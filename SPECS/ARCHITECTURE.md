@@ -86,3 +86,12 @@ Serão responsáveis pelo acesso ao banco de dados.
 - Não conectar WhatsApp antes do núcleo de conhecimento funcionar.
 - Não conectar Kommo antes do fluxo principal estar testado.
 - Não criar módulos vazios sem necessidade imediata.
+
+## Persistência atual
+
+- Prisma ORM 7 acessa o PostgreSQL por meio de `@prisma/adapter-pg`.
+- `src/config/env.ts` valida `DATABASE_URL` e `src/config/prisma.ts` centraliza o Prisma Client.
+- O schema usa UUID nativo, nomes camelCase no Prisma e snake_case no PostgreSQL.
+- Migrations são versionadas em `prisma/migrations/`; migrations aplicadas são imutáveis.
+- `scripts/db-check.ts` executa somente `SELECT 1` para validar a conexão e sempre encerra o client.
+- pgvector e integrações externas permanecem fora da implementação atual.

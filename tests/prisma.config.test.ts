@@ -10,7 +10,7 @@ describe('configuracao inicial do Prisma', () => {
       'utf8',
     );
 
-    expect(schema).toContain('embedding String?');
+    expect(schema).toMatch(/embedding\s+String\?/);
     expect(schema).not.toContain('Unsupported("vector")');
     expect(migration).toContain('"embedding" TEXT');
     expect(migration).not.toContain('CREATE EXTENSION');

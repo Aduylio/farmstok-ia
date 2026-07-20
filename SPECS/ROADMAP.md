@@ -23,15 +23,20 @@
 
 - [x] Configurar Prisma ORM com adapter PostgreSQL.
 - [x] Definir schema Prisma inicial.
-- [x] Preparar migration inicial versionada (não aplicada).
+- [x] Preparar migration inicial versionada.
 - [x] Validar `DATABASE_URL` como variável obrigatória.
-- [ ] Configurar PostgreSQL local e aplicar a migration inicial.
+- [x] Configurar PostgreSQL local e aplicar a migration inicial.
+- [x] Executar smoke test de conexão.
+- [x] Criar especificação 004 para refinamento do schema Prisma.
+- [x] Revisar e implementar o refinamento do schema Prisma em nova migration.
+- [x] Adotar UUID nativo e mapeamento snake_case.
+- [x] Criar e validar o smoke test `db:check`.
 - [ ] Criar projeto.
 - [ ] Configurar cliente no backend.
-- [ ] Criar migrations.
+- [x] Criar migrations.
 - [ ] Ativar pgvector.
-- [ ] Criar tabelas da base de conhecimento.
-- [ ] Testar conexão.
+- [x] Criar tabelas da base de conhecimento.
+- [x] Testar conexão.
 - [ ] Testar inserção e leitura.
 
 ## Etapa 4 — Ingestão

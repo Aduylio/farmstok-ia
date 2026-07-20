@@ -2,7 +2,7 @@
 
 ## Última atualização
 
-Data: 17/07/2026
+Data: 20/07/2026
 
 ## Funcionando
 
@@ -20,15 +20,18 @@ Data: 17/07/2026
 - Testes automatizados do módulo knowledge funcionando.
 - Testes executados com Fastify app.inject().
 - Prisma ORM 7 configurado com adapter PostgreSQL (`@prisma/adapter-pg`).
-- Schema Prisma inicial definido conforme o modelo de dados de referência.
-- Migration inicial versionada e preparada, ainda não aplicada a um banco.
+- Schema Prisma refinado conforme a especificação 004.
+- PostgreSQL local conectado ao banco `farmstok_ai`.
+- Migration inicial versionada e aplicada com sucesso.
+- Migration `20260720114700_refine_prisma_schema` aplicada com sucesso ao banco local vazio.
+- Prisma Client gerado.
+- Smoke test real `npm run db:check` funcionando com `SELECT 1`.
 - `DATABASE_URL` obrigatória e validada com Zod.
+- UUID nativo e nomenclatura snake_case implementados no PostgreSQL.
 
 ## Ainda não implementado
 
 - Supabase.
-- Banco PostgreSQL local provisionado e conectado.
-- Aplicação da migration inicial.
 - pgvector.
 - Embeddings.
 - API de inteligência artificial.
@@ -38,4 +41,4 @@ Data: 17/07/2026
 
 ## Próxima tarefa
 
-Configurar o PostgreSQL local, definir `DATABASE_URL` e aplicar a migration inicial em ambiente de desenvolvimento controlado.
+Definir os contratos de validação e repositórios necessários antes da entrada de dados reais, mantendo integrações externas fora do escopo.

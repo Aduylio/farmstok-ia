@@ -21,6 +21,11 @@
 
 ## Etapa 3 — Supabase
 
+- [x] Configurar Prisma ORM com adapter PostgreSQL.
+- [x] Definir schema Prisma inicial.
+- [x] Preparar migration inicial versionada (não aplicada).
+- [x] Validar `DATABASE_URL` como variável obrigatória.
+- [ ] Configurar PostgreSQL local e aplicar a migration inicial.
 - [ ] Criar projeto.
 - [ ] Configurar cliente no backend.
 - [ ] Criar migrations.

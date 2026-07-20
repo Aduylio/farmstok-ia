@@ -19,11 +19,16 @@ Data: 17/07/2026
 - Validação de pergunta vazia.
 - Testes automatizados do módulo knowledge funcionando.
 - Testes executados com Fastify app.inject().
+- Prisma ORM 7 configurado com adapter PostgreSQL (`@prisma/adapter-pg`).
+- Schema Prisma inicial definido conforme o modelo de dados de referência.
+- Migration inicial versionada e preparada, ainda não aplicada a um banco.
+- `DATABASE_URL` obrigatória e validada com Zod.
 
 ## Ainda não implementado
 
 - Supabase.
-- Banco de dados.
+- Banco PostgreSQL local provisionado e conectado.
+- Aplicação da migration inicial.
 - pgvector.
 - Embeddings.
 - API de inteligência artificial.
@@ -33,4 +38,4 @@ Data: 17/07/2026
 
 ## Próxima tarefa
 
-Implementar a feature 002 (configuração do Supabase) conforme `SPECS/features/002-supabase-setup.md`.
+Configurar o PostgreSQL local, definir `DATABASE_URL` e aplicar a migration inicial em ambiente de desenvolvimento controlado.

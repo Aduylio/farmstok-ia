@@ -140,7 +140,7 @@ Armazena trechos de conteúdo derivados das fontes, com embeddings vetoriais par
 | `id` | `uuid` | Não | Chave primária, gerada automaticamente (`gen_random_uuid()`) |
 | `source_id` | `uuid` | Não | Chave estrangeira para `knowledge_sources.id` |
 | `content` | `text` | Não | Texto do trecho |
-| `embedding` | `vector(1536)` | Sim | Vetor de embedding. Será populado na etapa de ingestão. |
+| `embedding` | `vector(1536)` | Sim | Vetor de embedding. Será populado na etapa de ingestão. A dimensão 1536 corresponde ao padrão do MVP e depende do modelo de embedding escolhido (ex: OpenAI `text-embedding-3-small`). Caso o modelo seja alterado, a dimensão da coluna e a migration devem ser ajustadas. |
 | `chunk_index` | `integer` | Não | Índice do trecho dentro da fonte (começa em 0) |
 | `token_count` | `integer` | Sim | Quantidade estimada de tokens do trecho |
 | `created_at` | `timestamptz` | Não | Data de criação do registro (default: `now()`) |
@@ -166,15 +166,13 @@ Armazena trechos de conteúdo derivados das fontes, com embeddings vetoriais par
 | Índice | Colunas | Tipo | Descrição |
 |--------|---------|------|-----------|
 | `idx_knowledge_chunks_source_id` | `source_id` | B-tree | Busca por fonte |
-| `idx_knowledge_chunks_embedding` | `embedding` | IVFFlat ou HNSW | Busca vetorial por similaridade. Criado apenas quando embeddings estiverem populados. |
-
-> Nota sobre o índice vetorial: na migration inicial, criar o índice com `lists = 1` para IVFFlat. Em produção, o valor de `lists` deve ser recalculado após a ingestão de dados (fórmula: `sqrt(n_rows)`). O índice pode ser recriado em uma migration futura.
+| `idx_knowledge_chunks_embedding` | `embedding` | A definir | Índice vetorial para busca por similaridade. **Não será criado nesta etapa.** A estratégia (IVFFlat, HNSW) e os parâmetros serão definidos somente após a ingestão de dados reais, quando for possível avaliar volume e performance. |
 
 ## Regras de integridade e relacionamentos
 
 1. **Cascade delete**: quando um `knowledge_source` é removido, todos os seus `knowledge_chunks` devem ser removidos automaticamente.
 2. **Embedding nullable**: a coluna `embedding` em `knowledge_chunks` é nullable para permitir inserção de trechos antes da geração de embeddings.
-3. **Índice vetorial parcial**: o índice de similaridade vetorial deve ser criado apenas após dados reais estarem populados. Na migration inicial, criar com configuração mínima.
+3. **Índice vetorial adiado**: o índice de similaridade vetorial não deve ser criado nesta etapa. Será avaliado e criado somente após a ingestão de dados reais, quando volume e padrão de consulta estiverem claros.
 4. **Sem duplicação**: a combinação `(source_id, chunk_index)` deve ser única para evitar inserções duplicadas.
 5. **Auditoria**: colunas `created_at` e `updated_at` devem ser preenchidas automaticamente.
 
@@ -194,7 +192,7 @@ Armazena trechos de conteúdo derivados das fontes, com embeddings vetoriais par
 5. [ ] Tabela `knowledge_sources` criada com todas as colunas e constraints.
 6. [ ] Tabela `knowledge_chunks` criada com todas as colunas, constraints e chave estrangeira.
 7. [ ] Índices B-tree criados para buscas por módulo e source_id.
-8. [ ] Índice vetorial IVFFlat criado para embeddings.
+8. [ ] Índice vetorial **não** criado nesta etapa (adiado para após ingestão de dados reais).
 9. [ ] Repositório `knowledge.repository.ts` criado com operações de insert e select.
 10. [ ] Tipos TypeScript das tabelas definidos em `knowledge.types.ts`.
 11. [ ] Testes automatizados passam (`npm run test:run`).
@@ -220,7 +218,7 @@ Armazena trechos de conteúdo derivados das fontes, com embeddings vetoriais par
 | Variáveis de ambiente não configuradas | Aplicação não inicia | Validação com Zod + mensagem clara de erro |
 | Supabase indisponível | Falha na conexão | Retry com backoff no repositório (futuro) |
 | Credenciais expostas | Segurança comprometida | Sem logs de credenciais, `.env` não versionado |
-| Índice vetorial mal configurado | Performance ruim na busca | Criar com configuração mínima, recriar após ingestão |
+| Índice vetorial criado prematuramente | Performance ruim na busca | Índice vetorial adiado para etapa de ingestão, quando dados reais permitirão avaliar a melhor estratégia |
 | Migração SQL com erro | Banco corrompido | Testar migrations em ambiente de staging antes de produção |
 | Versão incompatível do Supabase SDK | Erros em runtime | Travar versão no `package.json`, testar antes de atualizar |
 

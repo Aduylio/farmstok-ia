@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ConversationMode {
+  AI
+  HUMAN
+  PAUSED
+}
+
+enum MessageSender {
+  STUDENT
+  AI
+  CONSULTANT
+}
+
+enum MessageDirection {
+  INCOMING
+  OUTGOING
+}
+
+enum KnowledgeSourceType {
+  AULA
+  LIVE
+  PDF
+}
+
+enum ConversationEventType {
+  PAUSED
+  RESUMED
+  HUMAN_ASSUMED
+}
+
+model Student {
+  id     String   @id @default(cuid())
+  name   String
+  phone  String   @unique
+  status String   @default("active")
+  access DateTime @default(now())
+
+  conversations Conversation[]
+  messages      Message[]
+  answerLogs    AnswerLog[]
+}
+
+model Consultant {
+  id   String @id @default(cuid())
+  name String
+
+  conversations Conversation[]
+}
+
+model Conversation {
+  id        String           @id @default(cuid())
+  mode      ConversationMode @default(AI)
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  studentId    String
+  student      Student     @relation(fields: [studentId], references: [id])
+  consultantId String?
+  consultant   Consultant? @relation(fields: [consultantId], references: [id])
+
+  messages   Message[]
+  events     ConversationEvent[]
+  answerLogs AnswerLog[]
+}
+
+model Message {
+  id        String           @id @default(cuid())
+  content   String
+  sender    MessageSender
+  direction MessageDirection
+  createdAt DateTime         @default(now())
+
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  studentId      String?
+  student        Student?     @relation(fields: [studentId], references: [id])
+}
+
+model ConversationEvent {
+  id        String                @id @default(cuid())
+  type      ConversationEventType
+  metadata  Json?
+  createdAt DateTime              @default(now())
+
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+}
+
+model KnowledgeSource {
+  id        String              @id @default(cuid())
+  type      KnowledgeSourceType
+  title     String
+  module    String
+  url       String
+  createdAt DateTime            @default(now())
+
+  chunks KnowledgeChunk[]
+}
+
+model KnowledgeChunk {
+  id        String  @id @default(cuid())
+  content   String
+  startTime String?
+  endTime   String?
+  metadata  Json?
+  embedding String?
+
+  sourceId String
+  source   KnowledgeSource @relation(fields: [sourceId], references: [id])
+
+  answerSources AnswerSource[]
+}
+
+model AnswerLog {
+  id         String   @id @default(cuid())
+  question   String
+  answer     String
+  confidence Float
+  tokens     Int
+  createdAt  DateTime @default(now())
+
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  studentId      String
+  student        Student      @relation(fields: [studentId], references: [id])
+
+  sources AnswerSource[]
+}
+
+model AnswerSource {
+  id         String @id @default(cuid())
+  ranking    Int
+  similarity Float
+
+  answerLogId      String
+  answerLog        AnswerLog      @relation(fields: [answerLogId], references: [id])
+  knowledgeChunkId String
+  knowledgeChunk   KnowledgeChunk @relation(fields: [knowledgeChunkId], references: [id])
+
+  @@unique([answerLogId, knowledgeChunkId])
+}

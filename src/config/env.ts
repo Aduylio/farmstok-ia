@@ -23,6 +23,8 @@ const envSchema = z.object({
       'silent',
     ])
     .default('info'),
+
+  DATABASE_URL: z.string().url(),
 });
 
 const parsedEnv = envSchema.safeParse(process.env);

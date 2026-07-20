@@ -95,3 +95,11 @@ Serão responsáveis pelo acesso ao banco de dados.
 - Migrations são versionadas em `prisma/migrations/`; migrations aplicadas são imutáveis.
 - `scripts/db-check.ts` executa somente `SELECT 1` para validar a conexão e sempre encerra o client.
 - pgvector e integrações externas permanecem fora da implementação atual.
+
+## Busca textual diagnóstica
+
+- `knowledge-search.repository.ts` seleciona até 500 chunks de fontes ativas usando Prisma e filtros parametrizados.
+- `knowledge-search.service.ts` normaliza, pontua, ordena e limita os resultados.
+- `knowledge-search.utils.ts` concentra funções puras de texto, score e links temporais.
+- `knowledge-search.routes.ts` expõe `GET /api/knowledge/search` com validação Zod e erros seguros.
+- A estratégia é temporária e executada na aplicação; não usa pgvector, embeddings, SQL concatenado ou mecanismo externo.

@@ -44,6 +44,12 @@ Data: 20/07/2026
 - Migration `20260720143000_add_knowledge_source_identity` aplicada sem perda de fontes, chunks ou timestamps.
 - Endpoint e importador local rejeitam fontes duplicadas com `DUPLICATE_SOURCE`.
 - Reprocessamento preferencial por `sourceKey`, mantendo compatibilidade por `sourceId`.
+- Feature 009 de busca textual diagnóstica implementada.
+- Rota GET `/api/knowledge/search` pesquisando até 500 chunks de fontes ativas com filtros e ranking determinístico.
+- Comando `npm run knowledge:search` reutilizando o mesmo service da API.
+- Links temporais do YouTube gerados a partir de `startTime`.
+- 72 testes automatizados passando sem PostgreSQL real nas suítes de busca.
+- Seis consultas diagnósticas executadas no PostgreSQL real somente para leitura.
 
 ## Ainda não implementado
 
@@ -58,4 +64,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Definir a próxima etapa de recuperação de conhecimento, mantendo pgvector e embeddings em feature separada.
+Avaliar a qualidade do ranking textual e definir a estratégia futura de recuperação semântica em feature separada.

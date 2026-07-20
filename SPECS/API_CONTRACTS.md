@@ -59,6 +59,32 @@ Embeddings, conteúdo dos chunks e detalhes internos não são retornados.
 - `409 DUPLICATE_SOURCE`: já existe fonte com a `sourceKey` informada.
 - `500 INTERNAL_ERROR`: falha inesperada, sem exposição de SQL, credenciais ou stack trace.
 
+## GET /api/knowledge/search
+
+Busca textual diagnóstica nos chunks de fontes ativas.
+
+Parâmetros: `q` obrigatório; `limit` opcional entre 1 e 20, padrão 5; filtros opcionais `sourceKey`, `course` e `type`.
+
+```http
+GET /api/knowledge/search?q=estoque%20mínimo%20Trier&limit=5
+```
+
+Retorna `query`, `results` e `total`. Cada resultado contém `chunkId`, `content`, `score`, `startTime`, `endTime` e fonte com `id`, `sourceKey`, `type`, `title`, `course`, `module`, `sourceUrl` e `timestampUrl`.
+
+- `400 INVALID_REQUEST`: parâmetros ausentes ou inválidos.
+- `200` com `results: []`: nenhum termo relevante.
+- `500 INTERNAL_ERROR`: falha inesperada sem detalhes internos.
+
+O ranking textual é determinístico, temporário e avalia no máximo 500 candidatos ativos antes de ordenar e aplicar `limit`.
+
+## Comando interno: knowledge:search
+
+```bash
+npm run knowledge:search -- "estoque mínimo Trier" [--limit 10] [--source-key chave]
+```
+
+Reutiliza o mesmo service do endpoint e imprime resultados resumidos sem alterar dados.
+
 ## Comando interno: knowledge:import
 
 Ferramenta local do MVP para importar pares `.txt`/`.md` e `.json` da pasta `data/knowledge/inbox`:

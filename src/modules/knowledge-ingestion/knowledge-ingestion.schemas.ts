@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const knowledgeSourceTypes = [
+export const knowledgeSourceTypes = [
   'AULA',
   'LIVE',
   'MENTORIA',

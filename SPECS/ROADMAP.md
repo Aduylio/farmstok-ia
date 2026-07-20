@@ -63,6 +63,9 @@
 
 ## Etapa 5 — Busca e IA
 
+- [x] Criar busca textual diagnóstica em chunks persistidos.
+- [x] Retornar fontes, timestamps e links temporais em ranking determinístico.
+- [x] Criar CLI local para diagnóstico da recuperação.
 - [ ] Implementar busca vetorial.
 - [ ] Recuperar fontes.
 - [ ] Conectar provedor de IA.

@@ -54,3 +54,11 @@
 - Proteção contra duplicidade adicionada no service e na constraint única para cobrir concorrência.
 - Reprocessamento por `sourceKey` adicionado como forma preferencial, preservando suporte por UUID.
 - JSONs das duas fontes processadas atualizados sem reimportação ou reprocessamento automático.
+- Feature 009 de busca textual diagnóstica criada e implementada.
+- Endpoint `GET /api/knowledge/search` adicionado com validação Zod, filtros e erros seguros.
+- Ranking determinístico adicionado com pesos para título, módulo, conteúdo, frase exata e cobertura de termos.
+- Teto de 500 candidatos ativos e limite de resposta entre 1 e 20 documentados.
+- Geração de links temporais para `youtube.com` e `youtu.be` adicionada.
+- Comando `npm run knowledge:search` adicionado reutilizando o service da API.
+- Testes unitários de normalização, ranking, filtros, ordenação, URLs, repository, service e rota adicionados.
+- Seis consultas reais executadas somente para leitura, sem alterar schema, migrations ou dados.

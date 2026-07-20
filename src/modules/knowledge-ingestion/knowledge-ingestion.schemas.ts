@@ -9,7 +9,7 @@ const knowledgeSourceTypes = [
   'OUTRO',
 ] as const;
 
-export const createKnowledgeSourceBodySchema = z.object({
+export const knowledgeSourceMetadataSchema = z.object({
   type: z.enum(knowledgeSourceTypes),
   title: z.string().trim().min(1).max(300),
   course: z.string().trim().min(1).max(200),
@@ -22,6 +22,9 @@ export const createKnowledgeSourceBodySchema = z.object({
   isActive: z.boolean().optional(),
   storagePath: z.string().trim().min(1).max(1000).optional(),
   instructor: z.string().trim().min(1).max(200).optional(),
+});
+
+export const createKnowledgeSourceBodySchema = knowledgeSourceMetadataSchema.extend({
   content: z.string().trim().min(1, 'O conteúdo não pode estar vazio.'),
 });
 

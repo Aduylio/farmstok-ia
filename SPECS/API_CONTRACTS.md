@@ -55,3 +55,13 @@ Embeddings, conteúdo dos chunks e detalhes internos não são retornados.
 - `400 INVALID_REQUEST`: payload inválido ou conteúdo vazio.
 - `409 DUPLICATE_CONTENT`: conflito com conteúdo duplicado dentro da fonte.
 - `500 INTERNAL_ERROR`: falha inesperada, sem exposição de SQL, credenciais ou stack trace.
+
+## Comando interno: knowledge:import
+
+Ferramenta local do MVP para importar pares `.txt`/`.md` e `.json` da pasta `data/knowledge/inbox`:
+
+```bash
+npm run knowledge:import
+```
+
+Não é um endpoint HTTP. O comando reutiliza o serviço de ingestão, move sucessos para `processed`, falhas para `failed` e imprime apenas um resumo agregado. PostgreSQL permanece como fonte de verdade.

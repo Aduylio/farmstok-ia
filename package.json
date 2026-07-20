@@ -11,6 +11,7 @@
     "test:run": "vitest run",
     "typecheck": "tsc --noEmit",
     "db:check": "tsx scripts/db-check.ts",
+    "knowledge:import": "tsx scripts/import-knowledge.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:studio": "prisma studio",

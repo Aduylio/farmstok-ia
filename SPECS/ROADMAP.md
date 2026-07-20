@@ -51,6 +51,10 @@
 - [ ] Gerar embeddings.
 - [ ] Permitir reprocessamento.
 - [ ] Definir idempotência no nível da fonte.
+- [x] Criar importador local de arquivos TXT e Markdown.
+- [x] Validar metadados JSON e limite configurável por arquivo.
+- [x] Organizar inbox, processed e failed sem sobrescrita.
+- [ ] Importar PDF, DOCX, áudio ou vídeo.
 
 ## Etapa 5 — Busca e IA
 

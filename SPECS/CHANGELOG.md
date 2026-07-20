@@ -36,3 +36,8 @@
 - Chunking determinístico, hashes SHA-256, estimativa aproximada de tokens e deduplicação adicionados.
 - Tratamento seguro de payload inválido, conflitos e falhas internas adicionado.
 - Testes de ingestão, utilitários, conflito e rollback adicionados sem PostgreSQL real.
+- Especificação 006 e importador local de conhecimento por TXT e Markdown adicionados.
+- Comando `npm run knowledge:import` adicionado com resumo determinístico e encerramento correto do Prisma Client.
+- Pastas inbox, processed e failed adicionadas com movimentação segura e relatórios de erro sem dados sensíveis.
+- Limite `KNOWLEDGE_IMPORT_MAX_BYTES` adicionado com padrão de 5 MiB.
+- Testes de descoberta, ordenação, validação, limites, movimentação, colisões, continuidade e inbox vazia adicionados.

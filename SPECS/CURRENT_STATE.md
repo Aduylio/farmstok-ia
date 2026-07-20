@@ -31,7 +31,10 @@ Data: 20/07/2026
 - Feature 005 de ingestão inicial implementada.
 - Rota POST `/api/knowledge/sources` cadastrando fonte e chunks em transação Prisma.
 - Chunking determinístico, SHA-256, estimativa aproximada de tokens e deduplicação implementados.
-- 19 testes automatizados passando, sem dependência de PostgreSQL real nos testes unitários.
+- Feature 006 de importação local por TXT e Markdown implementada.
+- Comando `npm run knowledge:import` reutilizando o serviço transacional da Feature 005.
+- Inbox, processed e failed versionados, com limite padrão de 5 MiB por arquivo.
+- 29 testes automatizados passando; testes do importador usam filesystem temporário e não acessam PostgreSQL real.
 
 ## Ainda não implementado
 
@@ -39,6 +42,7 @@ Data: 20/07/2026
 - pgvector.
 - Embeddings.
 - Reprocessamento e idempotência de fontes.
+- Importação de PDF, DOCX, áudio e vídeo.
 - API de inteligência artificial.
 - WhatsApp.
 - Kommo.
@@ -46,4 +50,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Definir limites de payload, autenticação e estratégia de reprocessamento antes de ampliar a ingestão ou iniciar embeddings.
+Definir idempotência e reprocessamento de fontes antes de ampliar formatos de importação ou iniciar embeddings.

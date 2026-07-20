@@ -25,6 +25,12 @@ const envSchema = z.object({
     .default('info'),
 
   DATABASE_URL: z.string().url(),
+
+  KNOWLEDGE_IMPORT_MAX_BYTES: z.coerce
+    .number()
+    .int()
+    .positive()
+    .default(5 * 1024 * 1024),
 });
 
 const parsedEnv = envSchema.safeParse(process.env);

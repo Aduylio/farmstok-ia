@@ -16,6 +16,7 @@ Cadastra uma fonte e seus chunks em uma única transação.
 
 ```json
 {
+  "sourceKey": "aula:gestao-estoques:curva-abc",
   "type": "AULA",
   "title": "Curva ABC",
   "course": "Farmstok",
@@ -27,7 +28,7 @@ Cadastra uma fonte e seus chunks em uma única transação.
 }
 ```
 
-Obrigatórios: `type`, `title`, `course` e `content` não vazio.
+Obrigatórios: `sourceKey`, `type`, `title`, `course` e `content` não vazio. `sourceKey` deve ter até 200 caracteres e seguir `^[a-z0-9][a-z0-9:_-]*$`.
 
 Opcionais: `module`, `lessonNumber`, `sourceUrl`, `recordedAt`, `version`, `priority`, `isActive`, `storagePath` e `instructor`.
 
@@ -37,6 +38,7 @@ Opcionais: `module`, `lessonNumber`, `sourceUrl`, `recordedAt`, `version`, `prio
 {
   "source": {
     "id": "uuid",
+    "sourceKey": "aula:gestao-estoques:curva-abc",
     "type": "AULA",
     "title": "Curva ABC",
     "course": "Farmstok"
@@ -54,6 +56,7 @@ Embeddings, conteúdo dos chunks e detalhes internos não são retornados.
 
 - `400 INVALID_REQUEST`: payload inválido ou conteúdo vazio.
 - `409 DUPLICATE_CONTENT`: conflito com conteúdo duplicado dentro da fonte.
+- `409 DUPLICATE_SOURCE`: já existe fonte com a `sourceKey` informada.
 - `500 INTERNAL_ERROR`: falha inesperada, sem exposição de SQL, credenciais ou stack trace.
 
 ## Comando interno: knowledge:import
@@ -72,6 +75,12 @@ Substitui transacionalmente os chunks de uma fonte existente usando uma transcri
 
 ```bash
 npm run knowledge:reprocess -- <sourceId> <arquivo.txt|arquivo.md>
+```
+
+Forma preferencial:
+
+```bash
+npm run knowledge:reprocess -- --source-key <sourceKey> <arquivo.txt|arquivo.md>
 ```
 
 O comando preserva a fonte e seus metadados, não cria fonte duplicada e preenche `startTime`/`endTime` quando encontra timestamps isolados. Não é um endpoint HTTP e não executa reprocessamento automático.

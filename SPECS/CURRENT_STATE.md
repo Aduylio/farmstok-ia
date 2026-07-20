@@ -39,14 +39,17 @@ Data: 20/07/2026
 - Comando `npm run knowledge:reprocess` substituindo chunks de uma fonte existente em transação.
 - 43 testes automatizados passando sem PostgreSQL real nos novos testes.
 - Auditoria somente leitura confirmou 2 fontes e 151 chunks antes do reprocessamento manual.
+- As duas fontes reais foram reprocessadas com timestamps; auditoria atual confirmou 2 fontes e 148 chunks.
+- Feature 008 de identidade única implementada com `sourceKey` obrigatória, explícita e única.
+- Migration `20260720143000_add_knowledge_source_identity` aplicada sem perda de fontes, chunks ou timestamps.
+- Endpoint e importador local rejeitam fontes duplicadas com `DUPLICATE_SOURCE`.
+- Reprocessamento preferencial por `sourceKey`, mantendo compatibilidade por `sourceId`.
 
 ## Ainda não implementado
 
 - Supabase.
 - pgvector.
 - Embeddings.
-- Idempotência de fontes.
-- Reprocessamento manual das duas fontes reais já importadas.
 - Importação de PDF, DOCX, áudio e vídeo.
 - API de inteligência artificial.
 - WhatsApp.
@@ -55,4 +58,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Conferir os IDs e executar manualmente os comandos documentados na Feature 007 para reprocessar as duas transcrições reais.
+Definir a próxima etapa de recuperação de conhecimento, mantendo pgvector e embeddings em feature separada.

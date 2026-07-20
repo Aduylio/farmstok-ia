@@ -11,10 +11,12 @@ describe('reprocessamento de conhecimento', () => {
   it('gera chunks temporais e reutiliza o sourceId existente', async () => {
     const calls: Array<{ sourceId: string; chunkCount: number }> = [];
     const repository: KnowledgeReprocessingRepository = {
-      async replaceSourceChunks(sourceId, chunks) {
+      async replaceSourceChunks(selector, chunks) {
+        const sourceId = 'id' in selector ? selector.id : 'resolved-id';
         calls.push({ sourceId, chunkCount: chunks.length });
         return {
           sourceId,
+          sourceKey: 'aula:curva-abc',
           chunksRemoved: 3,
           chunksCreated: chunks.length,
         };
@@ -31,6 +33,7 @@ describe('reprocessamento de conhecimento', () => {
     expect(calls).toEqual([{ sourceId, chunkCount: 1 }]);
     expect(result).toEqual({
       sourceId,
+      sourceKey: 'aula:curva-abc',
       chunksRemoved: 3,
       chunksCreated: 1,
     });
@@ -40,7 +43,7 @@ describe('reprocessamento de conhecimento', () => {
     const sourceId = '3e1e04ad-32e5-4eed-b131-e72f16f063b7';
     const transaction = {
       knowledgeSource: {
-        findUnique: vi.fn(async () => ({ id: sourceId })),
+        findUnique: vi.fn(async () => ({ id: sourceId, sourceKey: 'aula:curva-abc' })),
       },
       knowledgeChunk: {
         deleteMany: vi.fn(async () => ({ count: 125 })),
@@ -56,7 +59,7 @@ describe('reprocessamento de conhecimento', () => {
     } as unknown as PrismaClient;
     const repository = new PrismaKnowledgeReprocessingRepository(fakeClient);
 
-    const result = await repository.replaceSourceChunks(sourceId, [
+    const result = await repository.replaceSourceChunks({ id: sourceId }, [
       {
         content: 'Trecho',
         contentHash: 'hash',
@@ -68,6 +71,7 @@ describe('reprocessamento de conhecimento', () => {
 
     expect(result).toEqual({
       sourceId,
+      sourceKey: 'aula:curva-abc',
       chunksRemoved: 125,
       chunksCreated: 80,
     });
@@ -82,7 +86,7 @@ describe('reprocessamento de conhecimento', () => {
     const persistedChunks = ['chunk-antigo'];
     const transaction = {
       knowledgeSource: {
-        findUnique: vi.fn(async () => ({ id: sourceId })),
+        findUnique: vi.fn(async () => ({ id: sourceId, sourceKey: 'aula:curva-abc' })),
       },
       knowledgeChunk: {
         deleteMany: vi.fn(async () => {
@@ -113,7 +117,7 @@ describe('reprocessamento de conhecimento', () => {
     const repository = new PrismaKnowledgeReprocessingRepository(fakeClient);
 
     await expect(
-      repository.replaceSourceChunks(sourceId, [
+      repository.replaceSourceChunks({ id: sourceId }, [
         {
           content: 'Novo trecho',
           contentHash: 'novo-hash',
@@ -125,5 +129,31 @@ describe('reprocessamento de conhecimento', () => {
     ).rejects.toThrow('falha simulada');
 
     expect(persistedChunks).toEqual(['chunk-antigo']);
+  });
+
+  it('encontra por sourceKey e preserva id e chave', async () => {
+    const sourceId = '3e1e04ad-32e5-4eed-b131-e72f16f063b7';
+    const sourceKey = 'live:historia-farmstok';
+    const repository: KnowledgeReprocessingRepository = {
+      async replaceSourceChunks(selector, chunks) {
+        expect(selector).toEqual({ sourceKey });
+        return {
+          sourceId,
+          sourceKey,
+          chunksRemoved: 50,
+          chunksCreated: chunks.length,
+        };
+      },
+    };
+    const service = new KnowledgeReprocessingService(repository);
+
+    await expect(
+      service.reprocessBySourceKey(sourceKey, '0:14\nTrecho.'),
+    ).resolves.toEqual({
+      sourceId,
+      sourceKey,
+      chunksRemoved: 50,
+      chunksCreated: 1,
+    });
   });
 });

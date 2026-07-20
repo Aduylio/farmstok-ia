@@ -21,6 +21,7 @@ import {
   runKnowledgeImport,
   type KnowledgeImportDirectories,
 } from '../src/modules/knowledge-import/local-knowledge-import.js';
+import { DuplicateKnowledgeSourceError } from '../src/modules/knowledge-ingestion/knowledge-ingestion.repository.js';
 
 class FakeIngestionService {
   readonly inputs: CreateKnowledgeSourceBody[] = [];
@@ -39,6 +40,7 @@ class FakeIngestionService {
     return {
       source: {
         id: '3e1e04ad-32e5-4eed-b131-e72f16f063b7',
+        sourceKey: input.sourceKey,
         type: input.type,
         title: input.title,
         course: input.course,
@@ -51,8 +53,15 @@ class FakeIngestionService {
   }
 }
 
+class DuplicateSourceService extends FakeIngestionService {
+  override async ingest(): Promise<never> {
+    throw new DuplicateKnowledgeSourceError();
+  }
+}
+
 const fixedDate = new Date('2026-07-20T12:00:00.000Z');
 const validMetadata = {
+  sourceKey: 'aula:curva-abc',
   type: 'AULA',
   title: 'Curva ABC',
   course: 'Farmstok',
@@ -323,5 +332,32 @@ describe('importacao local de conhecimento', () => {
     expect(formatKnowledgeImportSummary(summary)).toContain(
       'Nenhum arquivo de conhecimento encontrado.',
     );
+  });
+
+  it('move sourceKey duplicada para failed com erro seguro', async () => {
+    await writePair('duplicada', '.txt');
+
+    const summary = await runKnowledgeImport({
+      directories,
+      maxBytes: 1024,
+      service: new DuplicateSourceService(),
+      now: () => fixedDate,
+    });
+
+    expect(summary.failures).toBe(1);
+    const errorContent = await readFile(
+      join(directories.failed, 'duplicada.error.json'),
+      'utf8',
+    );
+    expect(JSON.parse(errorContent)).toMatchObject({
+      code: 'DUPLICATE_SOURCE',
+      message: 'Já existe uma fonte com esta sourceKey.',
+    });
+    expect(errorContent).not.toContain('P2002');
+    expect(await readdir(directories.failed)).toEqual([
+      'duplicada.error.json',
+      'duplicada.json',
+      'duplicada.txt',
+    ]);
   });
 });

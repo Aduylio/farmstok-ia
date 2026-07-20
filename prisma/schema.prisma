@@ -168,6 +168,7 @@ model ConversationEvent {
 
 model KnowledgeSource {
   id           String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sourceKey    String              @unique @map("source_key")
   type         KnowledgeSourceType
   title        String
   course       String

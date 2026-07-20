@@ -9,7 +9,14 @@ const knowledgeSourceTypes = [
   'OUTRO',
 ] as const;
 
+export const sourceKeySchema = z
+  .string()
+  .min(1)
+  .max(200)
+  .regex(/^[a-z0-9][a-z0-9:_-]*$/u);
+
 export const knowledgeSourceMetadataSchema = z.object({
+  sourceKey: sourceKeySchema,
   type: z.enum(knowledgeSourceTypes),
   title: z.string().trim().min(1).max(300),
   course: z.string().trim().min(1).max(200),
@@ -35,6 +42,7 @@ export type CreateKnowledgeSourceBody = z.infer<
 export interface KnowledgeIngestionResponse {
   source: {
     id: string;
+    sourceKey: string;
     type: CreateKnowledgeSourceBody['type'];
     title: string;
     course: string;

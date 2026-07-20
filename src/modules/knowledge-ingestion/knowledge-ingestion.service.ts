@@ -6,6 +6,7 @@ import type {
   KnowledgeIngestionRepository,
   KnowledgeSourceInput,
 } from './knowledge-ingestion.repository.js';
+import { DuplicateKnowledgeSourceError } from './knowledge-ingestion.repository.js';
 import {
   createContentHash,
   estimateTokenCount,
@@ -44,6 +45,7 @@ function buildSourceInput(
   input: CreateKnowledgeSourceBody,
 ): KnowledgeSourceInput {
   return {
+    sourceKey: input.sourceKey,
     type: input.type,
     title: input.title,
     course: input.course,
@@ -73,6 +75,12 @@ export class KnowledgeIngestionService {
   async ingest(
     input: CreateKnowledgeSourceBody,
   ): Promise<KnowledgeIngestionResponse> {
+    const existingSource = await this.repository.findSourceByKey(input.sourceKey);
+
+    if (existingSource !== null) {
+      throw new DuplicateKnowledgeSourceError();
+    }
+
     const result = await this.repository.createSourceWithChunks({
       source: buildSourceInput(input),
       chunks: prepareKnowledgeChunks(input.content),

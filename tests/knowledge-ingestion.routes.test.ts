@@ -11,10 +11,15 @@ import { createKnowledgeIngestionRoutes } from '../src/modules/knowledge-ingesti
 import { KnowledgeIngestionService } from '../src/modules/knowledge-ingestion/knowledge-ingestion.service.js';
 
 class SuccessfulRepository implements KnowledgeIngestionRepository {
+  async findSourceByKey(): Promise<{ id: string } | null> {
+    return null;
+  }
+
   async createSourceWithChunks(input: CreateSourceWithChunksInput) {
     return {
       source: {
         id: '3e1e04ad-32e5-4eed-b131-e72f16f063b7',
+        sourceKey: input.source.sourceKey,
         type: input.source.type,
         title: input.source.title,
         course: input.source.course,
@@ -25,12 +30,20 @@ class SuccessfulRepository implements KnowledgeIngestionRepository {
 }
 
 class ConflictingRepository implements KnowledgeIngestionRepository {
+  async findSourceByKey(): Promise<{ id: string } | null> {
+    return null;
+  }
+
   async createSourceWithChunks(): Promise<never> {
     throw new DuplicateKnowledgeChunkError();
   }
 }
 
 class FailingRepository implements KnowledgeIngestionRepository {
+  async findSourceByKey(): Promise<{ id: string } | null> {
+    return null;
+  }
+
   async createSourceWithChunks(): Promise<never> {
     throw new Error('detalhe interno que não pode ser exposto');
   }
@@ -65,6 +78,7 @@ describe('POST /api/knowledge/sources', () => {
       method: 'POST',
       url: '/api/knowledge/sources',
       payload: {
+        sourceKey: 'aula:curva-abc',
         type: 'AULA',
         title: 'Curva ABC',
         course: 'Farmstok',
@@ -80,6 +94,7 @@ describe('POST /api/knowledge/sources', () => {
     expect(response.json()).toEqual({
       source: {
         id: '3e1e04ad-32e5-4eed-b131-e72f16f063b7',
+        sourceKey: 'aula:curva-abc',
         type: 'AULA',
         title: 'Curva ABC',
         course: 'Farmstok',
@@ -98,6 +113,7 @@ describe('POST /api/knowledge/sources', () => {
       method: 'POST',
       url: '/api/knowledge/sources',
       payload: {
+        sourceKey: 'aula:curva-abc',
         type: 'AULA',
         title: 'Curva ABC',
         course: 'Farmstok',
@@ -116,6 +132,7 @@ describe('POST /api/knowledge/sources', () => {
       method: 'POST',
       url: '/api/knowledge/sources',
       payload: {
+        sourceKey: 'aula:curva-abc',
         type: 'TIPO_INEXISTENTE',
         content: 'Conteúdo válido.',
       },
@@ -132,6 +149,7 @@ describe('POST /api/knowledge/sources', () => {
       method: 'POST',
       url: '/api/knowledge/sources',
       payload: {
+        sourceKey: 'aula:curva-abc',
         type: 'AULA',
         title: 'Curva ABC',
         course: 'Farmstok',
@@ -153,6 +171,7 @@ describe('POST /api/knowledge/sources', () => {
       method: 'POST',
       url: '/api/knowledge/sources',
       payload: {
+        sourceKey: 'aula:curva-abc',
         type: 'AULA',
         title: 'Curva ABC',
         course: 'Farmstok',

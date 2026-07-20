@@ -10,22 +10,34 @@ import {
   KnowledgeSourceNotFoundError,
   PrismaKnowledgeReprocessingRepository,
 } from '../src/modules/knowledge-ingestion/knowledge-reprocessing.js';
+import { sourceKeySchema } from '../src/modules/knowledge-ingestion/knowledge-ingestion.schemas.js';
 
-const argumentsSchema = z.tuple([
+const sourceIdArgumentsSchema = z.tuple([
   z.string().uuid(),
   z.string().min(1),
 ]);
-const parsedArguments = argumentsSchema.safeParse(process.argv.slice(2));
+const sourceKeyArgumentsSchema = z.tuple([
+  z.literal('--source-key'),
+  sourceKeySchema,
+  z.string().min(1),
+]);
+const rawArguments = process.argv.slice(2);
+const parsedBySourceKey = sourceKeyArgumentsSchema.safeParse(rawArguments);
+const parsedBySourceId = sourceIdArgumentsSchema.safeParse(rawArguments);
+const parsedArguments = parsedBySourceKey.success
+  ? { sourceKey: parsedBySourceKey.data[1], fileArgument: parsedBySourceKey.data[2] }
+  : parsedBySourceId.success
+    ? { sourceId: parsedBySourceId.data[0], fileArgument: parsedBySourceId.data[1] }
+    : null;
 
 try {
-  if (!parsedArguments.success) {
+  if (parsedArguments === null) {
     throw new Error(
-      'Uso: npm run knowledge:reprocess -- <sourceId> <arquivo.txt|arquivo.md>',
+      'Uso: npm run knowledge:reprocess -- --source-key <sourceKey> <arquivo.txt|arquivo.md>\nCompatibilidade: npm run knowledge:reprocess -- <sourceId> <arquivo.txt|arquivo.md>',
     );
   }
 
-  const [sourceId, fileArgument] = parsedArguments.data;
-  const filePath = resolve(fileArgument);
+  const filePath = resolve(parsedArguments.fileArgument);
   const extension = extname(filePath).toLowerCase();
 
   if (extension !== '.txt' && extension !== '.md') {
@@ -46,10 +58,12 @@ try {
 
   const repository = new PrismaKnowledgeReprocessingRepository(prisma);
   const service = new KnowledgeReprocessingService(repository);
-  const result = await service.reprocess(sourceId, content);
+  const result = 'sourceKey' in parsedArguments
+    ? await service.reprocessBySourceKey(parsedArguments.sourceKey, content)
+    : await service.reprocess(parsedArguments.sourceId, content);
 
   console.log(
-    `Reprocessamento concluído.\nSource ID: ${result.sourceId}\nChunks removidos: ${result.chunksRemoved}\nChunks criados: ${result.chunksCreated}`,
+    `Reprocessamento concluído.\nSource key: ${result.sourceKey}\nSource ID: ${result.sourceId}\nChunks removidos: ${result.chunksRemoved}\nChunks criados: ${result.chunksCreated}`,
   );
 } catch (error) {
   if (error instanceof KnowledgeSourceNotFoundError) {

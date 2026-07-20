@@ -8,20 +8,21 @@ import {
 
 export interface KnowledgeReprocessingResult {
   sourceId: string;
+  sourceKey: string;
   chunksRemoved: number;
   chunksCreated: number;
 }
 
 export interface KnowledgeReprocessingRepository {
   replaceSourceChunks(
-    sourceId: string,
+    selector: { id: string } | { sourceKey: string },
     chunks: PreparedKnowledgeChunk[],
   ): Promise<KnowledgeReprocessingResult>;
 }
 
 export class KnowledgeSourceNotFoundError extends Error {
-  constructor(sourceId: string) {
-    super(`Fonte ${sourceId} não encontrada.`);
+  constructor(identifier: string) {
+    super(`Fonte ${identifier} não encontrada.`);
     this.name = 'KnowledgeSourceNotFoundError';
   }
 }
@@ -32,25 +33,27 @@ export class PrismaKnowledgeReprocessingRepository
   constructor(private readonly client: PrismaClient = prisma) {}
 
   async replaceSourceChunks(
-    sourceId: string,
+    selector: { id: string } | { sourceKey: string },
     chunks: PreparedKnowledgeChunk[],
   ): Promise<KnowledgeReprocessingResult> {
     return this.client.$transaction(async (transaction) => {
       const source = await transaction.knowledgeSource.findUnique({
-        where: { id: sourceId },
-        select: { id: true },
+        where: selector,
+        select: { id: true, sourceKey: true },
       });
 
       if (source === null) {
-        throw new KnowledgeSourceNotFoundError(sourceId);
+        throw new KnowledgeSourceNotFoundError(
+          'id' in selector ? selector.id : selector.sourceKey,
+        );
       }
 
       const removed = await transaction.knowledgeChunk.deleteMany({
-        where: { sourceId },
+        where: { sourceId: source.id },
       });
       const created = await transaction.knowledgeChunk.createMany({
         data: chunks.map((chunk) => ({
-          sourceId,
+          sourceId: source.id,
           content: chunk.content,
           contentHash: chunk.contentHash,
           tokenCount: chunk.tokenCount,
@@ -60,7 +63,8 @@ export class PrismaKnowledgeReprocessingRepository
       });
 
       return {
-        sourceId,
+        sourceId: source.id,
+        sourceKey: source.sourceKey,
         chunksRemoved: removed.count,
         chunksCreated: created.count,
       };
@@ -76,7 +80,17 @@ export class KnowledgeReprocessingService {
     content: string,
   ): Promise<KnowledgeReprocessingResult> {
     return this.repository.replaceSourceChunks(
-      sourceId,
+      { id: sourceId },
+      prepareKnowledgeChunks(content),
+    );
+  }
+
+  async reprocessBySourceKey(
+    sourceKey: string,
+    content: string,
+  ): Promise<KnowledgeReprocessingResult> {
+    return this.repository.replaceSourceChunks(
+      { sourceKey },
       prepareKnowledgeChunks(content),
     );
   }

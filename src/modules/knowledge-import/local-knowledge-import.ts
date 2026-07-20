@@ -13,7 +13,10 @@ import {
   createKnowledgeSourceBodySchema,
   knowledgeSourceMetadataSchema,
 } from '../knowledge-ingestion/knowledge-ingestion.schemas.js';
-import { DuplicateKnowledgeChunkError } from '../knowledge-ingestion/knowledge-ingestion.repository.js';
+import {
+  DuplicateKnowledgeChunkError,
+  DuplicateKnowledgeSourceError,
+} from '../knowledge-ingestion/knowledge-ingestion.repository.js';
 import type { KnowledgeIngestionService } from '../knowledge-ingestion/knowledge-ingestion.service.js';
 
 const CONTENT_EXTENSIONS = new Set(['.md', '.txt']);
@@ -223,6 +226,15 @@ function toSafeFailure(
       fileName,
       code: 'DUPLICATE_CONTENT',
       message: 'A fonte contém chunks duplicados.',
+      attemptedAt: attemptedAt.toISOString(),
+    };
+  }
+
+  if (error instanceof DuplicateKnowledgeSourceError) {
+    return {
+      fileName,
+      code: 'DUPLICATE_SOURCE',
+      message: 'Já existe uma fonte com esta sourceKey.',
       attemptedAt: attemptedAt.toISOString(),
     };
   }

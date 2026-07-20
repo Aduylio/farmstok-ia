@@ -86,11 +86,13 @@ Possui `id`, `conversationId`, `type`, `changedBy?`, `metadata?` e `createdAt`. 
 
 ### knowledge_sources
 
-Possui `id`, `type`, `title`, `course`, `module?`, `lessonNumber?`, `sourceUrl?`, `recordedAt?`, `version`, `priority`, `isActive`, `storagePath?`, `instructor?`, `createdAt` e `updatedAt`.
+Possui `id`, `sourceKey`, `type`, `title`, `course`, `module?`, `lessonNumber?`, `sourceUrl?`, `recordedAt?`, `version`, `priority`, `isActive`, `storagePath?`, `instructor?`, `createdAt` e `updatedAt`.
 
 Regras:
 
 - `lessonNumber`, quando informado, deve ser positivo.
+- `sourceKey` é obrigatória, única, mapeada para `source_key`, limitada a 200 caracteres e segue `^[a-z0-9][a-z0-9:_-]*$`.
+- A chave é explícita e estável; não é derivada do título.
 - `version` deve ser positiva.
 - Há índices em `isActive` e `course`.
 - Fontes devem ser inativadas em vez de excluídas quando já participarem do histórico.
@@ -137,7 +139,7 @@ Regras:
 - Identidade: `students.phone`, `students.whatsapp_id`, `consultants.phone`, `consultants.email`.
 - Idempotência externa: `messages.whatsapp_message_id`, `conversations.kommo_lead_id`.
 - Histórico: `messages(conversation_id, created_at)`, `conversation_events(conversation_id, created_at)` e `answer_logs(conversation_id, created_at)`.
-- Conhecimento: `knowledge_sources.is_active`, `knowledge_sources.course`, `knowledge_chunks.source_id` e unicidade `(source_id, content_hash)`.
+- Conhecimento: unicidade de `knowledge_sources.source_key`, índices em `knowledge_sources.is_active`, `knowledge_sources.course`, `knowledge_chunks.source_id` e unicidade `(source_id, content_hash)`.
 - Fontes de resposta: índices em `answer_sources.answer_log_id` e `answer_sources.knowledge_chunk_id`.
 
 ## Política de exclusão

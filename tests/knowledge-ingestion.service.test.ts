@@ -1,13 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import type {
   CreateSourceWithChunksInput,
   KnowledgeIngestionRepository,
 } from '../src/modules/knowledge-ingestion/knowledge-ingestion.repository.js';
 import { KnowledgeIngestionService } from '../src/modules/knowledge-ingestion/knowledge-ingestion.service.js';
+import { DuplicateKnowledgeSourceError } from '../src/modules/knowledge-ingestion/knowledge-ingestion.repository.js';
 
 class RecordingRepository implements KnowledgeIngestionRepository {
   input: CreateSourceWithChunksInput | undefined;
+
+  async findSourceByKey(): Promise<{ id: string } | null> {
+    return null;
+  }
 
   async createSourceWithChunks(input: CreateSourceWithChunksInput) {
     this.input = input;
@@ -15,6 +20,7 @@ class RecordingRepository implements KnowledgeIngestionRepository {
     return {
       source: {
         id: '3e1e04ad-32e5-4eed-b131-e72f16f063b7',
+        sourceKey: input.source.sourceKey,
         type: input.source.type,
         title: input.source.title,
         course: input.source.course,
@@ -31,6 +37,7 @@ describe('KnowledgeIngestionService', () => {
     const content = `${'A'.repeat(700)}\n\n${'B'.repeat(700)}`;
 
     const result = await service.ingest({
+      sourceKey: 'aula:curva-abc',
       type: 'AULA',
       title: 'Curva ABC',
       course: 'Farmstok',
@@ -58,6 +65,7 @@ describe('KnowledgeIngestionService', () => {
     const repeatedContent = 'conteudo-sem-espacos-'.repeat(60);
 
     await service.ingest({
+      sourceKey: 'faq:conteudo-repetido',
       type: 'FAQ',
       title: 'Conteúdo repetido',
       course: 'Farmstok',
@@ -65,5 +73,23 @@ describe('KnowledgeIngestionService', () => {
     });
 
     expect(repository.input?.chunks).toHaveLength(1);
+  });
+
+  it('interrompe antes da transacao quando sourceKey ja existe', async () => {
+    const repository: KnowledgeIngestionRepository = {
+      findSourceByKey: vi.fn(async () => ({ id: 'existing-id' })),
+      createSourceWithChunks: vi.fn(),
+    };
+    const service = new KnowledgeIngestionService(repository);
+
+    await expect(service.ingest({
+      sourceKey: 'live:historia-farmstok',
+      type: 'LIVE',
+      title: 'História do Farmstok',
+      course: 'Farmstok',
+      content: 'Conteúdo.',
+    })).rejects.toBeInstanceOf(DuplicateKnowledgeSourceError);
+
+    expect(repository.createSourceWithChunks).not.toHaveBeenCalled();
   });
 });

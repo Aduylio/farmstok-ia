@@ -46,3 +46,11 @@
 - Ingestão atualizada para persistir `startTime` e `endTime` sem alterar schema ou migration.
 - Comando `knowledge:reprocess` adicionado para substituição transacional dos chunks de uma fonte existente.
 - Testes de parsing, combinação temporal, hash, reprocessamento e rollback adicionados.
+- Feature 008 de identidade única de fontes criada e implementada.
+- Campo obrigatório e único `KnowledgeSource.sourceKey` mapeado para `source_key`.
+- Migration `20260720143000_add_knowledge_source_identity` aplicada com backfill explícito das duas fontes existentes.
+- Chaves `live:historia-farmstok` e `live:webinar-trier-compras-inteligentes` atribuídas sem alterar IDs ou timestamps das fontes.
+- Endpoint e importador local atualizados para exigir `sourceKey` e retornar `DUPLICATE_SOURCE` com mensagem segura.
+- Proteção contra duplicidade adicionada no service e na constraint única para cobrir concorrência.
+- Reprocessamento por `sourceKey` adicionado como forma preferencial, preservando suporte por UUID.
+- JSONs das duas fontes processadas atualizados sem reimportação ou reprocessamento automático.

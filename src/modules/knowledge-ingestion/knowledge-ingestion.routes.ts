@@ -3,6 +3,7 @@ import type { FastifyInstance } from 'fastify';
 import { createKnowledgeSourceBodySchema } from './knowledge-ingestion.schemas.js';
 import {
   DuplicateKnowledgeChunkError,
+  DuplicateKnowledgeSourceError,
   PrismaKnowledgeIngestionRepository,
 } from './knowledge-ingestion.repository.js';
 import { KnowledgeIngestionService } from './knowledge-ingestion.service.js';
@@ -26,6 +27,13 @@ export function createKnowledgeIngestionRoutes(
         const result = await service.ingest(parsedBody.data);
         return reply.status(201).send(result);
       } catch (error) {
+        if (error instanceof DuplicateKnowledgeSourceError) {
+          return reply.status(409).send({
+            error: 'DUPLICATE_SOURCE',
+            message: 'Já existe uma fonte com esta sourceKey.',
+          });
+        }
+
         if (error instanceof DuplicateKnowledgeChunkError) {
           return reply.status(409).send({
             error: 'DUPLICATE_CONTENT',

@@ -77,6 +77,7 @@ Os itens A exigem acompanhamento mais frequente, enquanto os itens B e C possuem
 
 ```json
 {
+  "sourceKey": "aula:gestao-estoques:curva-abc",
   "type": "AULA",
   "title": "Curva ABC",
   "course": "Farmstok",
@@ -155,6 +156,7 @@ Códigos seguros previstos:
 - `EMPTY_CONTENT`;
 - `INVALID_CONTENT`;
 - `DUPLICATE_CONTENT`;
+- `DUPLICATE_SOURCE`;
 - `IMPORT_FAILED`.
 
 ## Saída do terminal
@@ -222,7 +224,7 @@ Os testes usam diretórios temporários e serviço injetado; não acessam Postgr
 - `processed` é uma conveniência operacional, não backup ou fonte de verdade.
 - Uma falha de filesystem depois do commit pode deixar dados persistidos sem mover completamente o par; o operador deve conferir o resumo e as pastas.
 - Não existe lock para duas execuções simultâneas; o comando deve ser executado por um operador por vez.
-- Não existe idempotência no nível da fonte; reintroduzir um arquivo pode criar outra fonte.
+- A `sourceKey` obrigatória impede reintroduzir a mesma fonte; duplicidades são movidas para `failed` sem criar chunks.
 - Arquivos grandes dentro do limite ainda usam memória proporcional ao conteúdo.
 - O importer não valida encoding além da leitura UTF-8 do Node.js.
 - Arquivos JSON órfãos são ignorados porque somente `.txt` e `.md` iniciam processamento.

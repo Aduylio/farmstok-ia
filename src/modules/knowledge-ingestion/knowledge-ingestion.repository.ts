@@ -7,6 +7,7 @@ type KnowledgeSourceType = CreateKnowledgeSourceBody['type'];
 
 export interface KnowledgeSourceRecord {
   id: string;
+  sourceKey: string;
   type: KnowledgeSourceType;
   title: string;
   course: string;
@@ -21,6 +22,7 @@ export interface KnowledgeChunkInput {
 }
 
 export interface KnowledgeSourceInput {
+  sourceKey: string;
   type: KnowledgeSourceType;
   title: string;
   course: string;
@@ -46,6 +48,7 @@ export interface CreateSourceWithChunksResult {
 }
 
 export interface KnowledgeIngestionRepository {
+  findSourceByKey(sourceKey: string): Promise<{ id: string } | null>;
   createSourceWithChunks(
     input: CreateSourceWithChunksInput,
   ): Promise<CreateSourceWithChunksResult>;
@@ -55,6 +58,13 @@ export class DuplicateKnowledgeChunkError extends Error {
   constructor() {
     super('Um ou mais chunks já existem nesta fonte.');
     this.name = 'DuplicateKnowledgeChunkError';
+  }
+}
+
+export class DuplicateKnowledgeSourceError extends Error {
+  constructor() {
+    super('Já existe uma fonte com esta sourceKey.');
+    this.name = 'DuplicateKnowledgeSourceError';
   }
 }
 
@@ -72,20 +82,38 @@ export class PrismaKnowledgeIngestionRepository
 {
   constructor(private readonly client: PrismaClient = prisma) {}
 
+  async findSourceByKey(sourceKey: string): Promise<{ id: string } | null> {
+    return this.client.knowledgeSource.findUnique({
+      where: { sourceKey },
+      select: { id: true },
+    });
+  }
+
   async createSourceWithChunks(
     input: CreateSourceWithChunksInput,
   ): Promise<CreateSourceWithChunksResult> {
     try {
       return await this.client.$transaction(async (transaction) => {
-        const source = await transaction.knowledgeSource.create({
-          data: input.source,
-          select: {
-            id: true,
-            type: true,
-            title: true,
-            course: true,
-          },
-        });
+        let source: KnowledgeSourceRecord;
+
+        try {
+          source = await transaction.knowledgeSource.create({
+            data: input.source,
+            select: {
+              id: true,
+              sourceKey: true,
+              type: true,
+              title: true,
+              course: true,
+            },
+          });
+        } catch (error) {
+          if (isUniqueConstraintError(error)) {
+            throw new DuplicateKnowledgeSourceError();
+          }
+
+          throw error;
+        }
 
         const createdChunks = await transaction.knowledgeChunk.createMany({
           data: input.chunks.map((chunk) => ({

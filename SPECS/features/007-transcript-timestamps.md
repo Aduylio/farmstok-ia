@@ -88,6 +88,14 @@ Comando:
 npm run knowledge:reprocess -- <sourceId> <arquivo.txt|arquivo.md>
 ```
 
+Desde a Feature 008, a forma preferencial usa a identidade estável:
+
+```bash
+npm run knowledge:reprocess -- --source-key <sourceKey> <arquivo.txt|arquivo.md>
+```
+
+O formato por UUID permanece compatível. Ambos preservam o ID e a `sourceKey` e não criam nova fonte.
+
 O comando:
 
 1. Valida UUID, extensão, tamanho máximo e conteúdo não vazio.

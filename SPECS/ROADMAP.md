@@ -50,7 +50,7 @@
 - [ ] Ler transcrições automaticamente.
 - [ ] Gerar embeddings.
 - [x] Permitir reprocessamento manual por `sourceId`.
-- [ ] Definir idempotência no nível da fonte.
+- [x] Definir e implementar idempotência no nível da fonte por `sourceKey`.
 - [x] Criar importador local de arquivos TXT e Markdown.
 - [x] Validar metadados JSON e limite configurável por arquivo.
 - [x] Organizar inbox, processed e failed sem sobrescrita.
@@ -58,7 +58,8 @@
 - [x] Interpretar timestamps isolados em transcrições.
 - [x] Persistir `startTime` e `endTime` nos chunks.
 - [x] Criar reprocessamento transacional por `sourceId`.
-- [ ] Reprocessar manualmente as duas fontes reais existentes.
+- [x] Reprocessar manualmente as duas fontes reais existentes.
+- [x] Permitir reprocessamento preferencial por `sourceKey`.
 
 ## Etapa 5 — Busca e IA
 

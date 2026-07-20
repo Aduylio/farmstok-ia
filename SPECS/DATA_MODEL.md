@@ -10,7 +10,7 @@ Convenções:
 - Modelos e campos camelCase/PascalCase no Prisma.
 - Tabelas e colunas snake_case no PostgreSQL por meio de `@map` e `@@map`.
 - Datas persistidas como `TIMESTAMPTZ(3)`.
-- `embedding` permanece como `String?`/`TEXT`; pgvector não está implementado.
+- O vetor foi removido de `knowledge_chunks` e preparado em `knowledge_chunk_embeddings` como `vector(1536)`.
 
 ## Enums
 
@@ -106,11 +106,17 @@ Regras:
 - `sourceId` referencia `knowledge_sources` com `RESTRICT`.
 - `(sourceId, contentHash)` é único.
 - `tokenCount`, quando informado, não pode ser negativo.
-- `embedding` é temporariamente `String?`; não existe extensão ou índice vetorial.
+- O campo legado `embedding String?/TEXT` foi removido após uma guarda confirmar ausência de valores.
 - `startTime` e `endTime` armazenam limites normalizados como `HH:MM:SS` para transcrições temporais.
 - `startTime` corresponde ao primeiro marcador do chunk e `endTime` ao fim do último segmento combinado.
 - Conteúdo sem timestamps mantém ambos os campos nulos.
 - O hash continua baseado somente no conteúdo textual, sem timestamps.
+
+### knowledge_chunk_embeddings
+
+Relação opcional 1:1 com `knowledge_chunks`. `chunk_id` é simultaneamente PK e FK com `ON DELETE CASCADE`; `embedding` usa `vector(1536)`. Armazena ainda `provider`, `model`, `dimensions`, `inputHash`, `inputTokens?`, `embeddedAt`, `createdAt` e `updatedAt`.
+
+Constraints exigem dimensões iguais a 1536, hash SHA-256 hexadecimal, provider/model não vazios e tokens não negativos. A tabela está vazia; não há índice HNSW ou IVFFlat. O Prisma representa o vetor como `Unsupported("vector(1536)")` e operações vetoriais usam SQL parametrizado.
 
 ### answer_logs
 

@@ -95,6 +95,15 @@ Serão responsáveis pelo acesso ao banco de dados.
 - Migrations são versionadas em `prisma/migrations/`; migrations aplicadas são imutáveis.
 - `scripts/db-check.ts` executa somente `SELECT 1` para validar a conexão e sempre encerra o client.
 - pgvector e integrações externas permanecem fora da implementação atual.
+- pgvector 0.8.5 está habilitado para armazenamento em `knowledge_chunk_embeddings`; geração e busca vetorial ainda não estão implementadas.
+
+## Infraestrutura vetorial
+
+- Provider futuro: OpenAI; modelo `text-embedding-3-small`; 1536 dimensões.
+- Vetores ficam em tabela 1:0..1 separada dos chunks e usam `ON DELETE CASCADE`.
+- Prisma representa `vector(1536)` como `Unsupported`; operações vetoriais usam SQL parametrizado em repository interno.
+- A busca futura começa exata por cosseno, sem HNSW ou IVFFlat nesta etapa.
+- Nenhuma API key, SDK, chamada externa ou geração automática foi adicionada.
 
 ## Busca textual diagnóstica
 

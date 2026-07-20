@@ -200,16 +200,33 @@ model KnowledgeChunk {
   tokenCount  Int?     @map("token_count")
   metadata    Json?
   contentHash String   @map("content_hash")
-  embedding   String?
   createdAt   DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
   updatedAt   DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
 
   source        KnowledgeSource @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+  embedding     KnowledgeChunkEmbedding?
   answerSources AnswerSource[]
 
   @@index([sourceId])
   @@unique([sourceId, contentHash])
   @@map("knowledge_chunks")
+}
+
+model KnowledgeChunkEmbedding {
+  chunkId     String                      @id @map("chunk_id") @db.Uuid
+  embedding   Unsupported("vector(1536)")
+  provider    String                      @db.VarChar(50)
+  model       String                      @db.VarChar(100)
+  dimensions  Int
+  inputHash   String                      @map("input_hash") @db.Char(64)
+  inputTokens Int?                        @map("input_tokens")
+  embeddedAt  DateTime                    @map("embedded_at") @db.Timestamptz(3)
+  createdAt   DateTime                    @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt   DateTime                    @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  chunk KnowledgeChunk @relation(fields: [chunkId], references: [id], onDelete: Cascade)
+
+  @@map("knowledge_chunk_embeddings")
 }
 
 model AnswerLog {

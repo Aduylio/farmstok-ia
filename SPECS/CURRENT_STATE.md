@@ -50,11 +50,17 @@ Data: 20/07/2026
 - Links temporais do YouTube gerados a partir de `startTime`.
 - 72 testes automatizados passando sem PostgreSQL real nas suítes de busca.
 - Seis consultas diagnósticas executadas no PostgreSQL real somente para leitura.
+- Feature 010 de infraestrutura pgvector implementada.
+- Extensão pgvector 0.8.5 instalada no banco PostgreSQL 18.4.
+- Tabela `knowledge_chunk_embeddings` criada com `vector(1536)`, vazia e sem índice aproximado.
+- Modelo futuro confirmado como OpenAI `text-embedding-3-small`, com 1536 dimensões e cosseno exato.
+- Coluna legada `knowledge_chunks.embedding TEXT` removida após validação de nulidade.
+- Repository SQL parametrizado e utilitários vetoriais preparados sem geração ou chamada externa.
+- Auditoria `npm run db:vector-check` confirmando 0 embeddings e 148 chunks sem embedding.
 
 ## Ainda não implementado
 
 - Supabase.
-- pgvector.
 - Embeddings.
 - Importação de PDF, DOCX, áudio e vídeo.
 - API de inteligência artificial.
@@ -64,4 +70,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Avaliar a qualidade do ranking textual e definir a estratégia futura de recuperação semântica em feature separada.
+Implementar a Feature 011 de geração e backfill controlado de embeddings, sem conectar respostas por IA.

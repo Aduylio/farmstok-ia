@@ -11,10 +11,12 @@
     "test:run": "vitest run",
     "typecheck": "tsc --noEmit",
     "db:check": "tsx scripts/db-check.ts",
+    "db:vector-check": "tsx scripts/check-vector-infrastructure.ts",
     "knowledge:import": "tsx scripts/import-knowledge.ts",
     "knowledge:reprocess": "tsx scripts/reprocess-knowledge.ts",
     "knowledge:search": "tsx scripts/search-knowledge.ts",
     "prisma:generate": "prisma generate",
+    "prisma:validate": "prisma validate",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:studio": "prisma studio",
     "postinstall": "prisma generate"

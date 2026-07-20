@@ -17,6 +17,8 @@ Revisar o schema Prisma inicial antes da entrada de dados reais e definir um mod
 - O schema anterior possuía os nove modelos do domínio com campos mínimos, CUID armazenado como `TEXT` e nomenclatura camelCase também no PostgreSQL.
 - `KnowledgeChunk.embedding` permanece temporariamente como `String?`.
 
+> Nota posterior: a Feature 010 substituiu este campo legado, ainda vazio, pela tabela separada `knowledge_chunk_embeddings` com `vector(1536)`.
+
 ## Escopo
 
 - Definir campos, nulabilidade, defaults, enums, relacionamentos e restrições dos nove modelos atuais.

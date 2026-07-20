@@ -34,7 +34,7 @@
 - [ ] Criar projeto.
 - [ ] Configurar cliente no backend.
 - [x] Criar migrations.
-- [ ] Ativar pgvector.
+- [x] Ativar pgvector e criar armazenamento separado para embeddings.
 - [x] Criar tabelas da base de conhecimento.
 - [x] Testar conexão.
 - [ ] Testar inserção e leitura.
@@ -66,6 +66,7 @@
 - [x] Criar busca textual diagnóstica em chunks persistidos.
 - [x] Retornar fontes, timestamps e links temporais em ranking determinístico.
 - [x] Criar CLI local para diagnóstico da recuperação.
+- [x] Preparar pgvector `vector(1536)` sem gerar embeddings.
 - [ ] Implementar busca vetorial.
 - [ ] Recuperar fontes.
 - [ ] Conectar provedor de IA.

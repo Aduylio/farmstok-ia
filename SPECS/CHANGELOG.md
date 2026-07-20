@@ -62,3 +62,11 @@
 - Comando `npm run knowledge:search` adicionado reutilizando o service da API.
 - Testes unitários de normalização, ranking, filtros, ordenação, URLs, repository, service e rota adicionados.
 - Seis consultas reais executadas somente para leitura, sem alterar schema, migrations ou dados.
+- Feature 010 de infraestrutura pgvector criada e implementada.
+- pgvector 0.8.5 habilitado no PostgreSQL local pela migration `20260720153000_add_pgvector_infrastructure`.
+- Coluna legada `knowledge_chunks.embedding TEXT` removida com guarda contra valores não nulos.
+- Tabela 1:1 `knowledge_chunk_embeddings` criada com `vector(1536)` e `ON DELETE CASCADE`.
+- Configuração futura OpenAI `text-embedding-3-small` com 1536 dimensões centralizada sem API key ou SDK.
+- Validação, serialização vetorial e repository SQL parametrizado adicionados sem execução automática.
+- Script somente leitura `npm run db:vector-check` adicionado.
+- Nenhum embedding, índice aproximado, busca vetorial ou chamada externa foi criado.

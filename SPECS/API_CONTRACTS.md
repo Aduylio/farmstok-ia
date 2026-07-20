@@ -1,5 +1,7 @@
 # Contratos da API
 
+> A Feature 010 adicionou somente infraestrutura interna pgvector. Nenhum endpoint ou formato público foi alterado e nenhum embedding é gerado por requisições atuais.
+
 ## GET /api/health
 
 Retorna o estado básico do serviço.

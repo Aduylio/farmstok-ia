@@ -3,15 +3,16 @@ import { readFile } from 'node:fs/promises';
 import { describe, expect, it } from 'vitest';
 
 describe('configuracao inicial do Prisma', () => {
-  it('mantem o embedding opcional como String e nao habilita pgvector', async () => {
+  it('mantém a migration inicial sem pgvector e representa vector como Unsupported', async () => {
     const schema = await readFile('prisma/schema.prisma', 'utf8');
     const migration = await readFile(
       'prisma/migrations/20260717190240_init/migration.sql',
       'utf8',
     );
 
-    expect(schema).toMatch(/embedding\s+String\?/);
-    expect(schema).not.toContain('Unsupported("vector")');
+    expect(schema).not.toMatch(/embedding\s+String\?/);
+    expect(schema).toContain('Unsupported("vector(1536)")');
+    expect(schema).toContain('@@map("knowledge_chunk_embeddings")');
     expect(migration).toContain('"embedding" TEXT');
     expect(migration).not.toContain('CREATE EXTENSION');
   });

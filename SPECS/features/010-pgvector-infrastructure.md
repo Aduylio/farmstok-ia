@@ -1,5 +1,9 @@
 # Feature 010 — Infraestrutura pgvector e armazenamento de embeddings
 
+## Atualizacao pela Feature 011
+
+O cliente e o backfill controlado, idempotente e retomavel foram implementados, mantendo dry-run como padrao. A infraestrutura continua sem indice aproximado e com zero embeddings ate autorizacao manual de uma execucao paga.
+
 ## Status
 
 Implementada em 20/07/2026.

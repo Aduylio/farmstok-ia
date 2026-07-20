@@ -1,5 +1,13 @@
 # Estado atual do projeto
 
+## Feature 011
+
+- Cliente oficial OpenAI, provider abstrato, input v1, retry seletivo e backfill idempotente implementados.
+- `npm run knowledge:embed` e dry-run por padrao e a execucao paga exige confirmacao adicional.
+- Nenhuma chamada externa foi realizada; o banco permanece com 2 fontes, 148 chunks e 0 embeddings.
+- Schema, migrations, endpoints, busca textual, importador e reprocessamento permanecem inalterados.
+- Proximo passo manual: configurar chave valida e autorizar o teste controlado de 3 chunks descrito em `SPECS/features/011-embedding-backfill.md`.
+
 ## Última atualização
 
 Data: 20/07/2026

@@ -1,5 +1,9 @@
 # Modelo de dados
 
+## Metadados de embeddings (Feature 011)
+
+`KnowledgeChunkEmbedding.inputHash` identifica o texto exato da politica de embedding v1. Um embedding somente e atual quando `provider=openai`, `model=text-embedding-3-small`, `dimensions=1536` e o hash coincide. `inputTokens` registra a contagem por item somente quando o provider a fornece; a contagem agregada fica no resumo operacional.
+
 ## Estado implementado
 
 O modelo abaixo foi implementado no Prisma e aplicado ao PostgreSQL local pela migration `20260720114700_refine_prisma_schema` em 20/07/2026.

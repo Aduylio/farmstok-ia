@@ -15,6 +15,7 @@
     "knowledge:import": "tsx scripts/import-knowledge.ts",
     "knowledge:reprocess": "tsx scripts/reprocess-knowledge.ts",
     "knowledge:search": "tsx scripts/search-knowledge.ts",
+    "knowledge:embed": "tsx scripts/backfill-embeddings.ts",
     "prisma:generate": "prisma generate",
     "prisma:validate": "prisma validate",
     "prisma:migrate": "prisma migrate deploy",
@@ -30,6 +31,7 @@
     "@prisma/client": "^7.8.0",
     "dotenv": "^17.4.2",
     "fastify": "^5.10.0",
+    "openai": "^6.48.0",
     "pg": "^8.22.0",
     "zod": "^4.4.3"
   },

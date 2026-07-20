@@ -31,6 +31,17 @@ const envSchema = z.object({
     .int()
     .positive()
     .default(5 * 1024 * 1024),
+
+  OPENAI_API_KEY: z.preprocess(
+    (value) => (value === '' ? undefined : value),
+    z.string().min(1).optional(),
+  ),
+
+  EMBEDDING_BATCH_SIZE: z.coerce.number().int().min(1).max(100).default(20),
+
+  EMBEDDING_MAX_RETRIES: z.coerce.number().int().min(0).max(10).default(3),
+
+  EMBEDDING_RETRY_BASE_MS: z.coerce.number().int().min(1).max(60_000).default(1000),
 });
 
 const parsedEnv = envSchema.safeParse(process.env);

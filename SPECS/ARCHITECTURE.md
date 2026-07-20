@@ -1,5 +1,12 @@
 # Arquitetura
 
+## Backfill de embeddings (Feature 011)
+
+- `EmbeddingProvider` isola o dominio do SDK oficial OpenAI; respostas futuras podem usar outro provider, inclusive uma eventual DeepSeek, sem mudar o provider dos embeddings.
+- A politica versionada de input v1 e seu SHA-256 definem idempotencia junto com provider, modelo e dimensoes.
+- O CLI `knowledge:embed` e dry-run por padrao e exige confirmacao para execucao paga; nao roda no startup ou na importacao.
+- O backfill processa fontes ativas em ordem deterministica, valida a resposta completa e persiste uma transacao por lote com SQL vetorial parametrizado.
+
 ## Fluxo principal planejado
 
 Aluno no WhatsApp

@@ -1,5 +1,20 @@
 # Histórico de mudanças
 
+## 20/07/2026 - Feature 011
+
+### Adicionado
+
+- SDK oficial `openai` 6.48.0 e abstracao `EmbeddingProvider`.
+- Politica de input v1, SHA-256 e selecao idempotente por provider/modelo/dimensoes/hash.
+- CLI `knowledge:embed` com dry-run padrao, confirmacao paga, filtros, limite e lotes.
+- Retry exponencial seletivo, persistencia transacional por lote, auditoria ampliada e testes sem rede ou banco real.
+- Documentacao da independencia entre OpenAI para embeddings e eventual DeepSeek para respostas futuras.
+
+### Confirmado
+
+- Nenhuma chamada externa ou geracao real foi executada; permanecem 0 embeddings.
+- Schema e migrations nao foram modificados.
+
 ## 17/07/2026
 
 ### Adicionado

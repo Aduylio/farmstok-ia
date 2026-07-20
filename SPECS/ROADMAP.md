@@ -1,5 +1,13 @@
 # Roadmap
 
+## Atualizacao Feature 011
+
+- [x] Implementar cliente e backfill idempotente de embeddings em dry-run seguro.
+- [x] Adicionar confirmacao, filtros, limite, batching, retry e transacao por lote.
+- [ ] Configurar chave e executar teste pago controlado de 3 chunks somente com autorizacao manual.
+- [ ] Gerar os embeddings restantes.
+- [ ] Implementar busca vetorial.
+
 ## Etapa 1 — Estrutura base
 
 - [x] Inicializar o projeto Node.js.

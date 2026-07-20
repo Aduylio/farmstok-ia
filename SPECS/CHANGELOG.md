@@ -41,3 +41,8 @@
 - Pastas inbox, processed e failed adicionadas com movimentação segura e relatórios de erro sem dados sensíveis.
 - Limite `KNOWLEDGE_IMPORT_MAX_BYTES` adicionado com padrão de 5 MiB.
 - Testes de descoberta, ordenação, validação, limites, movimentação, colisões, continuidade e inbox vazia adicionados.
+- Feature 007 de parsing de timestamps e chunking temporal criada e implementada.
+- Formatos `M:SS`, `MM:SS`, `H:MM:SS` e `HH:MM:SS` normalizados para `HH:MM:SS`.
+- Ingestão atualizada para persistir `startTime` e `endTime` sem alterar schema ou migration.
+- Comando `knowledge:reprocess` adicionado para substituição transacional dos chunks de uma fonte existente.
+- Testes de parsing, combinação temporal, hash, reprocessamento e rollback adicionados.

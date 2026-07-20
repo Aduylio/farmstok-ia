@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "db:check": "tsx scripts/db-check.ts",
     "knowledge:import": "tsx scripts/import-knowledge.ts",
+    "knowledge:reprocess": "tsx scripts/reprocess-knowledge.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:studio": "prisma studio",

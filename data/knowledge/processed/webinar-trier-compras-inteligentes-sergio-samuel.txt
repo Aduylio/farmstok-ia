@@ -1,0 +1,2191 @@
+Webinar Trier: Aprenda a Comprar de Forma Inteligente! Com Sérgio Samuel
+
+Resumo do conteúdo:
+
+Nesta live, Sérgio Samuel apresenta a metodologia de gestão de compras do Farmstok aplicada ao sistema Trier. O conteúdo ensina como configurar o sistema para apoiar decisões de compra em farmácias, incluindo Curva ABC, estoque de segurança, cobertura de estoque, demanda, giro e parâmetros de compra.
+
+Também são demonstrados processos de compra de medicamentos de referência, medicamentos genéricos, similares e produtos correlatos. A live aborda ferramentas técnicas de compras, análise de estoque, definição de quantidades, controle de excessos, prevenção de rupturas e uso dos relatórios do sistema Trier para comprar de forma mais inteligente.
+
+Principais temas:
+
+- Sistema Trier
+- Gestão de compras em farmácias
+- Configuração do Trier
+- Curva ABC
+- Estoque de segurança
+- Cobertura de estoque
+- Demanda de produtos
+- Giro de estoque
+- Estoque mínimo
+- Estoque máximo
+- Compra de medicamentos de referência
+- Compra de medicamentos genéricos
+- Compra de medicamentos similares
+- Compra de correlatos
+- Parametrização do estoque
+- Sugestão de compras
+- Quantidade de compra
+- Excesso de estoque
+- Ruptura de estoque
+- Ferramentas técnicas de compras
+- Relatórios de compras
+- Metodologia Farmstok
+
+Transcrição:
+
+0:00
+Pessoal, muito boa tarde para alguns. Boa noite, né, aqui já nesse finalzinho de dia. É um prazer tê-los todos aqui
+0:07
+conosco. Eu sou Ricardo Balbino, diretor comercial do grupo Trier, né? Hoje aqui
+0:13
+quem vai vos falar e dar esse esse treinamento muito bacana, Sérgio Samuel,
+0:19
+um grande parceiro nosso, cliente nosso aí há mais de 15 anos e que a gente até
+0:24
+diz tem uma expertise aí incrível nesse módulo fascinante que é o nosso módulo
+0:30
+de compras o dose certa. Aqui junto conosco também tá toda a nossa equipe de retaguarda, o José
+0:38
+Antônio, que é o nosso coordenador de toda a estrutura comercial, o Fabiano Leite que é o nosso coordenador geral do
+0:45
+suporte, o Paulo, que coordena toda a parte de desenvolvimento com a nossa as
+0:51
+nossas parceiras e redes associativistas, né? Mas sem mais delongas, o que vocês querem é aprender
+0:58
+como comprar melhor e com mais eficácia. E com vocês eu deixo a palavra para esse
+1:04
+mestre da arte de compras, Sérgio Samuel. É com você, Serginho. A o popular a Cunha.
+1:12
+A Cunha. Boa noite, pessoal. Para mim é uma honra imensa tá aqui com vocês hoje.
+1:18
+Com certeza eu vou aprender muito mais do que ensinar, porque não sei se vocês perceberam, quem aqui ainda não
+1:24
+participa de muito ev muitos eventos de donos de farmácias, o real aprendizado acontece aqui, tá? Quando a gente se
+1:31
+junta e começa a misturar toda essa turma cheia de problemas e cheia de
+1:37
+soluções aí que custaram caro e custaram muito suó pra gente desenvolver em nossas farmácias. né? Então, sejam muito
+1:46
+bem-vindos. Desde já eu agradeço ao pessoal da Tria. Vocês devem estar se perguntando, né, como é que o Caba já é
+1:51
+cliente da Tria há 15 anos? Se ele aí não deve ter nem 30 ainda, eu tenho 29
+1:57
+anos. Então, a farmácia da gente já é cliente da Tria desde quando eu tinha 14
+2:02
+anos de idade. Quem tocavam eram meus pais. A nossa farmácia hoje tem já 82
+2:08
+anos de história. Foi fundada por meu bisavô em 1941.
+2:14
+E desde 2007 que a gente é cliente trier, é um do um dos primeiros códigos
+2:20
+aí, né, ainda na na safra dos primeiros 3.000. Então,
+2:26
+é um, para mim a Triaer me ajudou bastante, principalmente nos desafios
+2:32
+que a gente vivenciou ali em meados de 2018, quando minha mãe faleceu. E eu e
+2:38
+meus irmãos precisamos assumir a farmácia de repente. E eu nunca tinha feito um pedido na vida. Então imaginem
+2:45
+o desastre que é alguém que nunca fez compra, cair de para-quedas na farmácia
+2:51
+e ter que comprar. Só para que vocês tenham noção no tempo, acho que aicina
+2:56
+com três comprimidos era ali na faixa de R 1,50. A primeira que eu comprei foi de mais de R$ 6. Então no início foi um
+3:03
+desastre total. E eu percebi, né, eu vinha me formando já em administração,
+3:08
+tava no último semestre, eu percebi que se eu tivesse informações nas minhas mãos, independente de eu ter experiência
+3:14
+ou não, eu conseguiria desenvolver um bom papel de comprador na farmácia.
+3:20
+E foi exatamente isso que eu fui fazendo. Fui cascaveando as informações que o Trier me dava e fui testando e
+3:27
+validando. E até meu professor de logística falava muito sobre estoque
+3:33
+mínimo e demanda, que lá na faculdade a gente fazia um cálculo na mão de uma média móvel. E eu ficava imaginando como
+3:40
+isso pode funcionar em uma empresa que trabalha com 5.000 itens, como as nossas
+3:45
+farmácias, né? Então, foi aí que eu comecei a perceber que com apoio do sistema, que já calcula tudo isso pra
+3:53
+gente, a gente poderia usar essa ferramenta poderosa de compras.
+3:58
+E graças a Deus a gente conseguiu comprar. E se destacando aqui na região
+4:04
+a ponto que outras farmácias começaram a me pedir ajuda antes mesmo de eu me oferecer como consultor. Então, surgiram
+4:11
+essas outras demandas e a gente começou a dar consultoria para outras farmácias.
+4:17
+E hoje vamos fechar 2023 depois de ter realizado eventos, cursos
+4:23
+onlines, chegando aí em mais de 10 estados brasileiros. Graças a Deus, né?
+4:29
+Em janeiro mesmo desse ano, a gente fez um evento aqui em Carnaúba. A gente tá no interior do Rio Grande do Norte, 250
+4:36
+km de distância de Natal, que é a capital do Rio Grande do Norte. Em janeiro, a gente fez um evento aqui para
+4:43
+falar de compras, de marketing digital também, que meu irmão fala um pouco disso e faz algumas live shops,
+4:48
+inclusive tá fazendo uma hoje na farmácia. e vieram participantes de cinco estados
+4:55
+brasileiros para conhecer um pouco do nosso trabalho, da nossa história, inclusive do Piauí, do Pernambuco.
+5:01
+Então, pra gente foi uma honra imensa. E em julho a gente dobrou a aposta e
+5:08
+fizemos um evento em Natal, Revolução Farma. Inclusive algum de vocês que estão aqui hoje participaram, né?
+5:15
+E no Revolução Farma vieram participantes, 109 participantes de nove estados brasileiros, inclusive de São
+5:22
+Paulo, da Bahia. E foi um aprendizado incrível durante
+5:27
+2023, compartilhando com outros donos de farmácias como a gente conseguiu atingir
+5:32
+bons resultados aqui na nossa farmácia e como vocês podem atingir também, especialmente nesse setor de compras,
+5:38
+que foi onde eu me dediquei e me especializei até o ponto que hoje,
+5:45
+graças a Deus, o pessoal da Tria pôde confiar pra gente vir trocar essa ideia aqui para mais de 500 inscritos nesse
+5:51
+evento. Então é uma honra imensa. Espero que seja uma noite de muito
+5:57
+aprendizado, muita troca de ideia e principalmente que a partir de amanhã
+6:03
+todos vocês já estejam fazendo compras melhores na farmácia, tá? Quem tiver
+6:09
+aqui só para escutar e amanhã não vai botar nada em prática na farmácia, por
+6:15
+favor vá embora e não assista, porque eu quero gente que quer implementar e quer
+6:21
+atingir resultados melhores, quer comprar melhor e mais barato pra farmácia, tá? Então contem comigo e
+6:28
+vamos simbora para o que interessa, né, Valvinho? Chega de delongas
+6:33
+e vamos apresentar realmente o que interessa conteúdo prático.
+6:42
+Eu abrir aqui o meu retaguarda. Ô Serginho, aproveitando aí e já destacando pro pessoal,
+6:47
+como vocês perceberam, né, a o tria veio passando por algumas evoluções, talvez
+6:54
+até os meninos possam falar um pouco melhor dessa evolução aí, Fabiano, que saiu daquele relatório de faltas do
+7:03
+compra interativa para hoje lançar essa ferramenta do dose certa. E eu quero
+7:09
+falar um pouco dessa evolução também, porque eu usei e uso
+7:14
+principalmente o dose certa e o relatório de faltas como uma ferramenta de apoio. Então é importante que vocês
+7:21
+saibam quais as ferramentas existem para apoiar nesse momento de
+7:26
+compras, mas que especialmente hoje o dose certa já é uma ferramenta central que dá pra gente realizar a maioria das
+7:33
+compras e coletar a maior parte das informações lá com precisão, com exatidão
+7:41
+e principalmente com agilidade, né, pra gente ganhar tempo e conseguir
+7:46
+fazer o pedido de forma rápida, já que a tarefa das compras é uma tarefa que consome muito tempo de nós farmacistas,
+7:53
+né? Primeiramente eu queria começar falando e perguntando
+8:00
+a vocês, né? Tem alguém aqui que ainda faz compras
+8:10
+usando o relatório de vendas, porque é um erro muito comum e que eu vejo muito
+8:16
+nas farmácias. Ó, aí, Lucas já falou, então, tem muita gente que tá fazendo,
+8:23
+tá fazendo as compras usando o relatório de vendas.
+8:31
+E existe um grande problema de você fazer fazer compra baseado no relatório
+8:36
+de vendas, que é ela, o sistema não vai considerar o estoque que você tem na
+8:42
+farmácia, n? Então, se a gente tirar um relatório de vendas por produtos, por exemplo, né? Muita gente hoje estima eh
+8:52
+pedidos, estima quantidades de compras baseado nesse relatório aqui. O cara vai
+8:57
+lá e quer saber os produtos que foram vendidos de ontem
+9:02
+para hoje, né? que a gente gosta de fazer compra perigosa, aquela compra que a gente tá estimando só baseado na
+9:09
+compra do último dia. E aí o cara tira o relatório
+9:16
+e emite aqui todos os produtos que foram vendidos de
+9:21
+ontem para hoje, certo?
+9:26
+E se a farmácia de vocês tiver um mix legal como a gente, os produtos vendidos de ontem para hoje
+9:32
+vai dar um relatório gigante ou até maior do que esse que deu 11 páginas,
+9:38
+certo? Aí você começa logo se assustando, né? Vixe Maria, é coisa demais para comprar. Aqui tem uma
+9:44
+beralgina que é de um fornecedor de similar, tem uma bloque de um fornecedor
+9:49
+de referência, tem um absorvente ales que é do fornecedor de perfumaria. Aí
+9:56
+você já começa a criar um impasse com tudo isso e pensando, rapaz, como é que
+10:02
+eu vou comprar esse monte de produto? Ô Serginho, puxa ele paraa tela principal aí, um monte de fornecedor, se eu não
+10:08
+consigo sequer agrupar os produtos e tal.
+10:13
+Aí, beleza, você diz: "Não, então vamos fazer assim, o vendedor que for chegando, eu vou puxar esse relatório e
+10:20
+vou tentar estimar a o meu pedido baseado nesse relatório
+10:26
+de vendas." Aí chega aí para lhe atender o vendedor da Biolab, né? Oi. Oi, Serginho. Você vai lá, coloca o Ablock.
+10:34
+Ah, o Alock eu tenho 29 em estoque e só vendi um de ontem para hoje. Aí você diz: "Ixe, não tô precisando de
+10:40
+a block hoje não". E vai pro próximo. Ô Serginho, o agora já caiu biolá genético, que o fornecedor não vende
+10:47
+biolá genético, ele só vende o biolab referência e todos os caver de lol ali são
+10:54
+genéricos. Aí foi pro drenizon. O drenizon eu tenho zero em estoque e
+11:00
+vendi uma unidade. Certo. Será que esse brenzon realmente tem giro na minha loja? Será que vale a pena eu
+11:07
+ter ele na minha loja? Então,
+11:15
+então eu eu vou lá no cadastro do Drenizon.
+11:21
+Oi, Fabiano. Se quiser pode mandar mensagem aqui de texto.
+11:26
+É que não tá aparecendo a tela ali, Sérgio. Tá mostrando. Ah, não tá aparecendo o relatório.
+11:32
+Desculpa aí que eu compartilhei travado. Ó, que bobeira.
+11:53
+Agora vai. Tão vendo agora o relatório?
+12:06
+Agora sim. Chegou?
+12:12
+Sim, sim. Show.
+12:19
+Então, beleza. O cara abre o relatório de vendas e sai essa listona aqui, né, de 11 páginas, como eu tava falando, mas
+12:26
+não tava mostrando. Aí ficava difícil vocês adivinhar, né? Aí cheguei nesse drenizon no meu pedido
+12:33
+do Biolaboque, a coluna quantidade vendida. Ele tá zero
+12:38
+em estoque, mas foi vendida uma unidade. Aí eu vou lá no drenizon
+12:44
+e vejo o meu giro dele, se realmente eu quero ter o drenizon na loja ou se foi uma demanda esporádica, encomenda,
+12:51
+alguma coisa do tipo. E nesses últimos 12 meses, eu só vendi quatro unidades de drenizon. vende um em janeiro, um em
+12:58
+maio, um em novembro e um em dezembro, né? Aí eu vou procurar saber das
+13:04
+balconista se realmente o drenizon foi uma prescrição, se ele tá voltando realmente a ter demanda para que eu não
+13:11
+arrisque nesse produto, que é um produto que não tem tanta demanda na loja, né?
+13:16
+Então vou saber das meninas se realmente foi alguma prescrição ou se tá sendo
+13:23
+algo mais frequente que tá tendo uma procura maior recentemente ou para quem tem equívia ou bússola, dá uma sondada
+13:31
+se realmente tem demanda desse item aí na sua região, né? Aí como eu falei,
+13:36
+começa a misturar biolab genérico com RX. Então, um só laboratório que a gente
+13:41
+tentou comprar aqui pelo relatório de venda, já deu uma confusão do tamanho do mundo. Aí vocês começam a ver que aqui
+13:50
+tem muita informação para se analisar. E percebam aqui por essa coluna estoque,
+13:56
+né, essa coluna mesmo no centro do relatório, que muitos dos produtos que foram vendidos, eu tenho estoque
+14:02
+suficiente para passar mais uns dias, né? O Benegrip de ontem para hoje vendeu
+14:08
+cinco. Eu tenho 626 cartelas. O Buscofen vendeu uma, eu tenho 1300.
+14:16
+Então algumas oportunidades que eu comprei barato, eu dei uma estocada maior para aproveitar, como por exemplo esse
+14:22
+Ben Grip aí, que hoje eu consigo vender ele pelo preço fábrica com marcap de
+14:28
+quase 50%. foi uma oportunidade que eu peguei no ano passado, mas percebam que
+14:34
+a maioria dos itens desse relatório tem estoque, então você ia perder muito tempo analisando páginas e páginas de
+14:40
+relatório de forma desnecessária, quando você poderia, por exemplo, ir para o
+14:46
+ferramenta, para o compra dose certa e na hora de fazer o seu pedido de
+14:52
+referência, você já pegar o pedido aqui, que inclusive a gente já montou o pedido de
+14:58
+hoje. Vou excluir ele aqui para voltar para cá.
+15:06
+E quando eu coloco todos os filtros dos produtos de referência, tá aqui meu pedido de referência bem compacto, só
+15:13
+com 28 itens que realmente estão com estoque abaixo do estoque de segurança
+15:19
+que realmente tá acabando, que vai acabar e que são produtos
+15:25
+de alto valor agregado que eu não preciso ter um estoque muito grande na farmácia. E é sobre isso que a gente vai
+15:31
+conversar hoje, né? como configurar esse dose certa para que você consiga
+15:36
+realmente utilizar ele de forma inteligente, para que ele lhe surgira um relatório confiável
+15:44
+e para que a gente economize tempo e dinheiro na hora de fazer o pedido.
+15:51
+Beleza? Então, como esse é o pedido mais simples,
+15:56
+vamos começar por ele, né? Abram já aí sua a tela do compra dose
+16:01
+certa para quem já tem. Para quem ainda não é cliente trier, presta bem atenção
+16:07
+para ver se realmente a ferramenta de compras do seu sistema tá conseguindo entregar essas mesmas funções.
+16:14
+E para quem já é cliente tri, não usa o compra dose certa, presta atenção também que aí amanhã aqui
+16:22
+no final a gente já vai disponibilizar um contato para que vocês possam solicitar esse novo módulo que vai
+16:28
+facilitar a vida de vocês, certo? Então, para quem tá com dose certa aberto,
+16:34
+já dá uma sacada, talvez aí para vocês apareçam essas telinhas aqui, certo?
+16:41
+Reposição de vendas, estoque de segurança, compra por agrupamento, os
+16:46
+pedidos efetuados e a compra manual, certo? Essa reposição de vendas eu não uso
+16:52
+justamente pelo mesmo motivo daquele relatório de vendas que a gente tava tava analisando, porque aqui ele vai me
+16:59
+sugerir comprar muita coisa que eu não tô precisando agora, certo? Então, a
+17:05
+reposição de vendas, ele serve mais como uma tela de consulta para muitos casos
+17:11
+e para quem para quem quer ganhar tempo realmente e
+17:17
+fazer um pedido mais otimizado, ela não é tão eficiente. Então eu já cancelo ela aqui por pelo simples motivo. Se você
+17:26
+for abrir aqui, por exemplo, um pedido de éticos, vamos lá.
+17:31
+Aqui eu chamo de éticos. Em alguns de vocês, quem usa os grupos do GCP vai tá como RX.
+17:38
+Alguns usam como referência, outros como monitorados. Então, dá uma
+17:44
+sacada aqui. São os medicamentos medicamentos que a gente compra na Santa Cruz, na
+17:51
+Panfarma, na Nazara e na Profarma, na Gan. Aí quem é de Santa Catarina, né?
+17:57
+Então, se eu fosse fazer um pedido de éticos aqui e aplicasse,
+18:03
+ele me dá uma lista de 345 itens para comprar, certo? Imagina a
+18:11
+trabalhada que dá você analisar 345 itens aqui, inclusive muitos deles que a
+18:18
+gente não precisa nem comprar agora, certo? Como por exemplo, esse adinogel,
+18:25
+nesse caso, ele tem demanda, mas vamos pegar algum aqui que eu não quero comprar.
+18:40
+Clavulin BD de 70 ml, certo? Produto que não tem gira aqui na minha loja.
+18:48
+Pessoal, se tiver alguém tentando falar, pode chamar no chat aqui que eu tô sem retorno de som, aí eu abro na hora que
+18:54
+vocês forem falar, certo? Mas a gente vai abrir um espaçozinho legal para interação, para ficar organizado e todo
+19:01
+mundo pelo menos abrir algumas perguntas para que vocês consigam aproveitar melhor, beleza?
+19:08
+Eh, o Clavulin, por exemplo, ele é um produto que não tem demanda. Eu não gosto de trabalhar com clavulinha aqui
+19:14
+na farmácia, que eu tenho outras opções de amox clave mais rentáveis. E
+19:21
+ele teve uma demanda, inclusive foi uma encomenda agora em dezembro, certo? Só para situar, a gente aqui tá numa cidade
+19:27
+do interior, então é muito comum também que tenham encomendas de produtos que não tem na loja, como a nossa loja é a
+19:33
+maior da cidade, quando o pessoal vai nas outras farmácias não encontra e não encontra na nossa também. Então, às
+19:39
+vezes eles esperam para chegar no outro dia, que é uma realidade que não acontece em muitas cidades maiores, mas
+19:48
+que pra gente funciona, mas eu tento reduzir o máximo essas encomendas,
+19:53
+certo? Então, por dia elas representam cerca de cinco vendas, no máximo, e a
+19:58
+gente tem mais de 300 vendas por dia. Então, é um caso bem específico, então eu preciso analisar para que ela não se
+20:04
+torne um acúmulo de estoque. E nesse caso do clavulinho eu não quero
+20:10
+recomprar ele, certo? E uma forma de sinalizar que eu não quero recomprar é a curva dele, né? que a curva dele tá como
+20:17
+curva de porque ele não tinha demanda, ele veio ter essa primeira demanda agora semana passada que chegou dia 7 de
+20:23
+dezembro. Beleza? Então eu teria que nessa lista de 345 itens analisar um por
+20:30
+um e sair tirando clavulim da vida, outros itens que eu não quero recomprar,
+20:36
+quando eu posso fazer de uma forma bem mais inteligente aqui no estoque de segurança e utilizando os filtros que o
+20:43
+Trier me oferece, certo? E a primeira coisa que vocês precisam entender é que a gente precisa agrupar
+20:51
+os pedidos da mesma forma que os fornecedores são agrupados na nossa
+20:56
+pesquisa de preço, na nossa cotação e nas nossas negociações, tá? Então, se
+21:02
+você tem um fornecedor de uma OL da indústria, por exemplo, do Sanofi ou do
+21:10
+Ipera, né? Vamos pro Ipera, que é a mais popular hoje lá por meio do parceiro Ipera. Então, quem já tem, já é visitado
+21:16
+do Ipera ou tem o parceiro Ipera, você tem a chance de comprar de forma bem
+21:23
+mais barata e de ganhar outros benefícios, como a própria pontuação que
+21:28
+eles oferecem lá, que eu mês passado mesmo a gente trocou em um ar condicionado, a pontuação que vai
+21:35
+acumulando lá dentro do parceiro IPA, que é um benefício que a indústria oferece quando você compra direto com
+21:41
+ele e ele fatura pelo fornecedor, tá? Então é o mesmo produto faturado pelo
+21:46
+mesmo fornecedor, né? Digamos, você peça sempre na Santa Cruz, seja o seu fornecedor prioritário.
+21:52
+Você consegue pedir pelo parceiro Ipera, faturar pela Santa Cruz e receber ele de
+21:57
+forma mais barata e ganhando pontos, outros benefícios, tá? Então, se você
+22:02
+entende que existem esses grupos de OLs, então a gente precisa organizar o nosso
+22:09
+calendário de compras também por OLs e também os produtos que não t OL, né, ou
+22:14
+que a OL não vale a pena, como por exemplo a OL da Eurofarma muitas vezes tá com uma condição
+22:21
+menor, Eurofarma RX, né, Eurofarma referência, tá com a condição mais cara
+22:26
+do que a condição que a gente tem no distribuidor, beleza? Então, a gente tem
+22:31
+essa oportunidade ali de filtrar e excluir todas as OLs que eu
+22:38
+não quero comprar nesse meu pedido de referência sem OL, tá? Então vou filtrar aqui só o que tá o que eu tenho de
+22:45
+éticos, porque se eu limpar todos os filtros essa lista também vai ficar grande,
+22:52
+certo? Então, mesmo sendo só o que tá com estoque baixo de éticos,
+22:58
+se eu fosse recomprens, certo? Mas eu não quero recomprar esses
+23:05
+1212 hoje. Eu só quero recomprar os produtos que fazem parte da curva A e
+23:13
+curva B, que são aqueles produtos que só vende, que vendem pelo menos duas
+23:18
+unidades nos últimos três meses, tá? Então aqui na minha farmácia para referência, eu uso esse padrão de duas
+23:26
+unidades nos últimos três meses para puxar até a curva B e os que vendem muito, né, que estão na curva A
+23:33
+e vou comprar só os éticos, que aí no
+23:39
+sistema de vocês pode estar RX ou referência, pode ser que você use outra
+23:44
+nomenclatura. Mesmo assim, se eu for comprar todos os éticos que são curva A
+23:49
+e curva B, que estão acabando, ele vai me dar uma lista de 84 itens. Só que no
+23:55
+meio dessa lista tem uns pedidos de OL que eu já fiz com o representante da
+24:02
+indústria, como por exemplo esses de achê que eu já fiz e tô esperando receber, como os da Biolab RX também que
+24:10
+eu já fiz e como os do Ipera, né, que é o que a gente falou do parceiro Ipera, que podem
+24:16
+ser pedidos separados, tá? Então, ah, vou passar hoje pedido na OL do Ipera,
+24:23
+lá no parceiro Ipera. Então, eu poderia muito bem ir filtrando por laboratório e
+24:29
+escolher só os produtos do Ipera. Então, ele ia me mostrar aqui os
+24:35
+produtos de Ipera, que são curva A e curva B, que estão com estoque de segurança baixo, certo? Então, tá aqui
+24:42
+Alectos, Bulclina, Buscofen com 10.
+24:47
+Então, se vocês forem olhar nesses itens aqui, todos eles tiveram pelo menos duas
+24:53
+vendas nos últimos três meses, que para mim é um parâmetro de recompra, certo? A
+24:59
+não ser que tenha sido duas vendas de encomenda, que são casos bem específicos. o alívio GC, que é um lançamento recente
+25:07
+aí, né, mas que mesmo assim já vem tendo demanda. Todo mês vende pelo menos uma unidade só em outubro e julho que não
+25:15
+vendeu. Então, percebam que agora quando eu filtro curva A e curva B, ele já tira do
+25:22
+jogo muitas coisas, muitos itens que não tem
+25:27
+demanda aqui na farmácia, certo? Porque se eu fosse filtrar, por exemplo, se eu
+25:33
+fosse deixar os produtos com você junto, ó, um monte de produto que ia aparecer que eu não quero recomprar.
+25:44
+A dera cald90, ele só vendeu um em agosto e um em dezembro. Então não quero recomprar cal
+25:52
+mais, certo? Eu quero deixar de trabalhar com ele e só trazer novamente se o meu balcão sinalizar que teve
+25:58
+alguma venda perdida, que eu também uso esse indicador lá no próprio nas próprias vendas perdidas do sistema ou
+26:06
+se aparecer surgir alguma encomenda do ADAC, tá? Então esses produtos com você,
+26:12
+eu não preciso ficar analisando um por um sempre que eu for fazer um pedido do Ipera, eu só filtro e removo eles do meu
+26:19
+filtro, tá? Então, da mesma forma que eu eu consigo
+26:25
+escolher a boa pergunta aqui que Farmacia dos
+26:31
+Bancários fez. Eu vou já explicar como é que a gente faz o estoque de segurança, tá? Eu só tô
+26:37
+dando uma pincelada aqui nos filtros, mas vamos para lá. Eh, da mesma forma que você consegue
+26:43
+filtrar os laboratórios para fazer um pedido de OL,
+26:50
+você também consegue remover. Vamos ver essa configuração que é interessante
+26:57
+e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de segurança, tá? Então aqui no compra
+27:03
+dose certa, vai no nas configurações e vem aqui na
+27:08
+aba de estoque de segurança, tá? Qual o parâmetro que eu recomendo aqui?
+27:14
+Eu já acompanhei mais de 100 farmácias e a ideia é que a gente use um parâmetro que seja financeiramente saudável.
+27:21
+Então, um parâmetro que você consiga vender a mercadoria antes mesmo do
+27:26
+boleto vencer para quem trabalha a prazo ou para quem trabalha à vista também não
+27:32
+ficar comprando muito esticado ali para 2 3 meses e apertando o fluxo de caixa
+27:40
+até mesmo quando a farmácia cresce, né? Porque se seu fluxo de caixa é curto,
+27:45
+você tem que reduzir bastante a sua demanda calculada para não apertar muito
+27:51
+financeiramente a sua loja, tá? Então, qual o parâmetro que eu uso aqui na farmácia? Vou até excluir e salvar de
+27:57
+novo para que vocês acompanhem. No referência
+28:03
+no para mim aqui, eu uso o grupo dos éticos, eu analiso o período dos últimos
+28:09
+90 dias de venda. Tá, tem até um caso interessante, Fabian, que eu testei essa
+28:15
+semana aqui com um cliente que era recém inaugurado. E para quem é recém inaugurado e, por
+28:21
+exemplo, só tem 30 dias de funcionamento da loja, você pode já ir trabalhando com dose certa, analisando só os últimos 30
+28:29
+dias, né? Lógico que você não vai ter uma previsibilidade tão boa para quem já do em relação a quem já tem mais de 90
+28:35
+dias de dados, mas é uma alternativa que pode funcionar para quem chegou recente aí no tria, tá? Então pode ser uma
+28:43
+sacada aí para quem tá pouco tempo usando tria, coloca o período que faz que sua
+28:49
+farmácia inaugurou, tá? pode ser uma sacada aí para você não esperar tanto para começar a usar a ferramenta. Então
+28:56
+aqui eu uso 90 dias, é um período bem confortável e que não distorce tão tanto
+29:01
+a média. Então quanto maior o período que você usa, mais distorcido você vai
+29:07
+ter análise nos produtos sazonais. Então,
+29:12
+se você fosse usar, por exemplo, 180 dias em uma demanda do Benegripe, que,
+29:20
+por exemplo, aqui na minha cidade, eh, deu outro pipoco de gripe nesses últimos
+29:25
+45 dias. Então, se eu usasse 180 dias de análise, essa demanda de 40 dos últimos
+29:32
+45 dias no Benegripe não ia pesar tanto para que eu reforçasse meu estoque
+29:38
+quanto usando só os 90 dias, né? Então, os 90 dias têm sido um período que eu analisei
+29:45
+em mais de 100 farmá
+30:05
+me ouvindo? Voltou.
+30:11
+tá ouvindo agora? Sim. Então, os últimos 90 dias tem sido um
+30:20
+período retroativo de análise bem confortável e bem confiável para os medicamentos de referência, tá? Vamos
+30:26
+ver só os referências agora que cada grupo eh cada grupo sofre
+30:33
+parâmetros diferentes pra gente conseguir uma previsibilidade maior, tá bom?
+30:40
+Estoque de segurança nada mais é do que quando comprar o produto, tá? Então, se
+30:47
+você quer comprar tudo que vai acabar na sua farmácia só nos próximos dois dias,
+30:53
+então escolhe dois dias. Se você quer acabar, quer comprar tudo que vai acabar na próxima semana, escolhe 7 dias. E se
+31:02
+você quer comprar tudo que vai acabar no próximo mês, que logicamente vai dar um
+31:07
+pedido muito maior, mas a gente pode prever isso, como por exemplo, ah, vai ter um reajuste de buscopan, como teve
+31:16
+agora em setembro, né? E eu quero comprar tudo de minha demanda de buscopan que vai acabar nos próximos 60
+31:22
+dias. Aí eu posso usar um estoque de segurança para esse caso específico do Buscopan, que inclusive a gente pode
+31:29
+usar lá na compra manual, que é muito mais simples para esses casos específicos e de análise. Mas em geral,
+31:36
+aqui no Rio Grande do Norte, por exemplo, a gente tem uma entrega de medicamentos de referência que de
+31:42
+segunda a sexta, tudo que a gente pede em um dia chega no próximo dia.
+31:48
+Inclusive hoje, se eu pedir na Santa Cruz até 9 horas da noite, esse pedido
+31:53
+vai ser entregue na minha farmácia amanhã até meio-dia.
+31:58
+Quem mora na capital perto da distribuidora, em alguns casos, o cara pede de manhã e o pedido chega na
+32:05
+farmácia de tarde. Então, a gente tem uma logística de entrega de medicamentos de referência muito boa, muito rápida,
+32:13
+que eu acho que só existe no ramo farmacêutico e no ramo de verdura, porque em outros ramos eu vejo aí a
+32:19
+galera esperando três meses para um pedido ser entregue, dois meses. Minha esposa tem papelaria aqui, tem pedido
+32:24
+que ela espera 2, 3 meses para chegar. Então essa logística rápida nos dá a
+32:32
+condição de trabalhar com estoque de segurança muito baixo também, né? Então, por exemplo, se eu se eu uso um estoque
+32:39
+de segurança para 7 dias e hoje é dia 12, tá?
+32:45
+E se o meu produto acabar hoje ou se ele vender 30 unidades
+32:52
+por mês, 30 cartelas de DFlex, vamos pegar um exemplo de DFlex.
+32:57
+Quando o flex baixar de sete unidades, que no caso ele, o sistema vai entender
+33:02
+que vende uma cartela de Doflex por dia, ele vai lhe acusar que tem sete unidades
+33:09
+de DFlex aqui no dia 12 de dezembro, certo? Então, digamos que você percebeu
+33:15
+hoje que só tem sete cartelas de DFlex e você vende 30 por mês.
+33:22
+Aí o sistema vai lhe avisando, hoje só tem sete. Aí você vai e diz: "Não, vou deixar para comprar amanhã que eu vou
+33:27
+pesquisar preço e tal". Aí comprou amanhã, dia 13. E dia 13 você fechou a negociação, só
+33:35
+que o cabo esqueceu de faturar, perdeu a hora lá da distribuidora e só faturou
+33:41
+para o dia 14. Se ele faturou dia 14, o produto vai ser entregue dia 15. Só que
+33:49
+dia 15 o carro da distribuidora quebrou
+33:54
+e atrasou mais um dia de entrega. Então chegou dia 16. Só que dia 16 deu um problema na Cfaz. A nota não foi
+34:00
+faturada e atrasou mais um dia. Então só vai chegar no outro dia, na outra terça,
+34:07
+né, que a gente não tem entrega na segunda, já que não tem pedido no domingo nem no sábado. Então vai chegar
+34:13
+dia 19 e você ainda vai receber o do Flex exatamente no dia que acabou. Então
+34:18
+7 dias é um período confortável que nem vai inchar demais o seu estoque e nem
+34:25
+vai deixar faltar produto na loja, tá? Então, um estoque de segurança de 7 dias, nessas 100 farmá, mais de 100
+34:32
+farmácias que eu analisei, tem se mostrado um estoque muito seguro, que não vai inchar o seu fluxo de caixa, não
+34:40
+vai lhe apertar financeiramente e também não vai deixar faltar produto na loja de forma desnecessária, tá?
+34:47
+Então, usa um estoque de segurança de 7 dias para o referência, tá? E lembrando
+34:52
+sempre, essa configuração é para os medicamentos de referência e a cobertura
+34:58
+aí depende do seu prazo de pagamento, do seu caixa disponível hoje, se você tá
+35:03
+podendo investir ou não em mercadoria, se você prefere passar mais tempo
+35:09
+comprando ou menos tempo comprando. Por quê?
+35:14
+Porque digamos que hoje você trabalhe com um prazo de 45 dias para pagar,
+35:19
+certo? Se você tem 45 dias para pagar na distribuidora de referência
+35:25
+e você não vende fiado e sua maquininha de cartão é antecipada,
+35:31
+se você comprar só 30 cartelas de DFlex, comprar uma demanda para 30 dias, que é
+35:38
+exatamente uma caixinha, né? No exemplo doflex, ele é fracionado, mas digamos que não fosse fracionado. Mas se você
+35:43
+comprasse exatamente 30 cartelas de DFlex, você conseguiria vender as 30 cartelas
+35:50
+de DFlex, receber o dinheiro da maquininha que é antecipado antes mesmo do boleto que ia vencer com 45 dias, tá?
+35:58
+Então você consegue uma cobertura confortável financeiramente
+36:03
+e que não vai lhe apertar também e nem vai inchar demais o seu estoque. Lógico
+36:09
+que vão surgir oportunidades. Ah, Serginho, hoje o Doflex tá com 28%. Lógico que se você tiver condições,
+36:16
+tiver caixa disponível para isso, você vai aproveitar, não vai comprar só para um mês, né? Isso é óbvio, mas 95% das
+36:24
+compras da farmácia não são compras de oportunidade, elas são compras de reposição que sofrem só leves alterações
+36:32
+de preço. Então, se durante o ano inteiro o meu
+36:38
+ancoron lá do Libs para cá, depois que teve reajuste, ele sempre teve o mesmo desconto. Não faz
+36:45
+sentido eu comprar coron para 3, 4 meses se eu só vou ter 45 dias para pagar, não
+36:52
+é verdade? Então, se vocês têm essa folga,
+36:58
+se vocês têm eh esse prazo de 45 dias para pagar e vocês podem comprar só para
+37:05
+30 dias, é uma chance aí de nem precisar est comprando DFlex toda semana, que é
+37:11
+coisa chata no mundo, né? Ah, já vai acabar do flex semana que vem. Aí toda semana você tem que estar comprando do
+37:17
+flex, tá comprando uma coron de um em um e vende quatro por mês. Então é muito
+37:23
+mais eficiente e prático para quem compra a prazo usar uma demanda de 30
+37:30
+dias, tá? Agora, se você tá apertado financeiramente, se você só tá podendo comprar a vista
+37:37
+porque o o distribuidor cortou o seu prazo, então você pode sim usar uma
+37:43
+cobertura menor para 15 dias ou para 7 dias. Lembrando que você vai ter que
+37:49
+gastar muito mais tempo fazendo compras, né? Porque em vez de você comprar DFlex só uma vez por mês, você vai ter que
+37:55
+comprar D flex três vezes no mês, quatro vezes no mês, se for para 7 dias, né?
+38:02
+Então parece besteira, mas multiplique o flex pelos 5.000 itens que você tem na
+38:09
+farmácia. Imagine você ter que recomprar 5.000 itens toda semana. você vai viver
+38:16
+para fazer compras, infelizmente. Então, para quem tá com financeiro redondinho,
+38:22
+sem muito aperto, uma uma cobertura de 30 dias é saudável e principalmente se
+38:28
+você compra prazo no distribuidor, é saudável, não vai lhe apertar e vai lhe dar mais tempo disponível para realmente
+38:34
+procurar oportunidades, cuidar dos seus clientes, pensar em campanha de marketing, fazer as outras milhares de
+38:40
+tarefas que nós donos de farmácias temos que fazer todos os dias, né? Então, é
+38:46
+uma das formas de a gente ganhar eficiência sem precisar apertar o meu financeiro da farmácia.
+38:52
+Para considerar o o cálculo, aí você leva em consideração qual é o quais são
+38:59
+os dias de abertura da sua farmácia, tá? Então, se você só abre de
+39:05
+segunda a sexta, marca aqui só dias da semana e me chama para trabalhar, que eu sou doido para trabalhar numa farmácia
+39:10
+que trabalho só de segunda a sexta, que eu particularmente ainda não conheço nenhuma, mas pode ser que tenha.
+39:18
+Se você abre de segunda a sábado, marca dias da semana mais o sábado. E se você
+39:24
+abre de domingo a domingo, como eu, marca todos os dias. Por quê? Porque se
+39:30
+você não abre no domingo e marca todos os dias, ele vai entender que no domingo
+39:36
+você não teve venda do DFlex e vai puxar a o cálculo da média do DFlex para
+39:41
+baixo. Então você vai ter uma previsão um pouco errada descontando essa venda do domingo, que na verdade é um é um dia
+39:49
+que a loja tá fechada. Então se é um dia que a loja tá fechada, é um dia que é para ser desconsiderado no cálculo da
+39:55
+demanda mensal. Beleza? Então, todos os dias, se você tem PBM com reposição
+40:02
+automática, marca aqui, desconsiderar as vendas do passeio de reposição automática, certo?
+40:09
+Para você não correr o risco de estar recomprando aquele corus que vem automaticamente do PBM, tá? Então, de
+40:17
+marca aqui que ele mesmo já vai desconsiderar aquela reposição do PBM para que você não tenha que recomprar.
+40:24
+E se você tem filiais e que transfere medicamentos da sua matriz paraa filial,
+40:31
+por exemplo, e essa demanda da filial não é uma demanda da sua matriz, então
+40:37
+marca aqui desconsiderar transferências também para que você não fique fazendo compras baseado no que foi transferido,
+40:43
+né? E você compre o que foi vendido naquela filial. Beleza? Como eu não tenho filial, eu vou deixar desmarcado.
+40:52
+Adiciona a regra e recalcula a demanda. Beleza? Pessoal que tinha feito essa
+40:59
+pergunta, tá respondido. Configuração de referência.
+41:09
+Show. Farmácia das bancárias. Essa aí é engenheirada, viu?
+41:17
+E daqui existem os outros parâmetros que a gente vai falar um pouco lá na frente, o
+41:24
+compras por agrupamento, mas como a gente vai ver um de cada vez,
+41:30
+então vamos primeiro para os éticos e vamos entender aqui como é que ficou essa sugestão que o sistema deu, né?
+41:36
+Então eu tinha pulado um pouco essa etapa, mas como eu tinha dito, né? Se não
+41:42
+usasse nenhum filtro aqui, se eu excluir todos os filtros, a tela que vai aparecer para vocês é essa aqui,
+41:50
+certo? Então vai aparecer uma listona de muitos itens para comprar que vocês vão
+41:56
+olhar e vão se assustar. Meu Deus do céu, eu tenho que comprar 250 itens hoje. E na verdade não precisa, né?
+42:03
+Porque aqui no meu tá aquele caso do clavulim que eu falei que eu não quero recomprar, tá? Vários casos de produtos
+42:10
+que não tem demanda na farmácia. né? O próprio Drenizon lá, lembram que tava
+42:15
+sugerindo no meu estoque de venda, que eu puxei só de ontem para hoje, mas o Drenizon fazia aqui
+42:24
+4 meses que não tinha venda, né? Ele voltou a ter venda agora em novembro, então eu preciso analisar se realmente faz sentido ou não recomprar. Então é
+42:31
+uma análise um pouco mais minuciosa, que leva mais tempo, que eu vou ter que tirar dúvida às vezes até com o cliente,
+42:37
+né? Em alguns casos a gente pergunta o cliente se ele vai continuar o tratamento e tal. E pra gente não perder
+42:42
+tempo com essa compra minuciosa todo dia, que ela precisa ser feita, ela só não precisa ser feita todo dia, a gente
+42:49
+pode ir filtrando, né, como eu vinha fazendo naquele momento, a gente pode ir filtrando pela curva e colocando só os
+42:55
+produtos curva A e curva B, que aí dos 250 já vão cair só para 81.
+43:03
+Então, os meus produtos que estão na curva A e curva B já são produtos que
+43:09
+possuem uma demanda legal. Acho que é interessante a gente calcular a demanda a curva ABC também, né? Aqui,
+43:17
+que você acha, Fabiano? Legal, né? Sim, sim.
+43:25
+Oi.
+43:33
+Então vamos lá rapidinho, só para entender como foi, como o sistema estimou o que tava na curva A e o que
+43:40
+não tava, né? O que tava na curva B e o que não tava. Vocês vem aqui na na aba de compras, parâmetros de compras, tem
+43:48
+aqui a atualização da curva ABC, certo?
+43:55
+Aqui no grupo de produtos vocês colocam só os éticos ou RX ou
+44:01
+referência, não sei como vocês estão chamando aí na farmácia de vocês. Aqui na minha eu
+44:07
+chamo de éticos, já era um grupo antigo e eu mantive.
+44:13
+No dados dois vocês escolhem a curva ABC por ranking de quantidade, certo? Então
+44:21
+não coloca valor, porque, por exemplo, se você fosse calcular uma curva ABC de um Shigdu junto do da compressa de gás,
+44:30
+né, o Shigdu é R e tantos reais e a compressa de gás é 50 centavos.
+44:36
+Aí logicamente que a o Chigdug só vende um por mês, ia ter tanta importância
+44:42
+quanto a compressa de gas que vende 60, 70 unidades por mês. Então
+44:49
+por ranking de valor era ia distorcer muita curva, diferente por quantidade,
+44:55
+né? Até porque a gente faz pedido, a gente não diz assim: "Bote R$ 500 de dipirona, né? A gente pede 200 cartelas
+45:03
+de dipirona. A gente não pede, mande R$ 500 de pirona. Então, como paraa compra
+45:09
+a gente utiliza o parâmetro da quantidade para estimar a curva ABC, também a gente
+45:16
+estima por quantidade. Lógico que se você for, se você for fazer uma análise
+45:22
+de um relatório de vendas para entender qualos produtos impactam mais no faturamento da farmácia, aí vocês já
+45:28
+tiram outro relatório que consegue considerar por por valor, mas paraa
+45:34
+compra a gente vai usar o parâmetro por quantidade, certo?
+45:39
+Seleciona os mesmos 90 dias lá que que a gente utilizou para prever
+45:45
+o dose, certo? o estoque de segurança e a demanda usa também aqui, tá? Então,
+45:54
+marca de 12 de setembro até 11 de dezembro
+46:00
+e vai usando os percentuais da curva que
+46:05
+a gente conhece da famosa lei de Pareto, né? Vocês devem ter ouvido já a lei de Parede que diz que 80% 20% do esforço
+46:15
+gera 80% do resultado. E coincidência ou não,
+46:20
+20% dos produtos da farmácia geram 80% das vendas, tá? Então a curva A vocês
+46:28
+podem colocar sem medo nenhum 80%, que é exatamente aqueles produtos chave
+46:34
+que você não pode deixar faltar de jeito nenhum. Então, se um produto caiu na curva A e
+46:41
+não teve nenhuma oferta, nenhum nenhum caso específico que distorceu essa curva, ele é um produto altamente
+46:48
+relevante paraa sua farmácia e que você tem que trabalhar para não deixar faltar ele jamais na sua loja, tá? Então, 80%
+46:55
+curva A, aí entra a sacada, certo? Aí entra a sacada da gente derrubar aqueles
+47:00
+produtos que não tem tanto giro lá na hora de fazer o pedido do dose, certo?
+47:06
+Na curva B, eu percebi que se a gente usar esse parâmetro de 15%
+47:13
+na maioria das farmácias, tá? E vai ter alguns casos de vocês que vão ter que
+47:19
+fazer algumas alterações. Eu vou falar disso aqui para vocês, mas na maioria das farmácias 15% de curva B
+47:28
+aqueles produtos que nos últimos 3s meses tiveram pelo menos duas vendas,
+47:35
+tá? Que para mim e paraa maioria das farmácias que eu acompanhei
+47:40
+considerado um produto importante na loja. Pode ser que para alguns de vocês que tem uma farmácia muito pequena ou
+47:47
+que tá tentando enxugar muito o estoque, não seja interessante. Ah, Sérgio, eu só quero ter na minha farmácia produtos que
+47:54
+t pelo menos uma a venda de uma unidade por mês, no caso dos medicamentos de referência, né?
+48:00
+Então para você pode ser que essa porcentagem, essa proporção da curva B seja um pouco menor ou um pouco maior.
+48:08
+Então eu vou mostrar como vocês podem analisar e entender como estimar essa proporção, tá? Então na curva B coloca
+48:16
+os 15% e na curva C 5%. E os produtos que não tiveram nenhuma
+48:23
+venda nos últimos 90 dias, aí vocês colocam a curva de que quer
+48:30
+dizer Deus me livre, Deus me livre de trabalhar com esse produto aqui na minha loja, porque se você tá gastando seu
+48:37
+dinheiro para sustentar um produto tá passando três meses na sua prateleira sem nenhuma venda,
+48:44
+me desculpa lhe dizer, mas pode ter certeza que tem milhares de reais parado
+48:50
+aí na sua farmácia, se você não leva em consideração esses produtos e não tá analisando com carinho e tentando no
+48:56
+fazer girar e principalmente não recomprar mais esse produto, a não ser que ele tenha surgido demanda,
+49:03
+então pode puxar amanhã o relatório de produtos parados da farmácia, que eu
+49:09
+aposto que vai ter aí alguns milhares de reais bem significativos que você tá perdendo, que poderiam estar no seu
+49:16
+bolso para o conforto seu e da sua família. ou até para fazer outros investimentos na própria farmácia, tá?
+49:24
+Então, para quem tem filiais, lembrem de de
+49:30
+esmarcar aqui também de considerar transferências,
+49:36
+analisa somente os produtos ativos, tá? Porque produto tá inativo, não faz tanto sentido a gente analisar, principalmente
+49:42
+se você não inativa frequentemente, né? Então, a não ser que você
+49:49
+eh recentemente ou não tem tanto hábito de tá inativando
+49:55
+produtos, não faz sentido tá tá gerando curva ABC para esses produtos que já
+50:01
+estão parados faz muito tempo. E às vezes quando ele tá inativo, ele nem sugere paraa compra, né, Fabiano? Só me
+50:07
+confirma aí, por favor. Mas sim, daí não sujeto.
+50:12
+Pronto, perfeito. Então não tem para que se preocupar com o produto ativo. Vai só tornar esse processamento aqui mais
+50:17
+lento. para quem tem estoque mínimo e demanda
+50:22
+configurados pela curva padrão, que é outro parâmetro aqui que eu não costumo
+50:28
+a usar tanto, mas quem quiser usar depois dá uma sacada aqui, tenta entender melhor
+50:34
+que vocês conseguem configurar o estoque mínimo e a demanda padrão
+50:40
+até para alguns grupos e para algumas curvas, tá? Então, ah, Sérgio, eu quero diminuir
+50:46
+pros produtos curva B, eu não quero comprar para 30 dias, eu quero comprar só para 15. Então, você consegue
+50:52
+configurar isso lá. Para quem tem isso configurado, utiliza, marca essa opção.
+50:57
+No meu caso, eu não uso. E para quem quer desconsiderar as vendas
+51:05
+de parceiro com reposição automática também desmarca aqui, certo? No meu
+51:11
+caso, eu tô considerando porque tem alguns laboratórios como o achê
+51:17
+desligue aí despes estão trocando muito recentemente
+51:22
+tirando e colocando muitos produtos no PBM, tá? Então, por exemplo, tava no PBM
+51:29
+e ainda tá com alguns CRM específicos, né, de alguns médicos. Mas aí nem sempre o meu cliente consegue
+51:37
+comprar o treet pelo PBM porque ele não tem o vcher lá do médico ou um CRM
+51:42
+cadastrado. Aí nesses casos eu preciso comprar o preset na distribuidora.
+51:47
+Então, como esses casos do achê tá tendo muita variação e como a maioria desses itens de PBM tão
+51:55
+aqui na curva A, então eu não vou precisar me preocupar tanto em tá eh
+52:01
+desconsiderando ou considerando fazendo análises minuciosas desses itens. Então,
+52:07
+eu não considero as vendas de parceiro aqui na hora de
+52:12
+calcular a curva ABC. Na verdade eu considero, né, porque tá lá no no dose certa
+52:20
+desconsiderar e aqui desconsiderar, mas aí eu não desconsidero para justamente o
+52:27
+TREST, se ele for um produto importante na minha loja e tá tendo venda por fora do PBM, eu não esquecer de comprar ele e
+52:33
+ele correu o risco de cair aqui na curva C. Beleza? E aí vocês emitem o relatório e
+52:39
+atualizam o cadastro. Por quê? Porque é pelo relatório aqui que a gente vai analisar a proporção que eu vou usar na
+52:45
+curva B e na curva C, certo?
+52:55
+Então, curva A sempre puxa os produtos que têm uma demanda mais significativa,
+53:00
+né? Aí a gente vai chegar aqui, principalmente o local crítico desse
+53:06
+relatório é esse aqui, quando ele passa da curva B paraa curva C. Por quê?
+53:12
+Porque você tem que entender se não estão indo produtos importantes paraa
+53:17
+curva C, porque lembrando que a curva C é aquele aquela curva que a gente vai comprar com menos frequência, né? A
+53:23
+gente não vai precisar estar analisando todo dia naquele pedidão de reposição que a gente tem que fazer de forma
+53:29
+rápida e eficiente, né? Então, na curva Caiu aqui alguns produtos importantes
+53:35
+que tem uma demanda mensal de um. Então, caiu o Edson, caiu Marevan,
+53:43
+Novolim. Então, esses produtos eu considero que são importantes na minha loja. Eu posso até tirar tema indo lá na
+53:51
+no cadastro de produtos e analisando a demanda de algum deles, né? Então eu vou pegar esse lotar aqui para analisar.
+54:01
+Então, o lotar ele sofreu algumas oscilações de demanda, né? como aqui em setembro ele
+54:07
+não teve venda, mas nos últimos seis meses de junho para cá o único mês que
+54:12
+não teve venda foi em setembro. Então é um um produto que eu considero importante ter na farmácia e eu quero
+54:18
+que ele suba paraa curva B. Como é que eu vou fazer ele subir paraa curva B? É
+54:23
+justamente aumentando a minha proporção, né? Então eu quero a minha curva B, ela é maior do que 15%
+54:30
+e eu diminuo a proporção da curva C para 4%, tá? Então você consegue ir
+54:37
+atualizando e verificando se realmente aqueles produtos que você
+54:43
+quer comprar diariamente, que você quer manter aquele estoque de segurança de 7 dias e não correr aquele risco de
+54:49
+faltar, tão caindo aqui na curva B, como você acha importante, né? E subiu aqui,
+54:55
+ó, lotar. Agora ele tá na curva B, na curva de ranking por quantidade, certo?
+55:01
+Então, tá aqui o Lotá, tá aqui o Marevan,
+55:06
+certo? Produtos que eu considero importante e são produtos que vendem pelo menos um por mês.
+55:13
+Então, se esses produtos vendem pelo menos uma unidade por mês, são extremamente importantes de eu ter na
+55:19
+loja. E depois de eu configurar essa curva ABC, aí a gente vai lá pro dose certa.
+55:26
+E agora sim, né? Já configuramos o estoque mínimo e a demanda. Consideramos, configuramos a curva ABC e
+55:33
+agora vamos fazer o pedido de usufruir da ferramenta, né?
+55:41
+Quando você abrir aqui a compra por estoque de segurança, ela vai aparecer provavelmente sem nenhum desses filtros.
+55:48
+E aí a gente vai elaborando os filtros, né? Primeiro você coloca por grupo de
+55:53
+produtos, considera o grupo dos éticos, certo?
+55:59
+Depois você filtra a curva AC
+56:04
+e seleciona só a curva A e curva B. Aí você vai dizer: "Ah, Serginho, os produtos curva C, o que é que eu faço?"
+56:11
+de 15 em 15 dias você para e gera um filtro desse só com curva C e vai
+56:18
+analisar. Porque se eu gero só curva A e curva B, ele me sugeriu aqui 87 itens,
+56:25
+certo? A gente ainda não tirou as OLs. E se eu gero um só curva C,
+56:33
+ele vai me sugerir 164 itens. Então são 164 itens que tem uma
+56:40
+demanda tão baixa na minha farmácia como esse VR em Gotas. Vamos ver aqui. Ele
+56:46
+vendeu uma em julho e um em dezembro. Então não é um produto que eu quero repor ele automaticamente. Eu vou
+56:53
+estudar se faz sentido ou não eu repor e vou e continuar trabalhando com Vferrinho Gotas se ele só vende ali
+57:00
+talvez três unidades no ano. Então faz sentido eu ter um Viferrinho Gotas na minha loja? Aí eu vou analisar. Existe
+57:07
+um substituto dele que as minhas balconistas possam trocar, existe realmente uma demanda de prescrição que
+57:14
+chega na minha lógica que eu não posso perder. Então eu vou analisar esses outros critérios, começar a todrar aqui
+57:21
+também. Ele teve uma venda em agosto e teve uma venda agora em dezembro.
+57:28
+Então eu vou entender se faz sentido ou não repor esse artrodar que percebam que
+57:35
+é uma análise muito mais minuciosa e mais demorada do que a análise da curva
+57:41
+A e curva B, que já são aqueles produtos que eu sei que vendem pelo menos um por mês na minha farmácia. E um produto que
+57:48
+vende pelo menos um por mês é um produto que eu tenho que correr para repor, porque se tá zerado na minha farmácia,
+57:55
+eu tô correndo sérios riscos de perder venda deles, não é verdade? Então, por exemplo, esse B TRM F,
+58:04
+que ultimamente ele cresceu bastante a demanda, né? Mas em outubro e setembro tava demanda zerada. Aí o que é que o
+58:12
+sistema vai fazer?
+58:24
+O sistema vai pegar as vendas dos últimos 90 dias, certo?
+58:31
+Vamos pegar a calculadora aqui para que vocês vão possam ir acompanhando.
+58:41
+Então o sistema vai pegar aqui nos últimos 90 dias vendeu 2 + 3 + 0, né?
+58:49
+Então vendeu cinco unidades dividido por 3 meses, que deu 1,66
+58:56
+unidades, que aí existe outra configuração lá. que vocês podem procurar no parâmetro de
+59:03
+configurações do sistema, que vocês conseguem arredondar a compra do item
+59:08
+para cima ou para baixo, não é isso, Fabiano? Essa configuração é aquela do
+59:13
+cadastro de produto ou é lá nas configurações gerais? Me lembra aí. No cadastro de produtos. No cadastro de
+59:19
+produtos é por item. Pronto. Perfeito. Então vocês conseguem ir dependendo do item. Ah, Serginho, o
+59:27
+BRM é um antibiótico que sempre a receita dele vem com pelo menos duas
+59:32
+unidades. Então, é um item que faz sentido eu manter a configuração dele,
+59:38
+um arredondamento para cima, porque se eu só tiver uma unidade do backtrin, eu
+59:43
+tô correndo sérios riscos de perder a venda. Então eu vou usar aqui o
+59:49
+arredondamento do backtrim para cima, que na próxima vez o sistema já vai me
+59:54
+sugerir comprar duas unidades, certo? Vamos ver outros itens aqui. Seleston
+1:00:00
+elixi. Seleston elixi teve venda em agosto, em
+1:00:05
+outubro, em dezembro. E como o sistema calcula também
+1:00:11
+arredondando a curva ABC, né? Então, nos últimos três meses, ele teve duas vendas dividido para 3 meses, ele vendeu 067
+1:00:20
+de unidades que ela arredonda para demanda de um, né, lá na atualização da curva ABC, que para mim, se um produto
+1:00:28
+nos últimos três meses vendeu pelo menos dois, como nesse caso do Celestone, já é um produto mais interessante de eu ter
+1:00:34
+na loja. Então eu vou repor ele e vou comprar o aerolim Gotas, que
+1:00:40
+infelizmente tá faltando no mercado, né? O Aerolim ele tá me sugerindo comprar
+1:00:46
+aqui, mas desde novembro, desde outubro, na verdade, que eu não consigo mais recomprar ele. Então, infelizmente ele
+1:00:53
+tá faltando no mercado, mas mesmo assim todo dia eu disparo paraa cotação para
+1:00:58
+ver se ele chegou em algum distribuidor, certo? Então, como é que o sistema tá calculando essa
+1:01:06
+minha sugestão de compra? Agora vamos entender isso, né? Porque se ele já tá me dizendo realmente produtos que eu
+1:01:12
+preciso comprar, aí a gente vai pra próxima pas etapa do pedido, que é
+1:01:19
+quantas unidades eu preciso comprar desses produtos, né? Então, só para tirar, fechar essa parte dos produtos
+1:01:25
+que eu realmente preciso comprar, entrou aqui também o Max Cidex, que
+1:01:31
+ainda tem três unidades em estoque. Aí vocês devem perguntar: "Vige, Sérgio, mas tem três unidades e ele já tá me
+1:01:37
+mandando comprar. Claro, porque nos últimos 3s meses eu tenho uma
+1:01:44
+demanda média de 17 unidades de Maxidex vendidas por mês. E o estoque de
+1:01:51
+segurança a gente calculou para 7 dias, né? Então, se em um mês ele vende 17 unidades
+1:01:58
+e um mês tem 4 semanas e a gente botou o estoque de segurança para uma semana, então ele vai pegar as 17 e vai dividir
+1:02:05
+por 4 semanas. Lógico que o sistema faz uma divisão por dias, né? Eu tô dando um arredondamento aqui geral para vocês
+1:02:11
+entenderem. E ele dá 4,25, que é justamente esse estoque de segurança de quatro. Então,
+1:02:18
+quando o estoque do Maxdex baixou de quatro, ele já me sinalizou: "Sérgio, tá
+1:02:24
+na hora de comprar Maxidex". O Maxidex caiu aqui na minha lista de compras
+1:02:29
+e eu vou ter tempo de comprar Maxidex antes de faltar e antes de eu perder a
+1:02:35
+venda, né? Até porque se tiver atendendo um oftalmologista aí na cidade que
+1:02:40
+passar para escrever três maxidex no mesmo dia,
+1:02:47
+você corre o risco de perder. E por esse histórico de vendas do Maxidex, é muito
+1:02:52
+provável que em algum dia venda pelo menos duas unidades. Então você consegue
+1:02:58
+comprar o Maxidex antes dele acabar. Aí você vai ver como funciona o cálculo
+1:03:06
+da demanda mensal, né? Ele fez a média dos últimos 3 meses, deu 17.
+1:03:12
+E esse 17 ele subtraiu
+1:03:18
+as três unidades que tinha em estoque. Então, se eu vendo
+1:03:24
+17 por mês, mas eu ainda tenho três em estoque, para eu passar mais 30 dias, eu
+1:03:29
+só preciso comprar mais 14. e unidades. Concorda? Então, o sistema já calculou
+1:03:36
+que para eu comprar uma quantidade saudável de Maxidex para passar um mês, eu só preciso
+1:03:43
+comprar 14 unidades de Maxdex. Beleza? Vamos pegar mais um item aqui que tem
+1:03:50
+uma demanda um pouco maior para ver. Estomazia fevescente
+1:03:57
+de laranja. Então, ainda tenho duas unidades, duas cartelinhas de estão mazio e nos últimos 3s meses, né, a
+1:04:06
+gente tá aqui no dia 12 de dezembro, então tá mais ou menos na metade. Talvez, talvez isso seja até um
+1:04:12
+indicador que essas duas unidades é furo de estoque, porque a gente já tá no dia
+1:04:17
+12 e até agora só vendeu uma unidade. Então eu já fico de orelha em pé. Eu vejo um caso desse e já desço.
+1:04:24
+Peço paraa coordenadora do estoque da gente ir lá e conferir se realmente
+1:04:30
+ainda tem essas duas unidades de estão mazo. Que inclusive aqui eu deixo um
+1:04:36
+alerta importante para vocês. Eu descobri uma vez que a gente tava sendo roubada
+1:04:43
+aqui na farmácia. Eu descobri quando eu passei a utilizar as compras pelo sistema, certo? Então, em uma turma que
+1:04:52
+a gente fez aqui do Revolução Farma, tinha 100 109 donos de farmácia. Eu
+1:04:58
+perguntei quem aqui já foi roubado? Mais da metade levantou a mão e a outra
+1:05:04
+metade não levantou porque não sabe o que foi. Porque saibam que no Brasil
+1:05:10
+não é só político, é corrupto, não, certo? Então, infelizmente a gente tem gente corrupta até dentro da dentro das
+1:05:16
+nossas próprias farmácias. E se você tá consertando estoque de produto toda semana e tá furando, sinto muito lhe
+1:05:23
+dizer, mas você tem um sócio muito caro aí na sua farmácia e você não sabe, certo? Então esse tomazio aqui que furou
+1:05:31
+dois envelopes, que para muitos de vocês parece besteira, para mim já é um
+1:05:36
+indicador de ligar o alerta e ir lá conferir o estoque e tentar entender o
+1:05:42
+que pode ter sido esse furo, tá? Então, até nisso, fazer a compra pelo sistema
+1:05:48
+nos ajuda a evitar fraudes na farmácia, porque aí se faltou um produto que tá
+1:05:54
+constando no estoque e você fez um balanço, fez um inventário recentemente, então sinto muito lhe dizer, mas tem
+1:06:01
+alguma fralda acontecendo aí na farmácia que você não tá sabendo. Beleza? Então
+1:06:06
+este tomazio aqui ele tem duas unidades em estoque. O
+1:06:11
+sistema calculou a média dos últimos três meses, né, que pegou aqui, provavelmente essa essas vendas de
+1:06:17
+setembro, muitas delas foram no finalzinho do mês, né, já que a gente tá no dia 12. Então ele pega
+1:06:26
+as vendas do dia 13 de setembro para cá e provavelmente muitas dessas vendas de
+1:06:32
+setembro foram no finalzinho de setembro. E ele calculou uma média mensal de 12
+1:06:39
+unidades por mês, certo? E dessas 12 unidades ele subtrai as duas
+1:06:45
+que eu tenho estoque e me manda comprar 10. No caso do estomazia é a embalagem fracionada, né? Então eu vou ter que
+1:06:51
+comprar pelo menos a embalagenzinha lá com 25 envelopes, né? Aí eu teria que,
+1:06:59
+como vem a embalagem hospitalar, eu compraria as 25 unidades. Beleza?
+1:07:05
+Mas aí isso tudo é para que vocês entendam qual é a lógica do estoque de segurança e da demanda mensal.
+1:07:13
+E depois de implantar esse filtro da curva A e curva B, ainda tem outro outro
+1:07:21
+filtro que eu uso bastante, que é tirar os laboratórios de OLs,
+1:07:28
+que eu não preciso estar comprando diariamente,
+1:07:33
+porque senão eu teria que estar mandando vários pedidos, não está contido. E eu coloco aqui os
+1:07:40
+laboratórios que eu não quero comprar diariamente, o Achê, o Ipera,
+1:07:46
+o Absen. Então, vários laboratórios que eu possuo OLs da indústria, eu não quero
+1:07:53
+estar comprando aqui junto. Eu paro um dia por semana só e faço esses pedidos
+1:07:58
+de OLs, que se torna muito mais eficiente, eu consigo aproveitar bem mais as oportunidades, como aqui aparece
+1:08:04
+lá no no compre com achê, né? semana retrasada apareceu um alívio com 50% de
+1:08:11
+desconto. Então, uma oferta como essa, provavelmente eu vou passar batido.
+1:08:16
+Se eu for ficar olhando todo dia o parceiro Ipera, no terceiro dia eu vou estar cansado de já olhar as ofertas de
+1:08:23
+cima a baixo. É muito melhor parar uma vez na semana e focar realmente entender aquelas
+1:08:29
+oportunidades que existem ali dentro. E aquele meu pedido de 84 já caiu para
+1:08:36
+54. E aqui no filtro eu só desconsiderei 4 OLs, né? Mas na verdade eu tenho muito
+1:08:43
+mais OLs, que eu inclusive já tenho o perfil salvo aqui.
+1:08:51
+Então eu consegui tirar do pedido todas essas OLs que eu possu de Sanofi, de RECT, de
+1:08:58
+PG, Genon, MERC, que aquela compra que eu faço só uma vez por semana com essas
+1:09:04
+OL de forma muito mais eficiente e aplico o filtro. E aí, depois de fazer
+1:09:11
+todo o filtro que vocês vão usar aí na no dia a dia da farmácia, vocês podem vir aqui nesse bonequinho de lado, ó, e
+1:09:17
+já deixar o filtro salvo para não ter que configurar sempre que for abrir o dose certo, ter que lançar um filtro
+1:09:24
+novamente, tá? Então vocês vem aqui em novo perfil e criam o filtro aí que vocês criaram,
+1:09:31
+que nesse meu caso aqui eu usei é curva A, curva B sem ol e pode inclusive
+1:09:36
+utilizar como perfil global, se for o perfil mais utilizado, como aqui que eu faço compra de referência diariamente,
+1:09:44
+então é o meu perfil mais utilizado, eu jáito ele aqui. Beleza?
+1:09:50
+Então, em geral, pessoal, para pedido de referência, eu vou fazer uma demonstração aqui. Quando eu chego na
+1:09:56
+farmácia, no final do dia ali, faltando cerca de 15 minutos para 6 horas, eu
+1:10:03
+venho aqui no meu filtro que já tá salvo, que me sugeriu aqui 33.
+1:10:10
+Dou uma conferida se tem algum item aqui que eu achei estranho ou não a quantidade que pode ter sofrido alguma
+1:10:17
+alteração de demanda, certo? Então, por exemplo, ah, esse Máximus
+1:10:23
+foi um produto que eu lembro aqui que foi uma encomenda, tá? Então, ele veio aqui, ele tava parado já há muito tempo
+1:10:30
+e a gente conseguiu rodar ele em novembro. Foi até uma demanda dele com 90 cápsulas e a gente conseguiu
+1:10:37
+converter para essa de 30 que tava parada. Aí eu não quero recomprar esse máximus. Ou eu posso ir lá no cadastro
+1:10:45
+dele e suspender a ele das compras, né?
+1:10:51
+52 4575. Ou eu posso suspender ele das compras,
+1:10:57
+marcar assim, ou se eu não rodar a curva ABC com frequência, eu
+1:11:05
+posso vir aqui dar um F3 e jogar ele paraa minha curva C que não vai ficar aparecendo lá, tá?
+1:11:12
+Então tem essas duas opções de desconsiderar ele das compras.
+1:11:19
+Quando eu rodar de novo o pedido, ele já vai sair daqui, ó. Já caiu para 32 produtos.
+1:11:26
+Então aí eu passo o olho e vejo se realmente preciso comprar todos esses itens.
+1:11:32
+Confiram as quantidades que o sistema tá sugerindo. A curva dele a gente consegue alterar
+1:11:39
+aqui no cadastro de produto. Farmácia dos bancários perguntou aí
+1:11:45
+como altera a curva manualmente, né? Aqui 52 4575 o código dele. E aperta F3.
+1:11:54
+Como eu uso a curva por quantidade, só jogo aqui, vou dando o tab até ele
+1:12:00
+salvar, certo? até chegar no final e pode sair e salvar o cadastro do
+1:12:06
+produto.
+1:12:11
+E depois que eu passo a vista aqui, confiro se realmente eu quero comprar
+1:12:17
+todos esses itens. Aí tem alguns que eu quero tirar, por
+1:12:23
+exemplo, esse Flora B, Flora B, Gutas.
+1:12:28
+A última vez que eu comprei foi uma oferta de R$ 6,98, né? Um produto de R$ 80, eu consegui uma oferta com 90% na
+1:12:36
+Santa Cruz por R 6,98. Então eu sei que agora eu não consigo mais essa oferta. Eu vou até disparar
+1:12:42
+ele paraa cotação aqui de uma unidade e dou uma pesquisada.
+1:12:49
+Mas aí em geral os outros itens realmente são itens que t demanda na loja e que eu sei que o
+1:12:57
+sistema tá com sugerindo quantidades confiáveis que aí nos primeiros dias é lógico que vocês vão conferir, né?
+1:13:03
+Porque como vocês ainda não podem não ter esse hábito de fazer a compra aqui
+1:13:08
+pelo estoque de segurança, pode ser que vocês desconfiem: "Ah, rapaz, será que eu compro dois Cobá vital mesmo ou
+1:13:15
+compro um?" Ele tá sugerindo muito. Aí você vem no sistema e vê, ah, ele tá sugerindo dois
+1:13:22
+porque em outubro teve essa média, teve duas vendas e em dezembro a gente tá na
+1:13:27
+metade do mês e ele já tá sugerindo uma, né? Ele já vendeu uma, na verdade. Então, o sistema puxou a média para cima
+1:13:34
+aqui, nesse caso arredondou para cima. Mas aí eu quero comprar só uma do Cobá
+1:13:39
+Vital e faço a minha análise como comprador e como autoridade de compra da
+1:13:45
+minha farmácia. Então eu tenho essa decisão de escolher a quantidade e conferindo até refinar o parâmetro do
+1:13:52
+sistema a ponto de deixar o a sugestão do sistema realmente como você quer
+1:13:58
+comprar, certo? Então essa quantidade que o sistema sugere é muito baseado
+1:14:04
+naquela demanda mensal lá da configuração, certo? que essa era essa
+1:14:09
+telinha aqui da
+1:14:16
+configuração, que se você quer, tá achando que o
+1:14:21
+sistema tá sugerindo uma quantidade muito alta,
+1:14:26
+aí você vem na configuração no estoque de segurança. Lembrando que
+1:14:33
+tem que editar que você lançou aí a cobertura que você tinha botado pra 30,
+1:14:38
+você baixa pra 15 ou pra 20 também. Você pode personalizar aqui, ah, eu quero botar para 20 dias. Então você vai
+1:14:45
+diminuindo essa cobertura até chegar numa quantidade que você
+1:14:50
+considera como uma quantidade saudável, certo? Eu recomendo 30, porque na minha farmácia e nas mais de 100 farmácias que
+1:14:57
+eu acompanhei, rodou muito bem essa demanda mensal paraa gente não precisar
+1:15:02
+estar recomprando o item toda semana.
+1:15:08
+Aí você dá uma sacada e vê se realmente essas quantidades que o sistema tá sugerindo são as quantidades que você
+1:15:15
+quer comprar. Aí arrasta para cá, gera o pedido,
+1:15:21
+escolhe um fornecedor simbólico aí, que não é necessariamente o fornecedor que você vai comprar
+1:15:27
+e gera o pré-pedido, certo? A parte de elaboração de pedido do
+1:15:33
+trier, ela meio que morre aqui, né? Se vocês quiserem gerar e mandar um Excel
+1:15:38
+para o fornecedor digital ou se você mesmo for digitar, aí a gente já vai
+1:15:44
+paraa parte fora do tri. tá fora do dose, certo? Mas
+1:15:50
+a parte de elaboração de pedido e estimar quantidades funciona até aqui o
+1:15:57
+pré-pedido. Depois você pode até gerar o pedido e ir pra próxima tela que ele vai
+1:16:04
+conseguir lhe exibir código de barras e outras informações que aqui no pré-pedido ele não exibe, tá? Então aqui
+1:16:11
+nesse outro arquivo você consegue visualizar, por exemplo, o código de barras
+1:16:17
+e ir digitando você mesmo, como alguns farmacistas gostam de ir digitando o
+1:16:22
+pedido no sistema do fornecedor ou se você já usa alguma plataforma de
+1:16:28
+cotação que tem integração com os fornecedores, você pode ir digitando também, tá?
+1:16:34
+Então, depois dessa etapa de elaboração de pedido, a gente vai pra etapa de cotação
+1:16:41
+de preço, que aí já é outra etapa, certo? A pergunta que eu faço é nessa
+1:16:48
+parte de elaboração de pedidos de referência, ficou alguma dúvida crítica aí que vocês queiram tirar? Agora, agora
+1:16:55
+eu vou abrir para quem quiser, inclusive participar aí, abrir câmera. Vamos abrir
+1:17:02
+até 3 minutos para falar. Beleza.
+1:17:12
+Alô. Fala, Maurício. Ô,
+1:17:17
+boa noite a todos. Ô, ô, Sérgio, o que eu tô percebendo aí é assim, ver se eu
+1:17:23
+entendi. Você diz que a curva C, você a curva a curva B ele tem [roncando] que
+1:17:29
+sair eh pelo menos um produto no mês. É isso aí, eu tô entendendo certo
+1:17:36
+a curva B. Isso mesmo. Ou pelo menos dois produtos nos últimos três meses que vai dar uma
+1:17:42
+média de 067, aí ele arredonda para cima, certo? Mas você,
+1:17:48
+tá certo? Agora pode falar, pode falar, pode falar. Mas você consegue dos proporção lá
+1:17:56
+naquela configuração da curva ABC, certo? Se você vê que tá caindo muito produto que você não quer recomprar
+1:18:01
+agora, você pode ir diminuindo a proporção da curva B e aumentando a
+1:18:07
+curva C para que esses produtos você não quer comprar vão caindo pra curva C, certo? Uhum. Eu entendi. Entendi. Eu até dei
+1:18:15
+uma sugestão o tria aí, porque às vezes quando a gente faz uma configuração da curva ABC, o tria ele não coloca, por
+1:18:23
+exemplo, eh, por exemplo, se você bota 70%, ele arredonda só 70%, ele não trabalha com duas casas decimais. Isso
+1:18:30
+facilitaria bastante para nós se ele trabalhasse lá na configuração. Porque o
+1:18:35
+que que acontece quando você bota, vamos supor 70 e e 10, aí tem alguns produtos,
+1:18:42
+por exemplo, que fica com que vendeu cinco, que ele fica fica no B e tem alguns cinco que fica no C, né? E aí
+1:18:50
+você não pode, esse corte aí desses produtos, você não você não tem como
+1:18:55
+fazer nada, porque infelizmente o tria não tem as duas casas decimais na curva
+1:19:01
+ABC. Eu não sei se deu para você entender. Sim, fica a sugestão aí, Fabiano, já
+1:19:08
+registra que eu acho que é importante realmente a gente depois nas próximas versões qu lançar
+1:19:13
+essa solução usar aquele renda dois produtos, certo?
+1:19:19
+Se ele usar aquele arredonamento de produtos, eh, vai funcionar daí, porque daí o que que acontece? Eh, ele vai
+1:19:26
+rodar, redondar para mais ou para menos, conforme a configuração do caso produtos lá. Você tá me entendendo, certo?
+1:19:38
+Entendeu, Sérgio? Sim, sim. A sacada que eu dou paraa situação que a gente tem hoje, Maurício,
+1:19:45
+é essa. Vai aumentando de 1 em 1%. para ver se consegue ajustar esses
+1:19:51
+itens. Vai ter item que vai ficar quebrado, vai, como esse caso aí do Máximus, né? Ele vendeu duas unidades
+1:19:59
+e fazia se meses que não vendia. São exceções que a o próprio sistema, a
+1:20:04
+média móvel lá não consegue prever, né? Mas é uma forma que a gente pode ir resolvendo até esse problema ser sanado
+1:20:12
+aí ter e colocar essa decimal.
+1:20:17
+OK. OK, por enquanto é isso, só isso mesmo, viu? Obrigado. Show. Já tinha escutado esse relato de
+1:20:24
+outras outros donos de farmácia também, quando o cara é bem acurado, realmente, quer deixar a curva bem afiadinha,
+1:20:32
+aí barra nessa limitação realmente das casas decimais. Acho fica é importante
+1:20:37
+registrar a sugestão aí, viu Fabiano, para para as próximas versões.
+1:20:48
+Farmácia bancário, pode falar.
+1:20:55
+De farmácia bancários. Me diz uma coisa, essa configuração que você faz, que você
+1:21:01
+colocou só o grupo ético, você faz cada grupo? O de perfumaria você também faz
+1:21:08
+essa configuração. O de genérico você também faz essa configuração?
+1:21:15
+Vamos lá. Boa. Eu tentei, eu tentei resumir o máximo porque no curso do Farm
+1:21:22
+Stock a gente tem uma aula para cada grupo de compra desse, certo? Eu achava
+1:21:28
+que hoje eu ia conseguir resumir, mas eu não consigo porque a gente realmente tem que ir entrando nos detalhes
+1:21:34
+para esclarecer realmente e entender, né? Como eu tinha atropelado a parte da curva ABC, mas se não configurar a curva
+1:21:41
+ABC não vai funcionar o filtro lá do do dose, certo? Mas eu uso sim
+1:21:46
+configurações diferentes para cada grupo de produto, certo? Eu vou deixar sugestões rápidas. Quem for curioso e
+1:21:54
+amanhã quiser testar, já que não vai dar tempo a gente ver tudo hoje, já anota aí, certo? A configuração do compra por
+1:22:03
+agrupamento, que é a compra que eu uso para genérico,
+1:22:08
+é essa aqui, certo? Porque é uma compra muito mais demorada. Hoje eu faço cotação de preço com 30 fornecedores de
+1:22:15
+genérico. Então é uma compra que eu levo um dia inteiro e eu não tenho, não consigo ficar todo dia fazendo uma
+1:22:21
+cotação com 30 fornecedores. Então eu prefiro fazer a compra quinzenal. E pra
+1:22:27
+compra quinzenal eu uso o estoque de segurança de 20 dias para genérico, para
+1:22:32
+compra quinzenal de genérico, certo? Isso eu só recomendo para quem tá com
+1:22:37
+caixa folgado, quem tá realmente podendo manter o estoque um pouco maior para
+1:22:43
+quem tá com caixa apertada e quer fazer essa compra de genérico semanal ou até
+1:22:48
+duas vezes por semana, que eu considero uma frequência saudável, dependendo do porte da farmácia, pode reduzir esse
+1:22:54
+estoque de segurança até para 10 dias, certo? para quem faz
+1:23:00
+semanal. Lembrando, se você faz uma compra por semana, não deixa o estoque de segurança
+1:23:05
+de 7 dias, porque você tem que ter uns diazinos de folga para a entrega, para o
+1:23:11
+erro de faturamento, para o carro da transportadora quebrar. Então, lembrem dessa folga porque senão vai faltar
+1:23:17
+produto na loja. E se quem quem quer viver na loucura de
+1:23:22
+comprar genérico todo dia fazendo pesquisa de preço, aí coloca um estoque de segurança de 7 dias, como a gente
+1:23:28
+botou por referência que dá conta, tá? Então, na compra por agrupamento,
+1:23:34
+essa aqui de um tem uma aula inteira que eu falo só sobre ela, porque realmente ela é bem mais complexa, porque a gente
+1:23:40
+vai analisar quais laboratórios a gente substitui. Se, por exemplo, o Torcilax é um
+1:23:46
+similar, mas o genérico do Torcilax não vende tanto como o Torcilax, né? Então
+1:23:53
+são análises que são agrupadas, mas que a gente precisa ir isolando esses casos
+1:23:59
+para conseguir analisar ali realmente e fazer uma compra eficiente. Então é um
+1:24:04
+pedido bem mais complexo. Aí até tentar mostrar hoje aqui rapidamente eu posso até mostrar o que ele tá sugerindo para
+1:24:10
+mim com esses parâmetros, tá? Mas eu vou só resumir para quem quer testar amanhã,
+1:24:16
+usa usa o estoque de segurança de 20 dias para quem quer comprar quinzenal e
+1:24:22
+10 dias para quem quer comprar semanal. E a cobertura aí entra um detalhe importante para quem
+1:24:29
+tem caixa sobrando. Se você vai comprar genérico só para 30 dias,
+1:24:34
+provavelmente vai dar um volume de compras muito baixo, certo? Então que
+1:24:40
+você tem caixa sobrando para investir aí para não tá comprando, principalmente para quem tem farmácia que fatura de
+1:24:46
+200.000 abaixo, para não tá comprando ali a três unidades de desvendafaxin,
+1:24:52
+eh 20 unidades de omepraszol, em vez disso, você agregar um pouco mais de
+1:24:58
+volume em produtos que são mais baratos do que o referência, né? Então você não vai inchar tanto o seu estoque. Então
+1:25:05
+coloca uma cobertura ali para comprar 60 dias, até porque a compra também é mais
+1:25:11
+demorada, né? como eu falei, para quem vai cotar com muitos distribuidores, como eu faço,
+1:25:17
+aí você consegue eh colocar uma cobertura um pouco maior
+1:25:22
+para não ter que tá comprando Losartana todo mês. Então você consegue comprar Losartana pelo menos pro bimestre de
+1:25:28
+mesulda ou mezol, principalmente esses produtos de alto giro. E também não enchado demais, né? Porque no fornecedor
+1:25:34
+de genético também a gente consegue um prazozinho um pouquinho maior de 60 dias, às vezes até 60 90
+1:25:41
+e de vez em quando dá aquelas loucuras do simétrico e bota até 180 dias para pagar, né? Então se você tem um prazo um
+1:25:47
+pouco maior para pagar, você consegue botar uma cobertura maior também sem esticar, sem apertar tanto o o caixa.
+1:25:56
+Certo, Elton perguntou aí de sistemas de cotação. Boa pergunta, Elton.
+1:26:03
+Inclusive, eu tenho o meu próprio sistema de cotação, que é o cotafarma, que eu uso para cotar genéricos, né?
+1:26:11
+Hoje a gente conhece no mercado e tem dois grandes conhecidos que são o C
+1:26:16
+fácil e o Smartpad, que eu recomendo que vocês usem nesse pedido de referência,
+1:26:23
+certo? Porque realmente eles têm as integrações de Santa Cruz, de Profarma, de Nazá, de Panfarma. Então, no pedido
+1:26:31
+de referência do RX, você fechou aqui,
+1:26:37
+disparou paraa cotação, em 15 minutos você faz seu pedido, né? Então, hoje o
+1:26:44
+meu pedido de referência, eu não demoro mais do que 15 minutos, porque realmente é rápido para elaborar aqui no dose
+1:26:51
+certa e é rápido para cotar porque tem as integrações. Então, por isso que eu faço diariamente,
+1:26:57
+até para conseguir encaixar alguma encomenda, alguma demanda específica de venda perdida que tenha surgido na
+1:27:03
+farmácia, mas eu uso para referência o Smartpad,
+1:27:10
+que é bem prático, bem rápido. E para para
+1:27:16
+genéricos, eu uso o cotafarma, que é o meu sistema, né?
+1:27:21
+que aí um pedido de genérico, como eu falei, ele é um pouco mais complexo, mas eu vou abrir aqui como ele como a gente
+1:27:26
+pode ir fazendo nessa análise, né? Vocês podem configurar lá por essa sugestão que eu deixei de parâmetros e e
+1:27:35
+analisando o seu pedido, né? Inclusive a gente fez um pedido semana passada, ainda tá aqui na tela.
+1:27:44
+Deixa eu apagar aqui. Já chegou muita coisa. Tem produto ainda que não chegou.
+1:27:51
+Aí vamos lá.
+1:27:57
+Deixa eu pegar um produto que tenha muitos laboratórios pra gente analisar.
+1:28:03
+Oesartana de 20, certo? Eu calculei
+1:28:12
+Santaoli, né, Flumberto, né, Flberto? Não tá conseguindo ver o Vocês estão conseguindo ver bem os as informações
+1:28:18
+aqui da tela? Me confirme aí. Stefano quer falar.
+1:28:36
+Boa noite.
+1:28:41
+Pode ficar à vontade. E Sérgio, uma pergunta por gentileza sobre o seu sistema de cotação. Eh,
+1:28:48
+eh, é apenas as as distribuidoras que são cadastradas no seu sistema ou ele
+1:28:54
+ele filtra como é automaticamente? Como é que como é que funciona?
+1:29:01
+Pronto, a gente vai finalizar aqui esse pedido de genérica. Eu vou fazer uma demonstração para vocês bem rápida, mas
+1:29:09
+em geral o cotifácil e o Smartpad possuem distribuidoras integradas, principalmente a ser de referência, mas
+1:29:16
+os distribuidores de genéricos e similares, né, pelo menos aqui no Rio Grande do Norte e nos outros sete
+1:29:22
+estados que a gente atende, eh não possui integração com esses
+1:29:28
+sistemas de cotação. é que a gente percebeu, a maioria dos preços de genéricos hoje estão na mão do vendedor,
+1:29:35
+né? A verdade é essa. Muitas distribuidoras nem sistema de pedido eletrônico tem. Então a gente perde
+1:29:42
+muita oportunidade. Como por exemplo, ontem eu até fiquei com medo do cara tá
+1:29:47
+mandando o produto errado. Tinha um estamim comprimido de 1,69.
+1:29:54
+Então eu perguntei: "Rapaz, esse estamin é o estamin da neoquímica similar. Realmente caba disse: "É, e essa
+1:30:01
+distribuidora é uma distribuidora pequena aqui no Rio Grande do Norte, Renato Farma, que não tem sistema
+1:30:07
+eletrônico, não tem portal pra gente acessar, não tem integração com COD Fáil, nem com SmartPad. E ontem, eh,
+1:30:15
+segunda, na verdade, é, ontem, tô ficando é doido. Ontem a gente disparou
+1:30:20
+essa cotação, tinha o a minha era um dos itens que a gente queria comprar e tiveram tivemos
+1:30:28
+várias respostas e uma delas foi essa. Se eu não só cotasse com nas área
+1:30:34
+Profarma e Santa Cruz, que são os que têm integração no cot fácil, tem até outros dois, eu acho, Farma um, Nordeste
+1:30:40
+Potiguá, aqui no Rio Grande do Norte e Acripel. Então são seis fornecedores, né? Se eu cotasse com esses seis, eu não
+1:30:47
+ia achar esses mim e não ia achar mais da metade dos produtos que na cotação
+1:30:53
+ganharam fornecedores que não tm integração, tá? Então o existem esses
+1:30:59
+dois que são integrados que eu recomendo muito para pedido de referência, como esse que a gente fez agora a pouco. E o
+1:31:05
+Cotafarma a gente focou para o pedido de genéricos e similares para o fornecedor
+1:31:11
+responder manualmente os preços, tá? Então por isso que não pode ser um pedido diário, porque são muitas
+1:31:17
+informações para ser coletadas e a gente não consegue eh barganhar bons preços se
+1:31:24
+a gente tá comprando todo dia no pinga pinga, né? a gente agrupa ali pelo menos um pedido semanal ou quinzenal,
+1:31:30
+dispara paraa cotação para esses fornecedores responderem manualmente ali e a gente tenha conseguido bons
+1:31:38
+resultados e economias aí absurdas que muitas vezes a gente não consegue
+1:31:44
+eh em outros sistemas, né? Renata até falou aí que os fornecedores dela não
+1:31:50
+respondem e é uma questão muito cultural, Renata, que a gente precisa quebrar, né?
+1:31:56
+por exemplo, eh, em órgão público para um fornecedor para de, eh, fornecer para
+1:32:02
+um órgão público, ele tem que participar de uma licitação, tudo isso. E hoje 82%
+1:32:08
+dos clientes da nossa farmácia pesquisam preço, compram pelo preço, né, na verdade, e boa parte deles pesquisam
+1:32:15
+preço. Então, se o nosso consumidor tá pesquisando, imagine se a gente não pesquisar, né? Então, é uma mudança
+1:32:21
+cultural que eu vejo que a gente tá conseguindo eh desencadear, dar o ponta-apé nessa mudança. Lógico que a
+1:32:29
+gente vai eh levar tempo. Aqui na farmácia mesmo, em 2018, quando eu
+1:32:34
+comecei a fazer as compras, muitos fornecedores mangavam de mim, eh tiravam onda mesmo, dizia: "Ó, ninguém nunca vai
+1:32:41
+responder e tal, você tá ficando é doido, você nunca vai conseguir comprar barato porque você só tem uma farmácia".
+1:32:47
+E hoje, graças a Deus, a gente, uma cotação como essa que eu vou mostrar para vocês, a gente
+1:32:53
+consegue ter 22, 24 fornecedores disputando ali com meio dia de resposta.
+1:33:00
+Quando a gente abre de um dia para outro, a gente consegue respostas aí de mais de 30 fornecedores.
+1:33:06
+Mas, eh, em geral, o sistema da agente, ele
+1:33:11
+capta as respostas manuais de forma eh mais prática e mais usual do fornecedor
+1:33:17
+responder, que é uma limitação que a função do cotiface e do smartpad tem em
+1:33:23
+captar essas respostas manuais, certo? Vamos fazer uma análise rápida aqui de genético pra gente fechar essa parte de
+1:33:29
+pedido da tria e eu faço uma demonstração lá da cotação rapidinho também.
+1:33:35
+Como eu disse, eu tô tentando resumir ao rápido, ao máximo, né? Porque isso aqui
+1:33:40
+que eu tô mostrando hoje são mais de três aulas lá do curso do Farm Stock. Inclusive a gente vai abrir uma nova
+1:33:46
+turma agora. Quem tiver interesse, segue lá o Instagram do Farmstock que a gente vai
+1:33:53
+liberar mais informações. Então vamos ver aqui, por exemplo, esse Naproxeno de 500
+1:34:00
+que tem quatro laboratórios lá na farmácia, né? E aí a gente fica naquele receio. Se
+1:34:07
+eu for fazer a compra de genérico naquele estoque de segurança que eu usei
+1:34:13
+para referência, provavelmente ele vai me mandar comprar esse Naxotec da União
+1:34:19
+Química, que teve uma venda nos últimos 90 dias, mas que eu tô sem estoque nele já faz
+1:34:26
+tempo. Por quê? Porque quando acabou na Xotec que eu comprei por 7,28,
+1:34:32
+eu lancei uma cotação, né, quando tava acabando. E nessa cotação quem ganhou
+1:34:37
+foi o na proxen de 500 do Teutto por R,95. Então, se eu ficasse só trabalhando com
+1:34:44
+Naxotec da União Química, provavelmente eu estaria comprando caro aí, pelo menos
+1:34:52
+1,50 mais caro do que o do Teutto, que o meu cliente de naproxeno, ele não tá
+1:34:57
+vindo em busca do Naxotec, ele tá vindo em busca do naproxeno de 500, independente de ser o naprx, o
+1:35:04
+naprooxeno do te genérico ou o naxotec da união química, tá? Então eu preciso
+1:35:12
+entender quais produtos o meu cliente procura por preço e quais produtos o meu cliente procura por marca, como um
+1:35:18
+Tilax, que é um similar, mas o cliente do Tilax ele não quer levar o genérico
+1:35:24
+do Torcilax, né? Então muitos de vocês, eu sei que seguem recomprando o mesmo
+1:35:30
+laboratório e às vezes não fazem essa análise agrupada. E é nessa análise
+1:35:35
+agrupada que a gente percebe as oportunidades e é na cotação agrupada também que
+1:35:44
+a gente acha alguns algumas oportunidades também.
+1:35:49
+Cortou cortou aqui o seu comentário, Elton. Eu
+1:35:55
+vou ver se eu consigo abrir aqui para você. Vou abrir o chat aqui na outra tela.
+1:36:03
+Nesse caso do Naproxeno, isso eu tenho que levar em consideração o ticket e a rentabilidade. Sim, com
+1:36:10
+certeza. Inclusive eu posso muito bem vender o genérico do
+1:36:16
+Teutto pelo mesmo preço do Naxotec, não é
+1:36:22
+verdade? Então o
+1:36:27
+genérico do te eu comprei mais barato, vendi pelo mesmo 1270,
+1:36:33
+certo? Esse cálculo da rentabilidade, será que tá puxando de onde, Fabiano? Será que tem algum desconto aqui
+1:36:39
+aplicado, hein? Porque ele tá dando uma rentabilidade menor aqui, mas ele foi
+1:36:44
+comprado mais barato e foi vendido pelo mesmo preço, certo? Então, cuidado na
+1:36:50
+precificação de genéricos e similares, que quando você compra barato, não necessariamente você precisa baixar
+1:36:56
+aquele preço, certo? Então, é uma análise que que deve ser feita sim
+1:37:03
+e que não necessariamente você precisa baixar o preço quando você compra mais
+1:37:10
+barato, né? E na verdade a ideia é essa, é a gente tem um preço competitivo, sim. a gente não vai vender muito mais caro
+1:37:17
+do que nossos concorrentes, mas a gente comprar mais barato e manter um preço competitivo, mas seja mais rentável
+1:37:23
+também. Beleza? Aí tem algumas farmácias também que gostam de trabalhar com
+1:37:30
+muitas marcas, né? Então, por exemplo, pode ser esse seu caso, Elton, e, ah, eu gosto de ter um Naxotec aqui para eu
+1:37:37
+vender não por 12,70, mas eu quero vender ele por 17,70.
+1:37:42
+E na hora de atender o cliente, eu posso oferecer o na proxeno de 17 12,77,
+1:37:50
+possa oferecer o o Naxotec de 17,70 e posso oferecer o Flanax lá de 20 e
+1:37:56
+tantos reais, certo? Então o
+1:38:01
+a gente já tem algumas farmácias que gostam de trabalhar assim também e a gente
+1:38:10
+não nada impede de fazer bons negócios e comprar por cotação,
+1:38:16
+mesmo tendo uma rentabilidade maior em alguns itens. Beleza? Essa pergunta de auto foi boa porque quase sempre que eu
+1:38:22
+vou falar de cotação, a galera acha que a gente precisa comprar barato e sair queimando no preço, mas na verdade é o
+1:38:28
+contrário, é a gente comprar barato e manter a rentabilidade. Beleza? Deu para entender?
+1:38:38
+Já tô levando um carão aqui que a gente já tá caminhando para 2 horas, viu? Vou vou vou dar uma acelerada aqui paraa
+1:38:45
+gente paraa gente caminhar para fechar. Então, nesse caso do naproxeno, só para fechar
+1:38:52
+aqui rapidinho, como eu disse, tem uma aula inteira sobre isso, não dá paraa gente pra gente atropelar muito as
+1:38:59
+coisas, mas, por exemplo, quando eu fosse disparar para cotação, eu colocaria na proxeno 12 unidades. a
+1:39:05
+quantidade que eu preciso comprar, porque nos últimos
+1:39:12
+3s meses, eu vendi aqui uma média de
+1:39:18
+9 8 unidades por mês, certo? Então, peguei 11 + 3 + 7
+1:39:26
+e dividi por 3 meses, que dá uma média de oito. Como eu botei uma cobertura para 60 dias, então ele me sugeriu
+1:39:34
+comprar 17 unidades para 60 dias, né? Só que as 17 ele
+1:39:41
+subtrai as cinco que eu tenho em estoque e fica aqui as 12 unidades, que é a
+1:39:46
+quantidade que ele sugeriam, e eu jogo pro meu pedido, certo? Quando eu finalizo o meu pedido,
+1:39:59
+cadê? Eu acho que deu uma travadinha aqui.
+1:40:07
+Deixa eu excluir esse pedido. Já tava aberto.
+1:40:18
+Qu vê as meninas ter desligado o servidor da farmácia.
+1:40:32
+Deixa eu tentar abrir aqui em outra aula para ver se vai. Mas é só 8:40. Não era para tava fechado
+1:40:40
+não. É vergonhezo. Mas enfim, quando a gente levava o o
+1:40:47
+Naproxen para lá, aí ele vinha aqui para dentro do pedido
+1:40:52
+e esse pedido eu consigo exportar para Excel e disparar paraa cotação. Certo?
+1:41:00
+Eh, Luzia pediu até para mostrar como funciona o sistema de cotação, Luía, né?
+1:41:06
+Eu vou mostrar aqui, Luía. E só para deixar claro, até aqui encerra
+1:41:12
+a parte do trier, certo? Então, a parte de elaboração de pedidos
+1:41:20
+encerra aqui e daqui a gente dispara paraa cotação, ou seja, no cot no smartpad ou no cotfarma, que é o sistema
+1:41:26
+que a gente desenvolveu. E e a gente vai deixando claro aqui,
+1:41:34
+beleza? Então, depois de elaborar o pedido para
+1:41:39
+ir paraa cotação, só quero deixar claro aqui para quem já usa tri e ainda não
+1:41:45
+tem o dose certa, quiser entrar em contato aí para solicitar o dose certa, o pessoal vai disponibilizar um link aí
+1:41:51
+no chat e também amanhã vai ser vai ser disparado o e-mail para vocês,
+1:41:58
+para que vocês acompanhem e
+1:42:03
+e quem quiser solicitar, pedir lá implantação do dose, certo? Tá aí,
+1:42:09
+Felipe já colocou aí pelo marketing tria. E quem não usa tria ainda e tem
+1:42:14
+curiosidade, chama também, troca uma ideia, certo? Como eu
+1:42:19
+recomendo a todos os meus clientes, nunca troque um sistema por impulso.
+1:42:25
+Então, apesar de eu usar o TRI aqui desde 2007, o a decisão de mudança de sistema é uma
+1:42:31
+decisão muito séria e que precisa ser muito pensada. Então, converse bem com o pessoal, peça orçamento, se tiver
+1:42:38
+dúvida, peça demonstração, converse com quem já usa o sistema, inclusive comigo. Quem quiser chamar lá no Instagram do
+1:42:44
+Farmstock, pode chamar que a gente troca uma ideia. Mas fiquem à vontade para trocar uma
+1:42:53
+ideia com a galera, certo? Essa mudança de software é uma mudança muito séria e precisa ser feita com cautela
+1:43:01
+e que o pessoal aí tá à disposição justamente para atender vocês e tirar essas dúvidas e esclarecer.
+1:43:12
+Leê tá que chora hoje, viu? É, [limpando a garganta]
+1:43:18
+aí quem quiser pode chamar aí no direct. E
+1:43:24
+agora eu vou mostrar depois que termina o passo do pedido aqui,
+1:43:30
+aí a gente vai para disparar para cotação, certo? Então,
+1:43:43
+deixa eu abrir aqui na outra aba
+1:43:52
+no cota farma vocês conseguem importar o pedido.
+1:44:05
+Como a gente já tá com horário bem avançado, a parte de importação do pedido é bem
+1:44:10
+simples. Eles lançam aqui uma nova cotação,
+1:44:17
+lança o título lá, cotação, teste, bota um horário de validade pra galera
+1:44:22
+responder. Lembrando, como eu disse, né, quanto mais tempo você dá para responder, aí também não vai botar três
+1:44:27
+dias, quatro dias, mas você dá um dia pra galera responder, vai ser muito mais participado e muito mais disputado, né?
+1:44:34
+E aqui vocês podem tanto inserir manualmente como pode copiar os itens lá da planilha que o o Tria exporta,
+1:44:41
+inclusive fazendo a edição aqui do laboratório, se vocês querem exigir marca ou não do laboratório,
+1:44:49
+beleza? Quando vocês lançam a cotação que
+1:44:56
+recebem as respostas, a cotação para vocês vai aparecer assim, ó.
+1:45:01
+Essa foi a que a gente fez semana passada, dia 7/10, 7/12 e a gente
+1:45:07
+encerrou dia 8/12, certo? Uma cotação de R$ 9.048,
+1:45:15
+150 itens, 22 respostas, certo? Então
+1:45:20
+a gente teve resposta de AMS genérico, Nordeste, Potiguá, Cripel Nacional, as
+1:45:26
+OLs de genéricos, né? MS, Tutto, Germed, Eurofarm. Então a gente coloca essa
+1:45:32
+galera para brigar e disputar o preço ali para realmente conseguir alcançar
+1:45:38
+preços competitivos que para eles não é tanto, né, nem tanto uma briga, né, eles estão só informando
+1:45:44
+o preço ali e o próprio sistema já calcula quem tá com menor preço.
+1:45:50
+E por exemplo, vamos abrir um caso aqui, a
+1:45:58
+moxilina de 500 mg com 21 cápsula.
+1:46:03
+Quem ganhou foi a plena por R$ 6,99, mas percebam que o preço médio aqui tá
+1:46:09
+na faixa de R$ 8, R$ 9, né? Então, para quem não pesquisa preço, provavelmente
+1:46:15
+tá comprando a moxicilina nesse preço aqui de 8 e pouco, 7 e pouco, mas talvez
+1:46:22
+não tenha encontrado essa da plena de R$ 6,99. Então, nenhum outro sistema de cotação
+1:46:29
+hoje vocês conseguem captar tantas respostas como cotaform. Isso aí eu digo com com propriedade, porque a gente fez
+1:46:37
+um trabalho com os distribuidores de fazer com que a plataforma deles seja o
+1:46:44
+mais usual possível para se responder. A gente fez vários testes e pegamos vários
+1:46:49
+feedbacks dos distribuidores, já que o pessoal tinha muito essa dificuldade que
+1:46:55
+Luía comentou, né? Foi Luía, foi
+1:47:05
+que o pessoal comentou que tem essa dificuldade que os fornecedores não
+1:47:10
+respondem cotação, né? Então, para quebrar essa dificuldade, a gente fez a
+1:47:16
+plataforma mais visual possível para os fornecedores. A gente vai começar sim
+1:47:21
+com algumas integrações em 2024, mas a gente sabe que nem todos os
+1:47:26
+distribuidores liberam integrações. Então, a gente o que conseguir integrar, a gente vai integrar e vai tornar essa
+1:47:32
+forma híbrida. Vamos criar premiações para os fornecedores. Então, a gente vai tentar engajar eles ao máximo e trazer
+1:47:41
+realmente engajado para trazê-los para perto e fazer acontecer cada vez mais
+1:47:46
+competição e mais respostas para que nós pequenos farmacistas consigamos acessar
+1:47:52
+preços competitivos como as grandes redes, né? Porque hoje não existe
+1:47:58
+nenhuma outra forma de pequenas farmácias independentes serem competitivas, a não ser pesquisando
+1:48:04
+preço, negociando ofertas e correndo atrás e se dedicando nas compras, né?
+1:48:09
+Então, quem não tá pesquisando o preço tá perdendo muita oportunidade. Aamin
+1:48:18
+1,64 e chegou, viu? Vamim realmente
+1:48:28
+1,64 na Santa Cruz. Na cripel aqui tinha um stim de 1,78,
+1:48:36
+mas o ISAM mesmo, ó, teve até duas respostas aqui, que essa cripel foi uma integração que a gente fez junto da
+1:48:43
+Santa Cruz para testar, mas o da Cripel mesmo foi 4,25,
+1:48:51
+oamim, né? Aí teve essa resposta da integração que pela árvore dos códigos de barras ele agrupa pela substância,
+1:48:59
+mas aí não era o STIM. Então, uma oferta como essa, que nem o próprio fornecedor
+1:49:07
+tava trabalhando, tava sabendo que tava tão competitivo, a gente conseguiu aproveitar aí dentro da cotação. E eu ia
+1:49:13
+comprar 60 unidades, aumentei para 180 de tão boa que era a
+1:49:19
+oportunidade. Como eu tô investindo realmente em mercadoria, eu consegui estimar lá pelo dose, certo? Uma
+1:49:25
+quantidade que eu conseguisse vender antes de ele vencer, né? Eu perguntei a validade, tava para março de 2025. queão
+1:49:32
+este mesma quantidade que dá para eu vender com folga. E nesse caso,
+1:49:40
+eh, Elton, a gente leva em consideração a rentabilidade também, porque eu não
+1:49:46
+vou baixar esse aqui, os R$ 4 que os R$ 3 que eu consegui
+1:49:52
+economizar, eu vou manter ele o mesmo preço que eu já vendo, que já é um preço competitivo no mercado e vou aumentar a
+1:49:59
+minha rentabilidade, certo? Então, comprar barato hoje, tanto é lucrativo
+1:50:05
+como também é competitivo. Para quem quer ali eh ter um preço mais agressivo, você vai ter essa opção de
+1:50:12
+eh precificar sem precisar tá queimando tanto sua
+1:50:17
+margem. Beleza? Então, esse é o cota. Quem quiser também, eu vou disparar um
+1:50:25
+link aí para vocês no chat e lá no no Instagram do Farm Stock também tá
+1:50:31
+disponível para vocês o link de quem quiser pedir uma
+1:50:37
+demonstração do Cotafarma. A gente hoje já tá rodando em sete estados brasileiros.
+1:50:43
+E se vocês gostaram dessa live de hoje e querem participar também do curso do
+1:50:49
+Farm Stock, eu tô abrindo um novo desafio aí do Farm Stock e eu abro o meu curso,
+1:50:58
+mas eu não libero para todo mundo se inscrever. Então, já deixo claro que nem todo mundo consegue participar do curso.
+1:51:05
+Antes do meu curso, eu abro uma semana de desafio e lanço algumas tarefas para
+1:51:10
+que vocês executem aí na farmácia. Então, eu quero gente que quer colocar em prática, que quer, que tá com um
+1:51:17
+estoque redondinho batendo no sistema, que quer realmente utilizar as ferramentas que o sistema oferece.
+1:51:24
+Então, a última turma que eu abri foi em setembro, inclusive quando eu tava lá na
+1:51:30
+Tria, quando eu visitei lá em Tubarão. No outro dia eu abri o desafio, 90
+1:51:36
+pessoas se inscreveram no desafio. Dos 90 eu só selecionei 30 paraa turma, tá?
+1:51:41
+Então eu não quero quantidade, eu quero gente que quer fazer acontecer, que quer
+1:51:47
+otimizar cada vez mais suas as compras da sua farmácia. E se algum de vocês ficou interessado e
+1:51:55
+quer saber um pouco mais, eu mandei aí o link do desafio. Vou mandar também o link do Instagram do Farm Stock. Então
+1:52:02
+são vários links aqui para quem quiser acompanhar e acompanhar um pouco mais do
+1:52:08
+nosso trabalho. Lá eu dou várias dicas de compra, eu compartilho aqui o dia a dia da farmácia
+1:52:13
+e os meninos do marketing também pode reenviar o link da Triaer para quem
+1:52:18
+quiser solicitar. Mais informações de Tria, quem quiser um
+1:52:24
+atendimento aí especializado por essa galera que é top, eu admiro demais, não é a toa que a gente usa desde 2007 e no
+1:52:32
+momento mais difícil da nossa farmácia, que foi quando a gente perdeu nossa mãe, o Trier foi um braço forte, foi uma
+1:52:38
+ferramenta que me ajudou. Eu vejo que, por exemplo, hoje outras ferramentas que existem no mercado não oferecem essas
+1:52:45
+soluções que o Trier oferece. Às vezes a galera até quer entrar no curso usando
+1:52:50
+outros sistemas e eu limito um pouco, eu deixo claro que realmente no curso a
+1:52:55
+gente foca no tria, porque realmente é o sistema que eu confio, é o sistema que eu uso na minha loja e é o sistema que
+1:53:02
+eu domino e que eu consigo explicar para vocês, por exemplo, uma coisa que é quase impossível, a gente conseguir
+1:53:08
+explicar em duas horas aqui o que muita gente leva um dia configurando ali e às vezes não roda legal, né? Então, a gente
+1:53:15
+conseguiu mostrar aqui em 1 hora 55 um como você pode configurar seu sistema
+1:53:22
+para pedir de referência e de genéricos, né? foi bem rápido aqui, mas que amanhã
+1:53:28
+vocês já podem muito bem botar em prática na farmácia e fazer acontecer, coisa que em outros sistemas eu já não
+1:53:34
+consigo prometer, porque realmente existem limitações, como por exemplo essa compra agrupada que não roda bem em
+1:53:41
+nenhum outro sistema do Brasil que eu acompanhei. Os caras até dão algumas
+1:53:47
+algumas formas lá de você analisar, mas tem que ir abrindo, vendo estoque, vendo giro de produto pro poro, coisa que aqui
+1:53:55
+na tri a brilhau naproxeno, a substância naproxeno e já agrupou ali a demanda de
+1:54:01
+todos os naproxenos genéricos e similar que a gente tem na farmácia. Então é realmente diferenciado e eu indico sem
+1:54:07
+medo, assim como também o cotafarma que a gente vem dedicando muito investimento
+1:54:13
+e tempo e testes e engajar distribuidores, né? Coisa que outros
+1:54:19
+sistemas também não estão tão se preocupando. A pra gente é uma prioridade trazer o distribuidor para
+1:54:25
+perto e trazer bons negócios para as farmácias independentes. Beleza? Falei demais, né, Balbino?
+1:54:31
+Nota 1000, Serginho. É isso aí. E também a nossa preocupação aqui falando eh em
+1:54:37
+nome do grupo Trier é fazer com que realmente a farmácia tenha uma maior saúde financeira,
+1:54:44
+tenha a pretensão de prosperar e crescer sempre, que abra a sua segunda, sua
+1:54:50
+terceira loja ou que tenha a sua loja e cresça cada vez mais, porque eh com uma
+1:54:57
+compra saudável, comprando bem, né, eh a gestão já está muito muito mais que meio
+1:55:03
+caminho andado. Então, muito obrigado, Serginho. Muito obrigado a todos os participantes aqui. Tivemos picos aí de
+1:55:13
+uma quantidade magnífica de de pessoas interessadas e como o Serginho falou,
+1:55:19
+pessoal, eh eh participem. Esse esse curso do do Sérgio, esses
+1:55:27
+treinamentos dela dele te dão uma afinidade tão grande, tão boa para
+1:55:33
+compras, que você vai perceber como foi o comentário do nosso amigo aqui de Curitiba que falou: "Olha, depois que eu
+1:55:39
+fiz eh o treinamento aí com o Sérgio, eu não tive mais ruptura de estoque. Tô atendendo muito melhor meus clientes." É
+1:55:46
+isso daí. A gente tem que prezar pelo bom atendimento, né? eh, pel uma qualidade de compras muito boa, não vai
+1:55:53
+ter concorrência grande que abra ao lado da sua porta que vai te prejudicar. A gente tem que fazer a nossa parte de
+1:55:59
+gestão, né? Muito obrigado, Serginho. Muito obrigado aqui a todos os participantes aqui da Tria que estão
+1:56:04
+aqui também envolvidos e contem com a gente sempre, estamos à disposição.
+1:56:10
+Eu quero saber se tem gente aí que vai abrir a câmera ainda pra gente tirar uma foto, viu? Aí, ó, para registrar. Registrar, né,
+1:56:17
+Serginho? É isso aí. botar lá no lá no Instagram. É isso aí.
+1:56:22
+Olha aí, Pablo, apareceu cav bom. Pablo é da da segunda turma do curso.
+1:56:29
+Fábio Neves é agora tá com a gente aí. Turma boa do curso.
+1:56:34
+Que legal aqui hoje também. Hoje foi corrido, né, Fábi? aula lá do curso a gente consegue detalhar bem mais
+1:56:41
+e otimizando. Vou fazer aqui um
+1:56:48
+histório bem bom.
+1:57:00
+Tem que respeitar essa galera que fica até 9 horas da noite aprendendo a
+1:57:05
+comprar melhor, usando a ferramenta do compras deas certa, viu? A Cunha.
+1:57:12
+Ai, [risadas] muito obrigado, gente. Muito obrigado, Serginho, sem palavras. Conta com a
+1:57:18
+gente sempre. Você é de casa, né? E muito obrigado, pessoal, pela presença de todos. Aí tem um ditado muito certo
+1:57:26
+assim, ó. Quem vê palco muitas vezes não vê os bastidores, né? E isso aqui é os bastidores, a gente afiando machado,
+1:57:33
+fazendo a coisa acontecer pra gente prosperar e crescer sempre. Parabéns a todos.
+1:57:38
+Obrigadão, galera. Boa noite aí. Deus abençoe vocês, viu? Boa noite. Fiquem com Deus. Ciao. Ciao.
+1:57:44
+Ciao. Boa noite. Ть.

@@ -1,0 +1,1012 @@
+0:00
+Boa tarde, pessoal. Boa tarde. Vocês estão bem? De bucho cheio.
+0:07
+Agora vocês vão ver o palestrante mais matuto desse dia de hoje, certo? Eu me
+0:14
+chamo Sérgio Samuel, como Lia falou, né? Essa foto aqui representa um pouco da
+0:19
+nossa história. Tá aqui na Copa de 2006.
+0:26
+Esse era meu pai, minha mãe e esses são meus dois irmãos que estão aqui comigo e
+0:32
+que eu tenho muita honra e orgulho de ter a sociedade com eles da nossa farmácia e que eles nos acompanham aqui,
+0:39
+tá? E não se enganem. E essa mancha aqui no bucho de meu pai é suó, porque apesar
+0:46
+desses sorrisos aqui na foto, nesse dia a gente devia aproximadamente R$ 200.000
+0:52
+R$ 1000, agiotas, bancos, fornecedores atrasados. Então, a gente tava muito
+0:58
+endividado. E é um pouco dessa história também que eu quero contar para vocês nessa tarde de hoje. Beleza? Já tem
+1:05
+gente rindo aí, já sei que não tem ninguém endividado aqui, né? Graças a Deus.
+1:11
+Então, o que é que a gente vai fazer aqui nesses 50 minutos tão breves e
+1:16
+depois do almoço que eu imagino que vocês estão aí, mas queriam estar numa redinha se balançando para descansar o
+1:23
+almoço, né? A gente vai contar um pouco da história dos 83 anos da gente, que eu vou contar em 10 minutos, uma missão
+1:29
+muito difícil. Vou falar os principais desafios que a gente passou, principalmente nas compras e gestão de
+1:35
+estoque. E vou falar o que eu fiz para comprar bem e como eu montei o meu
+1:40
+painel de indicadores e o meu processo de compras que funciona na nossa
+1:45
+farmácia, certo? Não é método que eu tô jogando no peito de vocês, não. É o método que eu uso para abastecer a nossa
+1:52
+farmácia que tá lá numa cidade de 8.000 habitantes, que enquanto a gente tá
+1:58
+aqui, tá lá fazendo mais de 100 atendimentos agora de manhã e que nesse primeiro semestre de 2024, graças a
+2:05
+Deus, a gente vem crescendo cerca de 40% em relação ao ano passado, né? Então o que eu vou falar para vocês é algo que
+2:11
+eu uso, implemento e já validei em outras farmácias de alunos meus também.
+2:18
+Beleza? Para começar, né, a nossa farmácia começou em 1941
+2:24
+com meus bisavós Desidéria e Estevon. E vovó Desidéria
+2:29
+era como se fosse a médica da cidade, né? Nesse tempo não existia hospital, não, só tinha um pronto socorro lá que
+2:35
+funcionava só em horário comercial, não tinha plantão. Então, o que vocês imaginarem aí de eh paciente chegou
+2:43
+esfaqueado na farmácia, de aplicar injetáveis e ter que amolar a agulha
+2:48
+numa pedra. Então, as histórias mais sinistras assim de farmácia pode podem
+2:55
+ter certeza que tem. Eu acho que dava uma palestra só sobre essas histórias. Um dia eu vou chamar meus tios para vir
+3:00
+contar para vocês também. E aí, vovó Desidério, apesar de ser uma
+3:05
+grande médica, né? Ela fazia parto, curativo, ponto, aplicava injetáveis,
+3:12
+ela era uma péssima gestora, né? Então, em 1968, a farmácia já estava endividadas com a
+3:20
+Giotas. Então, para vocês ver como a giotagem é antiga no mundo também, né? E aí
+3:26
+meus avós Valdemar e Dezinha, Maria Desidéria,
+3:33
+chegaram para ela e disseram: "Ó, dona Desidéria, se quiser a gente assuma as dívidas da senhora". Certo? E assim eles
+3:39
+fizeram, assumiram e colocaram meus tios Mazinho e Vilma para cuidar da farmácia.
+3:47
+Tia Vilma tinha aí 10 anos de idade. Com 12 anos de idade ela já aplicava injetáveis que ela aprendeu a aplicar
+3:53
+numa laranja e numa melancia, certo? Então para vocês verem como a situação
+3:59
+era precária realmente, mas que era realmente o o estabelecimento de saúde que existia lá na nossa cidade, né?
+4:06
+E aí tem algumas fotos, tá? Aqui o prédio da farmácia no tempo. Esse gordinho da foto aqui era meu pai. Essa
+4:13
+foto foi aproximadamente aí em 1980. Essa balconista aqui, Nidelma, trabalhou
+4:19
+com a gente até 2020, no começo da pandemia. Então, ela passou 40 anos com a gente. Ela chegou na farmácia quando
+4:25
+meu pai era criança. Então, foi um período de realmente que a farmácia
+4:32
+ficou meio que largada, realmente, porque meu avô era prefeito, meus tios passaram em concursos e aí e eu passando
+4:39
+de mão em mão e não evoluiu tanto em critério de gestão, né? Até que em 1992
+4:47
+meus pais casaram Sebastião e Solange e aí meu tio chegou pro meu pai e disse:
+4:53
+"Pronto, agora você vai tomar conta da farmácia". Nesse tempo meu pai era representante da droguista. Vocês
+4:58
+lembram de droguistas que era a antiga nazária? Pronto. Meu pai era representante da
+5:04
+Droguistas e foi tomar conta da farmácia com minha mãe. Minha mãe morava em outra cidade, se mudou para Carnaúba sem
+5:10
+conhecer ninguém e foi realmente se doar e atender os nossos clientes com muito
+5:16
+amor. É tanto que ela conquistou muita gente com o carisma dela, certo? Tem algumas fotos aí da farmácia de 92, da
+5:24
+década de 90, né? Já era prateleira de ferro, mudou para um ponto maior, né?
+5:30
+Então, já começou alguma evolução também nesse período.
+5:35
+E aí em 2006, como eu falei para vocês, né, a gente tinha acabado de reformar a
+5:41
+farmácia, tava bem bonitinha aqui. Eh, meu pai tinha feito um empréstimo para
+5:47
+reformar e tal, só que quando ele foi ver, a farmácia devia de contas
+5:52
+atrasadas aproximadamente R$ 200.000, certo? juntando a Giota, juntando o banco, o
+6:00
+imposto, tudo que tava atrasado ali de contas apagado à farmácia, né? E aí
+6:07
+o que é que eles fizeram, né? Ele viu que realmente não conseguiria gerenciar
+6:12
+e sair daquela situação. E foi aí que eles acharam Madrinha Rosilda que tá
+6:17
+aqui com a gente também, que é uma pessoa extremamente amarrada, né? Vocês
+6:24
+lembram que Cadre falou que ninguém pesquisa preço em supermercado? Pois ele
+6:29
+não conhece Madrinha Rosilda, porque ela pega os encares de todos os supermercados, sai selecionando o que tá
+6:35
+mais barato em cada um e vai e faz a feira dela ali pelo menor preço de todas
+6:41
+as ofertas da cidade, tá? Então ela tem esse perfil conservador,
+6:46
+econômica e aí foi exatamente esse perfil que resolveu a nossa dívida da
+6:51
+farmácia, né? Porque ela tem principalmente a principal função para um controle financeiro funcionar, que é
+6:59
+ter disciplina, né? Você pode ter todo aquele método, saber que tem que preencher a planilha, tal, tal, tal, mas
+7:06
+se você não for todo dia lá conferir o dinheiro e lançar na planilha, não serve de nada, não é verdade? Quem aqui já
+7:13
+começou a preencher planilha depois da segunda semana não preencheu mais nada?
+7:18
+Levanta a mão aí, né? Porque realmente indisciplina é um problema do brasileiro, né? A gente não
+7:23
+aprende isso na escola. E aí, eh, Madrinha Rosilda, graças a Deus
+7:29
+conseguiu botar as dívidas em dia lá na farmácia. Em 2009, 2010 já tava tudo quitado, né, Madrinha? Graças a Deus e a
+7:37
+esse esforço que ela fez, né? E aí em 2009, três dias depois dessa
+7:43
+foto, a gente foi surpreendido com o painho que infartou lá dentro da farmácia, né?
+7:51
+Então, meu pai já era doente do coração e acabou infartando dentro da farmácia.
+7:57
+E a gente era muito novo, né? Eu tinha 14 anos, Saf tinha 10, Saunara tinha sete. E aí já começou aquela pressão,
+8:03
+você agora tem que ser o homem da casa, não sei o quê. Eu até mijar na cama, eu mijava ainda nesse tempo. E aí quando
+8:10
+começou a a pressão de ser o homem da casa, eu disse: "Rapaz, agora eu tenho
+8:15
+que pelo menos parar de mijar na cama, né?" E a gente foi se desenvolvendo.
+8:22
+Nesse tempo ele já estimulava muito empreendedorismo com a gente, né? Eu tinha uma cama elástica que eu levava
+8:27
+pra rua no domingo de noite para cobrar R$ 2 pros meninos pular na cama elástica, né? Então, a gente já vinha se
+8:33
+desenvolvendo também no empreendedorismo e em gestão, né? Então, em 2009, a gente
+8:39
+teve essa primeira grande perda de painho. Em 2013, eh, nosso avô era o
+8:45
+dono da farmácia, né? Era uma empresa individual e era no nome de vovô Valdemar ainda. E, infelizmente, em
+8:52
+2013, ele faleceu também. É tanto que quando ele faleceu a gente tinha acabado de conseguir o credenciamento no
+8:58
+farmácio popular e quase que a gente perde porque a contadora disse que
+9:03
+quando uma empresa individual, o sócio, o dono morre, a empresa se estigue, não
+9:09
+é isso, Isabela? E aí a gente teve que entrar com ação judicial para não perder, porque ia
+9:15
+prejudicar a população, tudo isso. Mas já fica aqui a primeira dica, certo? Se sua farmácia hoje foi uma empresa
+9:20
+individual, tenha cuidado, viu? E aí
+9:26
+em 2016 mainha descobriu que tava com câncer de
+9:32
+mama, né? essa gatona aqui que tá no meio, nossa mãe Solange.
+9:38
+E ela se tratou, a gente inclusive fez essa campanha, foi uma campanha da farmácia, a gente juntou todas as
+9:44
+mulheres que tiveram câncer de mama na farmácia e tiramos essa foto. E aí,
+9:51
+graças a Deus, ela se tratou, se curou e recebeu alta, né? Em 2018 nós fizemos
+9:58
+uma reforma, a farmácia ainda era naquele modelo antigo lá que eu mostrei na foto e a gente fez uma reforma em
+10:04
+janeiro de 2018. Foi um momento de muita alegria, muita comemoração, né? Mainha,
+10:09
+vovó, todo mundo comemorando. As vendas cresceram 20% assim instantaneamente
+10:15
+assim que reinaugurou a reforma da farmácia. Então era um momento muito bom
+10:21
+pra gente como negócio, né? Isso em janeiro, só que em março mainha começou
+10:27
+a sentir umas dores na coluna. E aí quando ela foi pro médico que fez
+10:32
+exame, ela descobriu que tava com metástase e o câncer tinha voltado. E aí
+10:38
+em questão de 20 dias, infelizmente ela faleceu. E aí nós ficamos sem pai nem
+10:43
+mãe. Saonara tinha 17 anos, ainda era até de menor aqui. E cinco dias depois que mainha faleceu,
+10:52
+vovó caiu em casa e quebrou o fo. E aí ela se internou, deu uma melhora,
+11:00
+voltou pra casa e aí a infecção voltou. Aquele ciclo que a gente vê muito acontecendo com os idosos, né? Quebra o
+11:07
+fêo, infecciona, opera e aí passou 5 meses internado, infelizmente também não
+11:13
+resistiu, né? E aí em novembro de 2018 estávamos nós três sem pai nem mãe, sem
+11:21
+vó nem vô. avó que a gente tem, a esquizofrênica, que graças a Deus tá se tratando e tá muito bem, mas a gente não
+11:29
+tinha ninguém realmente que se faltasse comer em casa eu dissesse: "Eu vou ali em Painho mainha pegar um almoço, né? Ou
+11:36
+se eu me endividar, eu dizer: "Eu vou pedir dinheiro emprestado a painho". como muitos de vocês, graças a Deus, t essa possibilidade hoje. Agradeçam a
+11:43
+Deus por isso. E aí a gente descobriu também que a pensão do INSS de Saionara,
+11:51
+que foi a única que receberia a pensão porque tinha 17 anos, acabaria com 21 anos de idade. Então a gente tinha 4
+11:58
+anos de idade para 4 anos de vida a seguir para resolver nossa vida e ter
+12:04
+realmente um sustento e uma garantia do que fazer. E aí nós conversamos com
+12:10
+entre nós três, disse irmão, ó, vamos tocar a farmácia, vamos dar o gás e vamos fazer acontecer. Aí a gente chamou
+12:16
+nossos tios, negociou, compramos a parte deles e decidimos realmente que ia fazer
+12:23
+acontecer na farmácia, ia construir uma história de sucesso. E aí essa história
+12:28
+que eu vou contar aqui para vocês hoje, o que a gente fez para estar numa cidade de 8.000 habitantes, crescendo 40% ao
+12:35
+ano e tendo resultados fora da curva, mandando pedidos pro Brasil inteiro,
+12:41
+para oito estados brasileiros. Beleza? E eu deixo essa pergunta para vocês, né?
+12:47
+Se você morrer amanhã, sua farmácia vai servir de sustento ou de dívida pros
+12:53
+seus filhos, né? Eu acho que quase ninguém aqui parou para pensar nisso,
+12:59
+mas é importante que vocês pensem, né? vocês vão deixar alguém e esse alguém
+13:04
+precisa ter pelo menos um uma base, né, que seja psicológica e que seja de valores para seguir a vida dele sem
+13:12
+vocês aqui, que essa vida é um sopro, né? E aí começamos, né, 2018 estávamos
+13:19
+aqui, nossa equipe tinha quatro atendentes, madrinha Rosilda no financeiro e nós três. Nesse período a
+13:25
+gente já fazia 6.000 1 atendimentos por mês, tinha delivery, tinha farmácia popular, tinha começamos PBMs
+13:34
+e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de
+13:39
+marketing, fazer tudo isso que a gente tanto sonha em fazer acontecer na farmácia, mas que na correria do dia a
+13:45
+dia a gente acaba deixando de lado, né? E alguns problemas que a gente tinha, e
+13:50
+aí Cadre falou muito agora de manhã, né? Era exatamente a fama de careiro. Por
+13:56
+mãha que fazia todas as compras da farmácia, ela era a balconista que mais
+14:02
+atendia, atendia mais da metade das vendas da farmácia e aí era impossível para ela conseguir preços competitivos
+14:08
+com os fornecedores naquela correria, né, atendendo cliente, eh, passando pedido, não tinha como realmente
+14:15
+implementar uma forma de comprar barato e abastecer a farmácia. E foi aí que a
+14:21
+gente começou a atacar essa fama de careiro e quebrar realmente essa fama de careiro, né? A gente não
+14:28
+tinha nenhuma experiência com compras de medicamentos. O primeiro pedido que eu fiz, eu fui comprar umas intromicina de
+14:34
+500 com três comprimidos. Eu lembro que no tempo era 1,50. Eu comprei por R$ 12,
+14:39
+né? Dá para ver o desastre que ia ser se eu continuasse comprando dessa forma que
+14:45
+eu fui tentar fazer, né? Só que eu vinha de uma experiência muito boa de compras com compras públicas, né? Eu fui
+14:52
+pregoeiro, fui estagiário de licitação. Então eu disse: "Rapaz, se é uma prefeitura que atrasa pagamento, que tem
+14:59
+uma burocracia do tamanho do mundo, os cab mandam cotação de preço, responde pesquisa e consegue comprar barato, que
+15:05
+eu não vou conseguir fazer isso aqui na farmácia", né? E aí o o muitos
+15:11
+vendedores até tiravam onda comigo, dizia: "Ó, você nunca vai conseguir comprar barato porque você só tem uma
+15:16
+farmácia independente, seu concorrente tem oito". Eu disse: "Beleza, vamos ver
+15:21
+o que é que vai acontecer". E aí não existiam processos estabelecidos, os fornecedores não
+15:28
+respondiam às pesquisas, os fornecedores que favoreciam o concorrente, né? Com o
+15:34
+vulgo babão, né? que eu sofri muito com os babões do meu concorrente no início,
+15:41
+que eu não tinha experiência, então os caras levavam as oportunidades só pro meu concorrente e eu ficava chupando o dedo ali.
+15:47
+Inclusive alguns processos que são muito importantes. E aí eu vou fazer uma pergunta muito importante para vocês
+15:53
+agora. Como por exemplo, fazer um inventário e bater o estoque no sistema não existia na farmácia.
+16:00
+E dois meses depois que manhã morreu, a gente descobriu que uma pessoa da nossa equipe tava roubando a gente, certo? Uma
+16:09
+balconista tava roubando a gente porque não batia estoque no sistema, não batia caixa direito. O caixa até já batia, né,
+16:15
+Madrid? Já tinha conferência de caixa, só que o estoque do sistema não batia. E
+16:20
+aí a gente fez o primeiro balanço com um mês depois começou a assumir 30 cartelas de comprimido. Eu disse vi de Benegripe.
+16:28
+Eu disse vi Maria 30 Benegrip não som do dia paraa noite. Fui olhar se foi erro de de fator, não era e tal. E aí a gente
+16:36
+descobriu e eu tive que resolver esse problema com vovó na no hospital internada porque vovó era dona da
+16:41
+farmácia, né? E aí eu conversei com meus tios, eu disse: "Ó, tá acontecendo isso, posso resolver?" Aí eles podem.
+16:48
+E aí eu quero fazer essa pergunta aqui agora e sejam sinceros e não tenham vergonha. Quem aqui já foi roubado por
+16:53
+alguém da equipe, levanta a mão. Não tenham vergonha. Pode levantar.
+17:00
+Só para quem não tá tendo noção disso, tenha noção agora de quanto isso acontece, certo?
+17:07
+Não se enganem. No Brasil não são só políticos que são corruptos, viu? Não se engane. Então, se você não tem esse
+17:14
+controle hoje, cuide em começar a ter, porque se você não levantou a mão, provavelmente você já foi e nem sabe,
+17:20
+viu? E aí, quais são os principais desafios
+17:25
+do mercado hoje, né, pra gente encaixar com os nossos desafios e chegar no nosso processo de compra. 17% dos consumidores
+17:33
+não compram tudo que precisam por faltar na farmácia. Isso é uma média. E nessa média tá as as redes da Abra Farma.
+17:41
+Então imagina aí, pegue quanto você fatura hoje. Digamos, você fatura R$ 100.000 numa loja.
+17:47
+Se você fatura R$ 100.000, provavelmente você tá perdendo 17.000 de faturamento só por deixar faltar produto na loja,
+17:54
+certo? E aí como não deixar faltar, que eu vou ensinar para vocês aqui hoje também. 88% dos brasileiros escolhem a
+18:01
+farmácia por preço. Cadre trouxe isso muito bem, não preciso nem eu repetir, mas que para gente ter preço pro nosso
+18:08
+consumidor final, a gente precisa comprar barato, né? Porque nós não vamos sair queimando nossa margem de forma
+18:14
+louca. Então tem que comprar barato para poder vender barato também.
+18:19
+E todo mundo que tá aqui nesse auditório hoje sabe que precisa comprar melhor, que precisa ter um mix de produto mais
+18:26
+sortido, mas ninguém sabe como fazer isso ou poucos sabem como fazer isso, né? É realmente uma tarefa muito difícil
+18:33
+gerenciar milhares de produtos no nosso estoque, né? Quem tem um posto de gasolina só precisa comprar gasolina
+18:40
+alco e óleo diesel. E a gente tem que comprar milhares de produtos para manter nossa farmácia abastecida.
+18:47
+E aí para fechar essa parte do mercado, esse cara aqui, Ivan Angel, notem aí no
+18:54
+papel, Ivan Angel tem uma pesquisa muito boa sobre mix de produtos que ele
+19:00
+avaliou 4.000 farmácias no Brasil inteiro. E o que é que ele descobriu,
+19:05
+né? Que o fator que tem mais correlação com faturamento
+19:11
+é o tamanho do sortimento, o tamanho do mix de produtos. Então, quanto mais mix
+19:16
+você tem, mais você fatura, certo? Isso ele provou numa pesquisa com 4.000
+19:21
+farmácias feita agora na virada desse ano, de 2023 para 24. Beleza?
+19:28
+Só para ter noção, ó, as redes da Abra, as lojas da Abrafarma tem em média
+19:33
+11.000 produtos e faturam em média R$ 700.000. As da Febra Fá tem em média R$ 4800 e
+19:41
+faturam 150. A média do Brasil é até um pouco menor, 4300. E as independentes
+19:47
+que vendem em média 70.000 só tem 2700 SKU na loja, certo? E se você não sabe
+19:55
+quantos SKU tem na sua loja hoje, já anota no papel para ser o primeiro relatório que vocês vão puxar quando
+20:00
+chegar na farmácia amanhã, beleza? E eu não quero dizer a vocês que cheguem
+20:05
+amanhã e aumentem de 4800 para 11.000 SKS. Pelo amor de Deus, não façam essa
+20:11
+loucura do dia paraa noite. Ela tem que ser feita de forma gradativa, com base em informações de mercado e informações
+20:18
+até do seu balcão, do que o pessoal tá procurando no balcão e não tem na loja. E você diz: "Ah, eu não quero trabalhar
+20:24
+com Ozempique", né? E aí fica botando banquinha para vender Ozempique e seu concorrente lá a gente, né? Por exemplo,
+20:31
+vendendo 12, 15 Ozeniques por mês numa cidade de 8000 habitantes, tá? Então se
+20:36
+vocês decidem não vender, é bom que sobra mais para mim também, viu?
+20:41
+E aí, o que é que eu fiz para comprar bem? Você traz uma alguém, por favor? Ah, tem aqui, desculpa.
+20:54
+O que é que eu fiz para comprar bem, né? Até agora eu só falei de problema. Agora vamos falar de solução.
+21:02
+Eu segui esses cinco passos aqui. Lógico que eles não são uma sequência, eles
+21:08
+caminham juntos. Inclusive alguns deles são perpétuos, né? Eles funcionam na farmácia sem parar.
+21:15
+Eu construí minha base de fornecedores, aperfeiçoei as ferramentas, gerenciei as
+21:20
+informações, me tornei um caçador de ofertas. Vou falar um pouco disso aqui também.
+21:26
+estruturei o meu processo de compras, certo? Esses cinco passos e nós vamos desdobrar esses cinco aqui agora.
+21:34
+Construir minha base de fornecedores. Então, hoje a gente já tem lá na farmácia pelo menos 30 fornecedores de
+21:40
+OL e genéricos. Eu vejo muitos de vocês comprando a três ou quatro fornecedores.
+21:46
+Vocês estão comprando caro, sinto muito dizer. Temos pelo menos 10 ols de referência e mais de 30 PBMs
+21:53
+cadastrados. Isso aqui já decide
+21:59
+metade dos descontos que vocês vão conseguir comprar na farmácia de vocês, certo? Se vocês forem conseguir R$ 5.000
+22:05
+de desconto na farmácia de vocês, pelo menos R$ 2.500 vão sair dessa primeira
+22:10
+ação aqui de cadastrar os fornecedores, cadastrar a OL da Indústria, cadastrar PBM.
+22:17
+tratando bem os representantes parecem uma besteira, mas eu tô cansado de ver
+22:23
+for representantes que chegam para eu atender e o cara diz: "Rapaz, passei na farmácia de fulaninha, ele nem me
+22:29
+atendeu, bateu a porta na minha cara, né? Lógico que tem uns sem vergonha que merece que a gente bata na porta mesmo,
+22:35
+né? Mas são minorias, certo? Não generalizem porque são minorias. A
+22:41
+maioria dos representantes, eles vêm para trazer oportunidades e fazer negócio. Então, se a gente recebe bem,
+22:49
+a gente já abre alguns caminhos. Tem que saber dizer não também, né? Não é só dizer: "Ah, não vou mais comprar". É o
+22:56
+cara de é ser transparente, né? Dizer o cara vem com uma campanha para vender floral thapy pra gente que tá lá com a
+23:03
+prateleheira cheia de floral terra parado, né? E aí o cara diz a ele, diz: "Ó, infelizmente floral não vende mais,
+23:11
+não tem o que fazer. Quem que tá com floral enganchado na farmácia? Levanta a mão. Aí só vocês se a gente somar aqui
+23:19
+dá uns R$ 50.000 de mercadoria, né? E aí se o a vendedora da Floraltera fica toda
+23:25
+semana no WhatsApp, Sérgio, vamos tirar um pedido, Sérgio, não sei o quê. Eu digo, minha filha não tá vendendo, não
+23:31
+tem o que fazer. Aí até que chegou um dia que ela disse: "Pois vamos fazer o seguinte, vamos trocar o floral thy por
+23:37
+óleo essencial de lavanda. Você quer?" Eu disse: "Oxe, agora ela disse: "Eu só
+23:43
+preciso que você derrame os floral terra, faça um vídeo e eu vou mandar os óleos essenciais para você." Resolvido.
+23:51
+Eu soube dizer o não e recebi uma mercadoria que resolveu meu problema,
+23:56
+porque os óleos de lavanda eu já vendi tudinho. Beleza?
+24:01
+E resolver os problemas de melhor da melhor forma também ajuda muito. Ajuda
+24:06
+muito, principalmente porque a gente se estressa muito com cagada do fornecedor, né? A gente se estressa muito quando
+24:13
+chega bola, quando atrasa entrega, quando o entregador amassa as caixas,
+24:19
+enfim, e joga tudo para cima do representante. Se a gente não soubesse ter essa conversa também desgasta muito
+24:25
+essa relação. E aí o pessoal me dizia, né, você nunca vai ser visitado pela indústria porque
+24:31
+tá no interior do estado. A nossa cidade é a última cidade antes da Visa com a Paraíba. Então, pro cara entrar lá tem
+24:37
+que ir a negócio mesmo. E tá aqui uma das
+24:42
+das visitas mais ilustres que a gente recebeu de Emília, que é supervisora do Ipera Regional. Aí eu acho que algum de
+24:49
+vocês devem conhecer supervisora ou gerente, né? E ela foi bater lá em
+24:54
+Carnauba dos Dantas para conhecer nossa loja, para levar oportunidade para fazer negócio, né? Então, realmente construir
+24:59
+base de fornecedores é fundamental. Aperfeiçoar as ferramentas. Eu comecei,
+25:05
+né, a usar o sistema para fazer pedidos, senão eu ia comprar as quantidades
+25:11
+erradas de azitromicina, ia comprar por R$ 12, porque eu não ia ter histórico nenhum de demanda nem de preço na
+25:18
+cabeça, né? Porque eu comecei a ser comprador do dia paraa noite e aí comecei a usar o sistema, criei minha
+25:24
+própria ferramenta de faltas e encomendas, né? Antes a gente usava esse caderninho aqui, ó. Essa foto é real.
+25:30
+Era uma um 5 de março lá da farmácia. Realmente, quem aqui ainda usa o
+25:36
+caderninho para fazer falta? Eita, coisa boa. Dava uma fogueira
+25:41
+bonita, viu? Com os caderninhos de vocês todos junto. E aí,
+25:47
+depois do caderninho, eu botei uma planilha online. As encomendas, quem aqui vem de encomenda de dizer, ó, traga
+25:53
+amanhã para você, levanta a mão. Sempre dá problema de entrega de encomenda, né? disse: "Rapaz, a encomenda de Zezinho tá
+25:59
+anotada onde? Pelo amor de Deus". Aí vai lá pá pá, vira o caderno e ninguém acha.
+26:05
+E aí eu comecei fazendo um caderninho de encomenda. Coisa mais linda, né? O cliente, medicamento. No terceiro dia já
+26:12
+tava o mesmo linhado, né? E aí eu fui para uma ferramenta online que o próprio
+26:18
+sistema às vezes dá essa ferramenta, né? vocês vão ver também aí essa possibilidade. Criei lista de transmissão com os grupos
+26:24
+de fornecedores. Então, eh, se eu tenho muitos fornecedores, eu preciso manter eles informados. Se eu quero comprar uma
+26:30
+de pirona, eu preciso informar todos os meus fornecedores de pirona que eu quero comprar. E se eu for mandar um por um os
+26:37
+30 fornecedores, a trabalhada for vai ser grande, né? Do mesmo jeito que eles têm as listas dos clientes, nós agora vamos ter a listas dos fornecedores, né?
+26:45
+Parei de fazer pedido por telefone porque a o erro que eu cometi da trromicina
+26:52
+foi realmente fazendo pedido por telefone sem ter informação nenhuma na mão para analisar. E os cabas me diziam,
+26:58
+né, eu não participo de cotação não, porque minha empresa não permite. Aí beleza, eles alguns diziam que não ia
+27:06
+participar porque a empresa não permite, né? Tá aqui um exemplo de um um dos indicadores que a gente construiu, que
+27:12
+eu eu sou apaixonado por esse indicador para gestão de compras. Eu acho que ele nunca deveria faltar numa farmácia, que
+27:19
+é acompanhar as vendas perdidas por falta. É aquela venda que o cliente
+27:24
+chegou no balcão e procurou: "Eh, Sérgio, você tem um Shigdu de 10 por 1000?"
+27:29
+Aí eu digo, não tenho. Aí eu vou lá no no sistema, na tela de busca, dou dois cliques e informo que não tinha o
+27:36
+Shigdu. E eu perdi uma venda de Shigdu de R$ 210. Aí ele vai totalizando por
+27:41
+curva. Então aqui meu comprador hoje tem uma meta de venda perdida. Se ele der
+27:47
+bobeira, ele não ganha a bonificação dele porque faltou muito produto na farmácia, certo? E muitos de vocês só
+27:53
+olham para o valor de compra e acabam de olhar para o valor de faltas, né? E é
+27:59
+essa gangorra que a gente dança, nem deixar faltar e nem comprar demais para se endividar, né? Então, se olhar só
+28:05
+para um lado vai dar merda, porque se faltar pouco produto, provavelmente você
+28:11
+tá comprando demais e aí vai ser impossível você ter tudo. É inviável, é financeiramente inviável pra farmácia.
+28:18
+Então esse é um dos indicadores que a gente trabalha lá, gerenciar as informações, né? Padronizei os cadastros
+28:24
+de produto. Olha que coisa linda aqui, ó. Os BPTOL, tudo alinhadinha. com as descrições, a o volume, a marca
+28:33
+tudo padronizada, né? E no tempo ainda nem tinha o GCP do Tria, que agora tem.
+28:39
+É bom demais, né, Júlio, né, Rafael? é café com leite. O sistema já atualiza as
+28:45
+descrições, o grupo de produto, a substância, tudo automaticamente. Então hoje ficou fácil demais, mas no tempo eu
+28:52
+já vinha fazendo isso porque eu sabia que se eu quisesse fazer pedido de dentro do escritório sem precisar est
+28:58
+olhar na prateleira, essas informações tinham que ser confiáveis, né? Então é um dos passos que eu tive que seguir,
+29:05
+fazer inventários frequentes, né? Como eu falei, para evitar ser até fraudes de
+29:10
+ser roubado também, implantei a conferência bipada de mercadoria para resolver principalmente
+29:17
+erros de fracionamentos e assumi a precificação da farmácia. Isso aí foi uma decisão minha mesmo,
+29:23
+porque eu gosto de estar precificando e no ato de precificar eu confiro se o cara tá mandando a mercadoria no preço
+29:29
+que eu comprei. Hoje mesmo eu comprei uma Colgate Total 12 ontem com 50% de
+29:35
+desconto na Santa Cruz. Vocês compraram? Perderam, né? Oportunidade.
+29:41
+E hoje quando eu fui precificar eu vi que ela só chegou com 42. Já mandei pro vendedor, disse: "Meu patrão, não é 42,
+29:49
+não, é 50. Vamos resolver. Aí ele dá os pulos dele. Ah, vou mandar bonificação, não sei o
+29:55
+quê. Tá barato por 42, tá? Mas ele não prometeu 50, tem que entregar o que
+30:00
+prometeu, né? E eu percebo isso na conferência de mercadoria, né? Inclusive
+30:06
+no tempo do roubo lá que eu falei, o pessoal dizia muito isso, né? Não se iluda, Serginho. O sistema, o estoque do
+30:13
+sistema nunca vai bater com a realidade, né? Aí a gente acaba caindo nesse viés e
+30:18
+relaxando e soltando frouxo. Aí é onde o bicho pega, viu?
+30:23
+Na caçada de oportunidades, o que é que a gente percebeu, né? Eh, primeiro,
+30:29
+quando a gente pegou a farmácia, eu puxei um estoque lá e eu vi que tinha chupeta na prateleira, que fazia 3 anos
+30:35
+que tava lá na prateleira, né? Ninguém aqui tem chupeta de 3 anos, né? Graças a Deus.
+30:41
+Porque se tiver vai ser o jeito de fazer isso aqui. No Black Friday eu fiz um balaio, botei a chupeta tudo por 1,99 e
+30:48
+as mamadeira por 4,99. Eu disse: "Eu quero ver onde dá fim essas agora". E foi assim que a
+30:54
+gente conseguiu e entendeu a lógica que com a logística que a gente tem na
+30:59
+farmácia de comprar num dia e chegar no outro dia, no próximo dia útil, não faz sentido eu ter um estoque para 3 anos.
+31:06
+Não faz sentido nem para se meses se não for algo muito barato, quanto mais para 3 anos, né? Então foi foi aí que a gente
+31:13
+começou a entender a lógica de fazer girar os produtos parados, os curva d. Foi aí que eu entendi também
+31:21
+que um certo dia na Panfarma, vocês lembram desse sabonete da Johnson?
+31:26
+O bicho era cheiroso, viu? Pena que tirado de linha. Um certo dia na Panfarma ele tava com
+31:32
+99% de desconto. Alguém aqui já viu um produto com 99%?
+31:39
+Muita gente já viu. Mas o pior é que muita gente vê e não compra porque pensa que é um erro do sistema, né? Mas não é
+31:46
+erro do sistema, são oportunidades que diariamente os caras estão lançando. Começa com o gato de ontem com 50% de
+31:52
+desconto, né? Então, diariamente tá saindo ali meio monte de oportunidade e
+31:58
+se você não procura, você perde. E eu vi que eu consegui comprar esse sabonete
+32:06
+por 1,22 e meu concorrente, que tinha oito lojas não conseguiu comprar. Aí eu disse:
+32:12
+"Agora eu descobri o canal de concorrer com esse caba e comecei a virar
+32:17
+realmente um caçador de oportunidades, né? E esse é realmente uma das grandes
+32:23
+funções que o comprador tem que ter, um grande espírito de caçador de oportunidade. Tem que ser tarado por
+32:30
+comprar barato. Se você se conforta em comprar caro, tem alguma coisa de errado. Você não pode deixar faltar
+32:36
+porque tá caro também, porque é melhor ter caro do que não ter. Mas você tem que viver essa vida constante de busca
+32:42
+de oportunidade. Se você quer ser um bom comprador para sua farmácia, se quer ganhar mais dinheiro e aumentar a lucratividade, né? Então a gente começou
+32:50
+aí essa caçada acompanhando os preços diariamente, minerando os dados dos sistemas, né? Começo da Santa Cruz foi
+32:57
+uma mineração de dados, é só classificar lá o maior desconto, fácil demais.
+33:02
+E dentre essas oportunidades, a gente teve São Malgin desconto, tava lá na
+33:08
+Profarma, eh, Benegrip com 48 também. A própria
+33:13
+pré-aluta de medicamento, se você souber fazer, ela já lhe dá ali pelo menos 5%
+33:19
+de um dia para o outro, né? Então, se souber comprar é um grande investimento.
+33:25
+Epsol, teve um mês que no Rio Grande do Norte inteiro a nossa farmácia foi a farmácia que mais vendeu o EPSOL no
+33:32
+estado inteiro. Como é que pode? Uma cidade de 8.000 habitantes ser a farmácia que mais vende Epsol. A gente
+33:37
+vendeu 140 EPSOL, mais ou menos, não foi, irmão? 140 unidades de EBSOL, colo,
+33:44
+aquele protetorular fator 70, certo? E aí estruturei meu setor de compras. Hoje
+33:50
+a gente tem inclusive essa aqui a apresentação das metas do mês passado que eu fiz com eles, no mês retrasado.
+33:56
+Hoje a gente até mudou, Thago já tá no suporte do Farm Stock e a do Will assumiu as compras quase tudo sozinho,
+34:02
+né? Então eu tô aqui palestrando para vocês. A do Will tá lá comprando barato, comprando as quantidades certas nos
+34:07
+parâmetros que eu ensinei a ele. E ele chegou em novembro, nunca tinha trabalhado numa farmácia, não sabia nem
+34:12
+o que era um genético, nem um similar, né? Então se você tem processos estabelecidos, você consegue treinar com
+34:19
+muito mais facilidade, né? Marcelo falou isso muito bem na palestra dele. E aí tem três conceitos que eu
+34:27
+daria várias aulas só desses conceitos aqui, né? No meu curso, eu tenho mais de 100 horas de aulas gravadas, mas a gente
+34:33
+tem que correr para resumir. Mas que vocês precisam entender, notem aí no papel, se vocês não entendem esses
+34:40
+três conceitos, vocês estão perdendo tempo e dinheiro na gestão de compras e
+34:45
+estoque de vocês, certo? Então,
+34:51
+quem não entende ainda já anota e cria um compromisso aí de aprender e entender
+34:56
+sobre esses três conceitos.
+35:05
+estoque mínimo, né? O estoque mínimo nada mais é do que um ponteiro de
+35:11
+reserva do tanque de combustível do carro. Vocês já pensaram como seria fácil abastecer uma farmácia se a gente
+35:18
+tivesse um ponteiro desse para cada produto? Não era? Quando batesse na reserva, a
+35:23
+gente corria e comprava, porque a reserva é o tempo suficiente da entrega chegar.
+35:29
+E a gente, a boa notícia é que a gente tem esse ponteiro, né? O sistema lhe dá esse ponteiro no próprio Tria, que é o
+35:36
+sistema que a gente usa em outros softwares também, mas eu vou citar mais o Tria, que é o que eu uso na farmácia,
+35:42
+eh, a gente consegue puxar um relatório e me dizer
+35:47
+instantaneamente lá em 3 segundos, ele vai me dizer todos os éticos que estão com estoque abaixo do nível de reserva,
+35:55
+né? todos os produtos que eu preciso comprar para eu não perder aquela venda lá que Zezinho vai ver atrás do Chicdu,
+36:01
+né? Então, um exemplo claro aqui de estoque de segurança, essa
+36:06
+heterogermina, eu ainda tenho duas unidades em estoque,
+36:12
+mas o estoque de segurança dela é quatro. Então, desde que baixou para três unidades, ele já tá me mandando
+36:19
+comprar a enterogermina. A enterogermina só caiu na lista de pedidos quando ela baixou para três. Quando ela tinha
+36:25
+quatro, ela ficou lá escondidinha sem encher meu saco, certo? E aí eu consigo
+36:30
+comprar inclusive com uma previsibilidade muito boa, porque apesar de ser um medicamento meio que sazonal,
+36:37
+ele já vem sendo muito bem propagado lá, com uma demanda bem constante, né? Então, percebam que a gente consegue ter
+36:44
+uma previsibilidade, faz sentido eu comprar só três enterogermina?
+36:50
+Se eu vendo 14, 17, 13 por mês, né? Não faz sentido. Se surgir uma oportunidade
+36:56
+de comprar muito barato, inclusive eu compro as 73, como eu comprei aqui em março,
+37:02
+pela Nazária por 31,41, né?
+37:08
+A demanda é exatamente essa previsão que a gente vai ter baseado nas vendas. Então, nada
+37:15
+mais é do que uma média aritmética. Então, por exemplo, um selene, para vocês verem como a gente tem, como o
+37:21
+Cadre falou, o melhor negócio para ganhar dinheiro, dos melhores negócios para ganhar dinheiro no mundo hoje,
+37:26
+porque a gente consegue prever exatamente ou quase exatamente quanto exceleno eu vou vender no mês que vem,
+37:33
+não é verdade? Então, clientes de anticoncepcionais, que geralmente são clientes muito fidelizados,
+37:40
+eu tinha aqui uma demanda de 29 unidades em abril, 31 em maio e 29 em junho, né?
+37:47
+Uma previsão perfeita. Se eu comprar 29 unidades aí eu não preciso nem ter medo, que eu sei que vai ser vendido no
+37:54
+próximo mês e meu boleto só vai vencer com 45 dias, né? Então, dominar esses
+37:59
+conceitos é a virada de chave para que vocês possam
+38:05
+eh ganhar tempo e economia na hora de comprar. Até o Salompas, que não é um
+38:11
+produto de uso contínuo, tem uma certa previsibilidade. Tão vendo, ó? Ele sofre
+38:16
+variações aqui entre 25 e 33, mas não é uma variação muito louca, tipo
+38:23
+de subir para 50, baixar para 10, né? É uma variação que ajuda muito a gente na
+38:28
+hora de decidir quanto comprar, né? Então eu compro 30, compro 26 e compro
+38:33
+com segurança, sabendo que vai vender, não é verdade? Então hoje a gente tem
+38:39
+muita previsibilidade na hora de comprar. E a curva ABC, né? A curva ABC,
+38:44
+ela vai ajudar vocês na hora de entender o que comprar para que não vire aquela
+38:50
+chupeta que passou 3 anos na prateleira, porque antes dela passar 3 anos, a
+38:56
+demanda daquela chupeta foi caindo, caindo até ela vir para cá, para essa
+39:02
+essa fatia zona da curva C que tá a maior parte do mix de vocês hoje da
+39:08
+farmácia. Essa fatia de 50% do do estoque de vocês só gera 5% de
+39:15
+faturamento. Tá vendo aqui, ó? Entre 95 e 100%. E já os curva A e curva B, que é a outra
+39:23
+metade dos produtos da farmácia, eles geram 95%
+39:28
+de faturamento. Então é isso aqui que a gente tem que correr para não deixar faltar de jeito nenhum. E esses curva a
+39:35
+gente vai analisar com mais calma, porque é aquele bezerol que você vendeu de seis em seis meses e tá em dúvida,
+39:41
+rapaz, eu recompro não esse bezerol passou seis meses para vender. Aí na semana que vem vem outro cliente e diz:
+39:48
+"Eu quero Bezerol". Aí você diz: "Não recompre", né? Então é uma análise muito
+39:53
+mais difícil de fazer e por isso que na hora de fazer o pedido vocês precisam separar esses pedidos. O pedido de curva
+40:00
+A, curva B, ele já é quase automático. Eu tem um vídeo que eu vou disponibilizar para vocês que eu
+40:07
+configuro meu sistema para gerar um pedido de curva A e curva B em 10 minutos. Em 10 minutos eu consigo fazer
+40:12
+um pedido de referência, enviar pra cotação e fazer o faturamento. 10
+40:17
+minutos, coisa que vocês estão perdendo duas horas por dia olhando pro caderninho sem saber e ainda compra
+40:23
+errado. Ainda compra demais ou deixa faltar, né? Então é usar tecnologia a
+40:28
+nosso favor, processando esses conceitos, tá? Tem que estudar, não tem ponto de correr.
+40:35
+E aí eu trouxe até esse exemplo claro de curva ABC, né? Essa é uma farmácia que eu visitei. Tá aqui a prateleira de
+40:41
+dermacos dele, bonitona, de vidro, iluminada. É porque não tava de aceso, mas é iluminada também. Só que dá
+40:50
+vontade de comprar dermacosmético nessa prateleira, não dá, né? E aí eu até
+40:56
+analisei com ele lá, ele viu que vendia cerca de R$ 300 a R$ 400 por mês. Olha a
+41:02
+prateleira de dermacosmético da gente hoje. Só essa essa pontinha de gôndula,
+41:07
+certo? Esse essa metadezinha da gôndula vende hoje na nossa farmácia cerca de R$
+41:13
+7.000 por mês, certo? Então ter os produtos certos não precisa ter uma
+41:18
+farmácia gigante de 300 m², é ter os produtos certos na farmácia. e não
+41:24
+deixar faltar. É isso, galera. Entendeu? Então, ó a diferença.
+41:30
+E essa aqui tá numa cidade de 50.000 habitantes, cheia de dermatologista, certo? E lá na minha não tem nenhum
+41:37
+dermatologista que pisa lá, infelizmente. Senão nós vendia uns 50.000 ligeiro aí, viu? de dermocosmético.
+41:43
+Beleza? E aí já tira foto dos principais
+41:49
+indicadores que eu uso. Eles são os que norteiam a minha gestão de estoque hoje
+41:55
+e as minhas compras, né? No ponto financeiro, eu olho basicamente por faturamento CMV e contas a pagar. Então
+42:02
+isso aqui são, lógico que tem vários indicadores, como o Cadre falou, mas
+42:08
+esses três vocês tm que estar de olho diariamente, diariamente acompanhando e criando objetivos e metas em cima deles,
+42:15
+porque senão o dinheirinho vai pro ralo ligeiro. Pro ralo não, pra prateleira e fica lá parado, né? Mas aí acaba vocês
+42:23
+passando aquele aperreio, fica rico, fica pobre, né? Mês de maio, todo mundo endinheirado, farmácia bombando, vou lá
+42:30
+e tiro R$ 30.000. R$ 1000 de prolabore na farmácia em maio. Mês de junho vê o
+42:36
+rebote dos boletos de abril e maio. Aí começa e paga e fecha o caixa e não dá o
+42:41
+dinheiro do boleto e não sei o quê, né? E aí acaba tendo que devolver uma parte daquele prolabore porque não tem esse
+42:47
+controle de contas a pagar. Beleza? da parte de gestão de estoque, eu
+42:53
+acompanho basicamente o estoque total, o excesso de estoque, que é aquele estoque
+42:59
+do que vende, mas que eu tenho muito. Por exemplo, se você vende 30 Nels por mês, você caiu na besteira de comprar
+43:05
+500 Nels para economizar 20 centavos. Quem aqui já deu uma cagada dessa? levanta a mão. É normal, essa é a mais
+43:13
+famosa. E aí esse Nelsoro, essas outras 470 unidades de Nelsoro são excesso de
+43:20
+estoque. É, e é ele que a gente tem que trabalhar também para não esperar um ano para vender meu estoque de Nelsoro, né?
+43:27
+Produtos sem vendas, que é aqueles as chupetinha lá que eu falei e as perdas, né? que aí tanto entra a venda perdida,
+43:34
+que é aquele indicador que eu falei, como também as perdas por vencimento.
+43:39
+Eu recebo uma facada no coração quando o caba vem me dizer que manda R$ 20.000 de produto vencido por mês pro lixo, né?
+43:47
+Então é algo que a gente tá tem que estar de olho e acompanhar de perto e
+43:53
+não perder de vista o meu processo de compras, né? Em 6 minutos eu vou ter que falar meu
+43:58
+processo de compra que eu ensino em mais de 100 horas. Meu Deus do céu. Basicamente a gente segue esses quatro
+44:05
+passos que é criar o calendário de compras, elaborar os pedidos, cotação e criticar o pedido quando chegar para não
+44:12
+acontecer como o Acolgate total 12 que eu comprei com 50% ontem, chegou com 42 hoje, né?
+44:19
+E aí vocês têm que entender primeiramente a diferença entre compra de reposição e compra de oportunidade,
+44:25
+né? Que aquela compra de reposição é fácil demais de fazer. é mamãozinho com açúcar, que é a de, por exemplo, os
+44:31
+medicamentos do Lib, do EMS, da Eurofarma, que eles sofrem variações de preço basicamente no reajuste anual lá
+44:38
+de maio para abril. Já as compras de oportunidade, por exemplo, hoje o Torcilax, pelo menos lá no Rio Grande do
+44:45
+Norte, tá nessa faixa de R7,70 no dia da oferta. Se aparecesse um Torcilax hoje
+44:51
+por R9,99, era uma oportunidade ou não?
+44:57
+Tem gente em dúvida ainda, né? Então é para mim, pelo histórico da do Rio Grande do Norte era uma oportunidade sim
+45:03
+e eu investiria um pouco mais. Então ele exige mais capital de giro porque sofre
+45:09
+altas variações de preço. Quem aqui comprou a Pic Tuchust de R$ 12 ano passado, no começo desse ano?
+45:16
+Só você deu aqui no Pernambuco também, né? Como é que vocês não aproveitaram uma fralda
+45:24
+com a qualidade cremer por R$ 12? Me diga qual foi o medo que vocês
+45:30
+tiveram dessa fralda não vender? Porque essa foi uma das grandes oportunidades que a gente pegou esse ano
+45:37
+e hoje minha farmácia vende a fralda picust mais barato que o distribuidor com marcap de 50%. Quase bati os 60,
+45:44
+viu? Cad você perguntou hoje de manhã. Então são oportunidades como essa que
+45:51
+estão diariamente disponíveis pra gente caçar também no mercado. É lógico que vocês têm que entender muito bem o
+45:57
+financeiro para não fazer loucura e ficar lá com caminão de piquitucho e os boletos atrasados para pagar. É tem que
+46:03
+ter noção para não escorregar nisso também. E aí, quem quiser tirar foto do calendário de compras, esse é um exemplo
+46:09
+do que a gente usa. Basicamente eu faço pedido de referência todo dia útil de segunda a sexta, porque
+46:17
+é aquele pedido de curva A e curva B que eu faço em 10 minutos. Então, para mim dá um conforto de caixa, dá uma queda de
+46:25
+ruptura muito boa, que não vai me apertar e nem vai tomar tomar muito tempo, né? E todo dia eu consigo
+46:32
+abastecer. Já os pedidos de genéricos e de higiene pessoal e cosméticos
+46:39
+são pedidos que eu de genético, por exemplo, hoje eu coto com 30 fornecedores. Então é um dia inteiro de
+46:45
+pedido, né? Eu solto o pedido de manhã e fecho de tardezinha. Dou o tempo do
+46:50
+pessoal responder, de entrar na disputa, tudo isso. Então é algo que a gente faz
+46:56
+uma vez por semana. Quem dominar muito bem pode passar para 10 em 10 dias ou 15
+47:01
+em 15 dias. Mais que isso já fica muito perigoso de dar ruptura na farmácia,
+47:07
+certo? E aí sempre deixa um pedidinho guardado aqui pro último dia do mês, viu? Galera
+47:12
+da distribuidora aí gosta, né, do último dia do mês para soltar uma ofertazinha. Então é bom sempre deixar uma uma
+47:19
+dotação orçamentária para gastar ali no último dia e aproveitar as oportunidades. Já esses produtos aqui,
+47:25
+ó, Nestley, Danoni, Johnson, Lever, Fraldas e Neoquímica, são produtos que a
+47:30
+gente não consegue prever o dia de comprar, não é verdade? Se você não compra
+47:36
+neste L no dia da oferta, no outro dia ele tá 15% mais caro do que a oferta. E
+47:42
+aí você vai comprar mais caro do que seu concorrente tá vendendo. Então, nessas
+47:47
+marcas de oferta que eu dei cinco exemplos, seis exemplos aqui, mas que são muito mais, né? Vocês t que ficar de
+47:55
+olho quais marcas t esse comportamento de oferta, que é uma oferta que nem é
+48:00
+algo tão eh, como é que eu posso dizer, tão pouco frequente, né? porque ela
+48:07
+acontece mensalmente ou bimestralmente, mas também se você errar a compra no dia, você só vai conseguir comprar
+48:13
+novamente nesse preço no mês que vem. Beleza?
+48:18
+Elaboração de pedidos. Infelizmente, eu gosto muito nessa hora abrir o sistema e mostrar para vocês eu montando um pedido
+48:24
+em 10 minutos, mas como o tempo não vai dar, eu vou liberar um link para vocês de um vídeo que eu tenho mostrando como
+48:31
+configurar esse pedido para vocês. Não é nem fazer o pedido, é como vocês podem replicar esse mesmo pedido na farmácia
+48:38
+de vocês, certo? E a cotação, para quem não acredita na cotação, eu trago sempre
+48:44
+esse exemplo, principalmente de genéricos para vocês, né? Esse foi um cliente meu da consultoria que mandou um
+48:51
+bom dia e disse que a Losartana ele comprou por 10,22 e o cliente veio
+48:56
+reclamar porque compra de 13 na outra farmácia. E aí ele tava vendendo por R$ 22 com
+49:03
+120% de markup. Vocês acham que o erro daqui foi de marcap ou foi de compra?
+49:11
+Compra, né? Hoje a gente compra facilmente uma Losartana com ID de 50 por 12,5 por R$ 5, não é verdade? Então
+49:20
+dá para comprar barato, ser competitivo. Lógico que esse concorrente também tava muito agressivo, mas no meio dessa
+49:28
+loucura que a gente tá vivendo de concorrência de mercado, dá para você ainda ser competitivo e ganhar dinheiro,
+49:33
+né? E o segredo tá aí, tá em achar realmente as as moléculas que estão mais
+49:38
+baratas, dos laboratórios que estão mais baratos, certo? E aí a crítica de pedido, como eu disse,
+49:45
+né? Eh, se eu não fizesse do creme total 12 lá que eu falei, eu não tinha
+49:50
+percebido e tinha perdido só nesse pedido acho que cerca de R$ 60 em um produto, né? Então, se você não faz essa
+49:57
+crítica, uma vez eu teve uma desvenda faxina que eu combinei com o pessoal para comprar de R$ 20 e eles me mandaram
+50:05
+por R$ 30 e eu comprei 120 unidades. Então, daria uma diferença de R$.200. R$
+50:11
+200 em um único produto que se eu não conferisse o preço que chegou na nota fiscal, eu ia perder, né? E para
+50:18
+finalizar, o meu segredo de comprar bem é esse aqui, é esse tripé, é comprar os
+50:23
+produtos certos na quantidade certa, com apoio do sistema, pelo melhor preço do mercado, né? Com
+50:30
+apoio de cotação e caçada de oportunidades, e gerir o que não vendeu
+50:35
+como esperado, como aquela chupeta que fazia 3 anos que tava na prateleira. E se eu não tivesse jogado ela para fora,
+50:41
+ela não tinha saído. Beleza? Para finalizar, eu quero deixar para
+50:47
+vocês mais um presente também. Hoje esse povo tá ganhando presente demais, viu Cad? Mais um presente. A gente preparou
+50:53
+um diagnóstico gratuito do seu processo de compras e gestão de estoque, certo? É
+50:59
+um é um diagnóstico automático. Então, aproveitem bem as aulas que ele vai
+51:06
+sugerir para você. Então, por exemplo, você vai dizer lá: "Ah, Sérgio, eu não faço pedido no sistema". Então, ele vai
+51:12
+lhe voltar: "Ó, assista essa aula que eu lhe ensino como fazer o pedido no
+51:17
+sistema, certo?" Então vocês preenchem esse diagnóstico com calma, vai levar
+51:22
+cerca de 5 minutos. E no final tem um link também do grupo do Clube Farm Stock, que já tem mais de
+51:30
+600 donos de farmácia lá diariamente compartilhando ideias, compartilhando problemas e sempre traz muito
+51:36
+aprendizado no nosso dia a dia. Beleza? Para fechar, eu descobri nesses dois anos que eu tô
+51:43
+rodando de mentoria, consultoria e do curso, que tem um fator que é o fator
+51:49
+que mais move um dono de farmácia a se mexer, que é eu ver outro dono de
+51:54
+farmácia fazendo acontecer. E muitas vezes vocês esperam o concorrente de vocês fazer, quando ele vai lá e faz, aí
+52:02
+vocês vão e copia, né? Então é muito mais fácil vocês aprenderem entre vocês que estão aqui no evento, trocar network
+52:10
+com a gente que é dono de farmácia e consegue implementar boas práticas e conseguir implementar primeiro do que
+52:16
+ser o concorrente, né? Porque quando vocês veem que eu consegui sem experiência nenhuma com meus irmãos
+52:23
+fazer acontecer lá em Carnaúba dos Dantes uma cidade de 8.000 habitantes. Vocês estão aqui em Recife, em Caruaru,
+52:29
+cidades enormes de um mercado enorme, ficam até meio encabulado. Né, rapaz,
+52:35
+será que é verdade mesmo? Será que esse menino consegue fazer uma cidade tão pequena e a gente não consegue aqui, né?
+52:41
+Então é exatamente isso que eu quis trazer para vocês hoje, é mostrar que a gente faz, que a gente implementa e que
+52:47
+pode funcionar na sua farmácia também. E quem quiser seguir o Instagram do Farmstock, tá aqui @farmstock também. Lá
+52:56
+tem várias dicas para vocês. Deus abençoe vocês. Muito obrigado.
+53:01
+Obrigada, Sérgio. Parabéns pela apresentação. Muito obrigada.

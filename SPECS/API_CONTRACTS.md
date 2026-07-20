@@ -65,3 +65,13 @@ npm run knowledge:import
 ```
 
 Não é um endpoint HTTP. O comando reutiliza o serviço de ingestão, move sucessos para `processed`, falhas para `failed` e imprime apenas um resumo agregado. PostgreSQL permanece como fonte de verdade.
+
+## Comando interno: knowledge:reprocess
+
+Substitui transacionalmente os chunks de uma fonte existente usando uma transcrição TXT ou Markdown:
+
+```bash
+npm run knowledge:reprocess -- <sourceId> <arquivo.txt|arquivo.md>
+```
+
+O comando preserva a fonte e seus metadados, não cria fonte duplicada e preenche `startTime`/`endTime` quando encontra timestamps isolados. Não é um endpoint HTTP e não executa reprocessamento automático.

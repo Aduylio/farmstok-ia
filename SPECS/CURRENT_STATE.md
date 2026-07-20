@@ -34,14 +34,19 @@ Data: 20/07/2026
 - Feature 006 de importação local por TXT e Markdown implementada.
 - Comando `npm run knowledge:import` reutilizando o serviço transacional da Feature 005.
 - Inbox, processed e failed versionados, com limite padrão de 5 MiB por arquivo.
-- 29 testes automatizados passando; testes do importador usam filesystem temporário e não acessam PostgreSQL real.
+- Feature 007 de parsing temporal implementada.
+- Ingestão preenchendo `startTime` e `endTime` normalizados quando há timestamps isolados.
+- Comando `npm run knowledge:reprocess` substituindo chunks de uma fonte existente em transação.
+- 43 testes automatizados passando sem PostgreSQL real nos novos testes.
+- Auditoria somente leitura confirmou 2 fontes e 151 chunks antes do reprocessamento manual.
 
 ## Ainda não implementado
 
 - Supabase.
 - pgvector.
 - Embeddings.
-- Reprocessamento e idempotência de fontes.
+- Idempotência de fontes.
+- Reprocessamento manual das duas fontes reais já importadas.
 - Importação de PDF, DOCX, áudio e vídeo.
 - API de inteligência artificial.
 - WhatsApp.
@@ -50,4 +55,4 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Definir idempotência e reprocessamento de fontes antes de ampliar formatos de importação ou iniciar embeddings.
+Conferir os IDs e executar manualmente os comandos documentados na Feature 007 para reprocessar as duas transcrições reais.

@@ -16,6 +16,8 @@ export interface KnowledgeChunkInput {
   content: string;
   contentHash: string;
   tokenCount: number;
+  startTime: string | null;
+  endTime: string | null;
 }
 
 export interface KnowledgeSourceInput {
@@ -91,6 +93,8 @@ export class PrismaKnowledgeIngestionRepository
             content: chunk.content,
             contentHash: chunk.contentHash,
             tokenCount: chunk.tokenCount,
+            startTime: chunk.startTime,
+            endTime: chunk.endTime,
           })),
         });
 

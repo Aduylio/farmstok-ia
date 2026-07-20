@@ -7,10 +7,38 @@ import type {
   KnowledgeSourceInput,
 } from './knowledge-ingestion.repository.js';
 import {
-  chunkText,
   createContentHash,
   estimateTokenCount,
 } from './knowledge-ingestion.utils.js';
+import { chunkTranscript } from './transcript-timestamps.js';
+
+export interface PreparedKnowledgeChunk {
+  content: string;
+  contentHash: string;
+  tokenCount: number;
+  startTime: string | null;
+  endTime: string | null;
+}
+
+export function prepareKnowledgeChunks(
+  content: string,
+): PreparedKnowledgeChunk[] {
+  const uniqueChunks = new Map<string, PreparedKnowledgeChunk>();
+
+  for (const chunk of chunkTranscript(content)) {
+    const contentHash = createContentHash(chunk.content);
+
+    if (!uniqueChunks.has(contentHash)) {
+      uniqueChunks.set(contentHash, {
+        ...chunk,
+        contentHash,
+        tokenCount: estimateTokenCount(chunk.content),
+      });
+    }
+  }
+
+  return [...uniqueChunks.values()];
+}
 
 function buildSourceInput(
   input: CreateKnowledgeSourceBody,
@@ -45,26 +73,9 @@ export class KnowledgeIngestionService {
   async ingest(
     input: CreateKnowledgeSourceBody,
   ): Promise<KnowledgeIngestionResponse> {
-    const uniqueChunks = new Map<
-      string,
-      { content: string; contentHash: string; tokenCount: number }
-    >();
-
-    for (const content of chunkText(input.content)) {
-      const contentHash = createContentHash(content);
-
-      if (!uniqueChunks.has(contentHash)) {
-        uniqueChunks.set(contentHash, {
-          content,
-          contentHash,
-          tokenCount: estimateTokenCount(content),
-        });
-      }
-    }
-
     const result = await this.repository.createSourceWithChunks({
       source: buildSourceInput(input),
-      chunks: [...uniqueChunks.values()],
+      chunks: prepareKnowledgeChunks(input.content),
     });
 
     return {

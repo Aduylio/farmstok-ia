@@ -105,6 +105,10 @@ Regras:
 - `(sourceId, contentHash)` é único.
 - `tokenCount`, quando informado, não pode ser negativo.
 - `embedding` é temporariamente `String?`; não existe extensão ou índice vetorial.
+- `startTime` e `endTime` armazenam limites normalizados como `HH:MM:SS` para transcrições temporais.
+- `startTime` corresponde ao primeiro marcador do chunk e `endTime` ao fim do último segmento combinado.
+- Conteúdo sem timestamps mantém ambos os campos nulos.
+- O hash continua baseado somente no conteúdo textual, sem timestamps.
 
 ### answer_logs
 

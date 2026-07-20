@@ -66,8 +66,10 @@ data/knowledge/inbox/curva-abc.json
 ```text
 Curva ABC
 
+0:14
 A Curva ABC classifica os itens de estoque conforme sua relevância.
 
+0:48
 Os itens A exigem acompanhamento mais frequente, enquanto os itens B e C possuem menor impacto relativo.
 ```
 
@@ -175,6 +177,8 @@ O script instancia:
 - `KnowledgeIngestionService`.
 
 O importador não conhece a implementação de chunks, SHA-256, tokenCount ou transação. Ele fornece metadados e conteúdo validados ao mesmo método `ingest` usado pelo endpoint HTTP.
+
+Transcrições que possuem timestamps isolados são interpretadas pelo pipeline temporal da Feature 007. Arquivos sem timestamps mantêm o chunking anterior.
 
 ## Encerramento
 

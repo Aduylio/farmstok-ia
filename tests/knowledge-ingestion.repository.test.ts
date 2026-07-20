@@ -58,6 +58,8 @@ describe('PrismaKnowledgeIngestionRepository', () => {
             content: 'Conteúdo',
             contentHash: 'hash',
             tokenCount: 2,
+            startTime: null,
+            endTime: null,
           },
         ],
       }),

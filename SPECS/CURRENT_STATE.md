@@ -1,5 +1,12 @@
 # Estado atual do projeto
 
+## Feature 013
+
+- Integracao Kommo preparada, mas sem credenciais ou chamadas reais.
+- Webhook form-urlencoded, consulta de lead, regra `IA_PAUSADA`, idempotencia, protecao de HUMAN e transacao implementados.
+- PostgreSQL e a fonte operacional e `canAiRespond` nao consulta o Kommo.
+- Nenhum Student, Conversation ou ConversationEvent foi alterado nesta implementacao.
+
 ## Feature 012
 
 - Busca vetorial exata por cosseno implementada em rota e CLI separados da busca textual.

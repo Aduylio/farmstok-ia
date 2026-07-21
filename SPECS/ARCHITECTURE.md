@@ -1,5 +1,12 @@
 # Arquitetura
 
+## Sincronizacao Kommo (Feature 013)
+
+- Kommo emite mudancas; PostgreSQL continua sendo a fonte operacional do modo.
+- O backend consulta o lead atualizado apenas ao receber webhook, nunca a cada mensagem.
+- Transporte, parser form-urlencoded, decisao, repository transacional e rota ficam separados em `modules/kommo`.
+- `HUMAN` e protegido; PAUSED somente volta a AI quando a pausa foi registrada pelo Kommo.
+
 ## Busca vetorial (Feature 012)
 
 - Modulo separado em `knowledge-vector-search`, sem substituir a busca textual.

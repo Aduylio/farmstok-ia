@@ -5,6 +5,7 @@ import { knowledgeIngestionRoutes } from './modules/knowledge-ingestion/knowledg
 import { knowledgeRoutes } from './modules/knowledge/knowledge.routes.js';
 import { knowledgeSearchRoutes } from './modules/knowledge/knowledge-search.routes.js';
 import { knowledgeVectorSearchRoutes } from './modules/knowledge-vector-search/knowledge-vector-search.routes.js';
+import { kommoRoutes } from './modules/kommo/kommo.routes.js';
 
 export function buildApp() {
   const app = Fastify({
@@ -26,6 +27,8 @@ export function buildApp() {
     prefix: '/api/knowledge',
   });
 
+  app.addContentTypeParser('application/x-www-form-urlencoded', { parseAs: 'string', bodyLimit: 64 * 1024 }, (_request, body, done) => done(null, body));
+
   app.register(knowledgeIngestionRoutes, {
     prefix: '/api/knowledge',
   });
@@ -37,6 +40,8 @@ export function buildApp() {
   app.register(knowledgeVectorSearchRoutes, {
     prefix: '/api/knowledge',
   });
+
+  app.register(kommoRoutes);
 
   return app;
 }

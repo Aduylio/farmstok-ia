@@ -1,5 +1,9 @@
 # Modelo de dados
 
+## Modo sincronizado pelo Kommo
+
+Feature 013 reutiliza `Conversation.mode`, `modeChangedAt`, `modeChangedBy=SYSTEM`, `kommoLeadId` e `ConversationEvent` existentes. Eventos usam os tipos reais `PAUSED` e `RESUMED`; metadata minima identifica `source=kommo`, lead e tag. Nenhum campo, enum ou migration foi adicionado.
+
 ## Metadados de embeddings (Feature 011)
 
 `KnowledgeChunkEmbedding.inputHash` identifica o texto exato da politica de embedding v1. Um embedding somente e atual quando `provider=openai`, `model=text-embedding-3-small`, `dimensions=1536` e o hash coincide. `inputTokens` registra a contagem por item somente quando o provider a fornece; a contagem agregada fica no resumo operacional.

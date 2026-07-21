@@ -1,5 +1,13 @@
 # Roadmap
 
+## Atualizacao Feature 013
+
+- [x] Preparar cliente e webhook Kommo para sincronizar modo por `IA_PAUSADA`.
+- [x] Implementar idempotencia, protecao HUMAN e auditoria transacional.
+- [ ] Configurar credenciais, segredo e URL HTTPS em ambiente controlado.
+- [ ] Executar teste real com lead e conversa conhecidos.
+- [ ] Avaliar fila e rate limiting distribuido antes de volume de producao.
+
 ## Atualizacao Feature 012
 
 - [x] Implementar endpoint e CLI de busca vetorial exata.

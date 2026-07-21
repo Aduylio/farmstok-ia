@@ -1,5 +1,9 @@
 # Contratos da API
 
+## POST /webhooks/kommo
+
+Webhook operacional form-urlencoded para eventos `leads[add]`, `leads[update]` e `leads[status]`. Deduplica ate 20 IDs, consulta o lead atualizado e retorna `{ accepted, processed, updated, ignored }`. Pode receber segredo pela URL (`?secret=`) configurada no Kommo ou pelo header `x-kommo-webhook-secret`. Payload invalido: 400 `INVALID_REQUEST`; segredo incorreto: 401 `UNAUTHORIZED_WEBHOOK`; falha de sincronizacao: 502 `KOMMO_SYNC_FAILED`.
+
 ## GET /api/knowledge/vector-search
 
 Busca vetorial exata separada de `GET /api/knowledge/search`. Recebe `q`, `limit` (1..20, padrao 5), `sourceKey`, `course`, `type` e `minSimilarity` (0..1, padrao 0). Sucesso retorna `{ query, results, total, reason }`; sem embeddings, HTTP 200 com `reason: "NO_EMBEDDINGS_AVAILABLE"`; sem resultado acima do threshold, `reason: "NO_RELEVANT_RESULTS"`. Entrada invalida retorna 400 `INVALID_REQUEST`, provider indisponivel retorna 503 `EMBEDDING_PROVIDER_UNAVAILABLE` e falha interna retorna 500 `INTERNAL_ERROR`.

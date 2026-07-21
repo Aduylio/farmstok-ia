@@ -1,5 +1,18 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 013
+
+### Adicionado
+
+- Modulo Kommo, cliente HTTP preparado, parser form-urlencoded, service e repository transacional.
+- Webhook `POST /webhooks/kommo`, segredo de rota e limite de payload/leads.
+- Regra `IA_PAUSADA`, protecao do modo HUMAN, idempotencia e `canAiRespond` local.
+- CLI de sincronizacao manual e testes sem internet ou banco real.
+
+### Confirmado
+
+- Nenhuma credencial, chamada Kommo/OpenAI, migration ou alteracao operacional no banco.
+
 ## 21/07/2026 - Feature 012
 
 ### Adicionado

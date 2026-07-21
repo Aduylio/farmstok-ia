@@ -4,6 +4,7 @@ import { env } from './config/env.js';
 import { knowledgeIngestionRoutes } from './modules/knowledge-ingestion/knowledge-ingestion.routes.js';
 import { knowledgeRoutes } from './modules/knowledge/knowledge.routes.js';
 import { knowledgeSearchRoutes } from './modules/knowledge/knowledge-search.routes.js';
+import { knowledgeVectorSearchRoutes } from './modules/knowledge-vector-search/knowledge-vector-search.routes.js';
 
 export function buildApp() {
   const app = Fastify({
@@ -30,6 +31,10 @@ export function buildApp() {
   });
 
   app.register(knowledgeSearchRoutes, {
+    prefix: '/api/knowledge',
+  });
+
+  app.register(knowledgeVectorSearchRoutes, {
     prefix: '/api/knowledge',
   });
 

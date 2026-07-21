@@ -1,5 +1,12 @@
 # Arquitetura
 
+## Busca vetorial (Feature 012)
+
+- Modulo separado em `knowledge-vector-search`, sem substituir a busca textual.
+- Busca exata por cosseno no pgvector, sem HNSW/IVFFlat.
+- O repository usa SQL parametrizado e somente embeddings OpenAI `text-embedding-3-small` de 1536 dimensoes.
+- O service verifica a existencia de embeddings antes de instanciar o provider; zero vetores nao exige chave nem chamada externa.
+
 ## Backfill de embeddings (Feature 011)
 
 - `EmbeddingProvider` isola o dominio do SDK oficial OpenAI; respostas futuras podem usar outro provider, inclusive uma eventual DeepSeek, sem mudar o provider dos embeddings.

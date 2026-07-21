@@ -15,6 +15,7 @@
     "knowledge:import": "tsx scripts/import-knowledge.ts",
     "knowledge:reprocess": "tsx scripts/reprocess-knowledge.ts",
     "knowledge:search": "tsx scripts/search-knowledge.ts",
+    "knowledge:vector-search": "tsx scripts/vector-search-knowledge.ts",
     "knowledge:embed": "tsx scripts/backfill-embeddings.ts",
     "prisma:generate": "prisma generate",
     "prisma:validate": "prisma validate",

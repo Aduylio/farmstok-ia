@@ -1,5 +1,9 @@
 # Contratos da API
 
+## GET /api/knowledge/vector-search
+
+Busca vetorial exata separada de `GET /api/knowledge/search`. Recebe `q`, `limit` (1..20, padrao 5), `sourceKey`, `course`, `type` e `minSimilarity` (0..1, padrao 0). Sucesso retorna `{ query, results, total, reason }`; sem embeddings, HTTP 200 com `reason: "NO_EMBEDDINGS_AVAILABLE"`; sem resultado acima do threshold, `reason: "NO_RELEVANT_RESULTS"`. Entrada invalida retorna 400 `INVALID_REQUEST`, provider indisponivel retorna 503 `EMBEDDING_PROVIDER_UNAVAILABLE` e falha interna retorna 500 `INTERNAL_ERROR`.
+
 > A Feature 010 adicionou somente infraestrutura interna pgvector. Nenhum endpoint ou formato público foi alterado e nenhum embedding é gerado por requisições atuais.
 
 ## GET /api/health

@@ -1,5 +1,19 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 012
+
+### Adicionado
+
+- Modulo, endpoint e CLI de busca vetorial exata por cosseno.
+- Input de pergunta v1 separado da politica de chunks.
+- SQL pgvector parametrizado com filtros, threshold, limite e ordem deterministica.
+- Tratamento `NO_EMBEDDINGS_AVAILABLE` sem chave ou chamada externa.
+- Testes unitarios de service, repository, schemas, rota, utilitarios e CLI.
+
+### Confirmado
+
+- Busca textual preservada; zero embeddings, zero chamadas externas, zero escritas e nenhuma migration nova.
+
 ## 20/07/2026 - Feature 011
 
 ### Adicionado

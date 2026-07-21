@@ -1,5 +1,13 @@
 # Roadmap
 
+## Atualizacao Feature 012
+
+- [x] Implementar endpoint e CLI de busca vetorial exata.
+- [x] Isolar busca textual e vetorial.
+- [x] Tratar zero embeddings sem exigir provider.
+- [ ] Validar ranking real apos o backfill controlado dos tres primeiros chunks.
+- [ ] Avaliar busca hibrida somente apos medir busca textual e vetorial.
+
 ## Atualizacao Feature 011
 
 - [x] Implementar cliente e backfill idempotente de embeddings em dry-run seguro.

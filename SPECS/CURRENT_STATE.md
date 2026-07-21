@@ -1,5 +1,12 @@
 # Estado atual do projeto
 
+## Feature 012
+
+- Busca vetorial exata por cosseno implementada em rota e CLI separados da busca textual.
+- Estado real permanece em 2 fontes, 148 chunks ativos, 0 embeddings e 148 chunks sem embedding.
+- Com zero embeddings, a busca retorna `NO_EMBEDDINGS_AVAILABLE` sem criar/chamar provider.
+- Nenhum backfill, embedding, escrita, schema ou migration foi executado nesta feature.
+
 ## Feature 011
 
 - Cliente oficial OpenAI, provider abstrato, input v1, retry seletivo e backfill idempotente implementados.

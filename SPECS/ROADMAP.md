@@ -127,3 +127,14 @@
 - [ ] Implementar tag IA_PAUSADA.
 - [ ] Sincronizar estado com Supabase.
 - [ ] Testar pausa e retomada.
+
+## Feature 016 — Avaliação RAG
+
+- [x] Criar dataset versionado e suíte reproduzível de avaliação.
+- [x] Medir TEXT e o fallback `TEXT_ONLY` do HYBRID.
+- [x] Versionar baseline textual e comparador de resultados.
+- [x] Separar métricas de expectativas confirmadas e pendentes.
+- [x] Incorporar revisão manual v2 e classificar todos os casos por `answerType`.
+- [x] Preservar baseline v1, gerar baseline v2 e comparar políticas.
+- [ ] Revisar manualmente os 5 casos ainda pendentes.
+- [ ] Repetir VECTOR e HYBRID após backfill autorizado.

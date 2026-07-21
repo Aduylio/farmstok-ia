@@ -1,0 +1,1045 @@
+{
+  "date": "2026-07-21",
+  "policyVersion": "rag-evaluation-v1",
+  "mode": "TEXT",
+  "effectiveMode": "TEXT",
+  "cases": 25,
+  "confirmedCases": 7,
+  "pendingCases": 18,
+  "metrics": {
+    "pass": 15,
+    "partial": 4,
+    "fail": 6,
+    "skipped": 0,
+    "top1Accuracy": 0.56,
+    "top3Accuracy": 0.72,
+    "meanReciprocalRank": 0.643333,
+    "expectedTermCoverage": 0.68
+  },
+  "metricsByReviewStatus": {
+    "confirmed": {
+      "pass": 3,
+      "partial": 3,
+      "fail": 1,
+      "skipped": 0,
+      "top1Accuracy": 0.571429,
+      "top3Accuracy": 0.714286,
+      "meanReciprocalRank": 0.678571,
+      "expectedTermCoverage": 0.642857
+    },
+    "pending": {
+      "pass": 12,
+      "partial": 1,
+      "fail": 5,
+      "skipped": 0,
+      "top1Accuracy": 0.555556,
+      "top3Accuracy": 0.722222,
+      "meanReciprocalRank": 0.62963,
+      "expectedTermCoverage": 0.694444
+    }
+  },
+  "results": [
+    {
+      "id": "trier-estoque-minimo",
+      "category": "TRIER",
+      "reviewStatus": "CONFIRMED",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "f8fd8e1c-882e-4890-a7b9-5beb1c9b75cd",
+          "excerpt": "Pessoal, muito boa tarde para alguns. Boa noite, né, aqui já nesse finalzinho de dia. É um prazer tê-los todos aqui conosco. Eu sou Ricardo Balbino, diretor com"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "117a4d41-8430-45a6-a226-cec42ef52b71",
+          "excerpt": "quer comprar diariamente, que você quer manter aquele estoque de segurança de 7 dias e não correr aquele risco de faltar, tão caindo aqui na curva B, como você "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d63e175-a0f3-453d-a31b-c9026c1124a1",
+          "excerpt": "- Sistema Trier - Gestão de compras em farmácias - Configuração do Trier - Curva ABC - Estoque de segurança - Cobertura de estoque - Demanda de produtos - Giro "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "c81ea3cd-a056-44e0-8638-66051134622c",
+          "excerpt": "A Cunha. Boa noite, pessoal. Para mim é uma honra imensa tá aqui com vocês hoje. Com certeza eu vou aprender muito mais do que ensinar, porque não sei se vocês "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "31400cd4-b2e1-4f52-bc69-ebd675ea7f66",
+          "excerpt": "Deixa eu pegar um produto que tenha muitos laboratórios pra gente analisar. Oesartana de 20, certo? Eu calculei Santaoli, né, Flumberto, né, Flberto? Não tá con"
+        }
+      ]
+    },
+    {
+      "id": "trier-estoque-maximo",
+      "category": "TRIER",
+      "reviewStatus": "CONFIRMED",
+      "status": "PARTIAL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0.5,
+      "reciprocalRank": 0.25,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "bbf77923-cc6a-4af4-8a2e-72fc813162d3",
+          "excerpt": "e as minhas compras, né? No ponto financeiro, eu olho basicamente por faturamento CMV e contas a pagar. Então isso aqui são, lógico que tem vários indicadores, "
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "a3360aff-a4bb-4cca-b570-27230b65ce21",
+          "excerpt": "descobriu e eu tive que resolver esse problema com vovó na no hospital internada porque vovó era dona da farmácia, né? E aí eu conversei com meus tios, eu disse"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "df7b1d83-6ba3-4a3c-9596-03d30a245da3",
+          "excerpt": "vulgo babão, né? que eu sofri muito com os babões do meu concorrente no início, que eu não tinha experiência, então os caras levavam as oportunidades só pro meu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "c7eed3f9-efde-4a61-a497-258e8fd2e450",
+          "excerpt": "E depois de implantar esse filtro da curva A e curva B, ainda tem outro outro filtro que eu uso bastante, que é tirar os laboratórios de OLs, que eu não preciso"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "84064a48-0e11-4883-963b-b73d6effde5e",
+          "excerpt": "farmácia de comprar num dia e chegar no outro dia, no próximo dia útil, não faz sentido eu ter um estoque para 3 anos. Não faz sentido nem para se meses se não "
+        }
+      ]
+    },
+    {
+      "id": "trier-curva-abc",
+      "category": "TRIER",
+      "reviewStatus": "CONFIRMED",
+      "status": "PARTIAL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0.5,
+      "reciprocalRank": 0.5,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "6ed52378-61fb-488d-b5eb-97ad01e6918e",
+          "excerpt": "20% dos produtos da farmácia geram 80% das vendas, tá? Então a curva A vocês podem colocar sem medo nenhum 80%, que é exatamente aqueles produtos chave que você"
+        }
+      ]
+    },
+    {
+      "id": "trier-estoque-seguranca",
+      "category": "TRIER",
+      "reviewStatus": "CONFIRMED",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "c7eed3f9-efde-4a61-a497-258e8fd2e450",
+          "excerpt": "E depois de implantar esse filtro da curva A e curva B, ainda tem outro outro filtro que eu uso bastante, que é tirar os laboratórios de OLs, que eu não preciso"
+        }
+      ]
+    },
+    {
+      "id": "trier-cobertura",
+      "category": "TRIER",
+      "reviewStatus": "CONFIRMED",
+      "status": "PARTIAL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0.5,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "51d54fa7-9310-4ab8-8d75-994e6e61d144",
+          "excerpt": "que para eu comprar uma quantidade saudável de Maxidex para passar um mês, eu só preciso comprar 14 unidades de Maxdex. Beleza? Vamos pegar mais um item aqui qu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        }
+      ]
+    },
+    {
+      "id": "trier-momento-compra",
+      "category": "COMPRAS",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "51d54fa7-9310-4ab8-8d75-994e6e61d144",
+          "excerpt": "que para eu comprar uma quantidade saudável de Maxidex para passar um mês, eu só preciso comprar 14 unidades de Maxdex. Beleza? Vamos pegar mais um item aqui qu"
+        }
+      ]
+    },
+    {
+      "id": "trier-eticos",
+      "category": "MEDICAMENTOS",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "653b1124-d0cd-4dce-837e-22a16e7f2883",
+          "excerpt": "fazer um pedido mais otimizado, ela não é tão eficiente. Então eu já cancelo ela aqui por pelo simples motivo. Se você for abrir aqui, por exemplo, um pedido de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a57dfb9f-8b9b-4fae-81d2-64c54dae4a96",
+          "excerpt": "curva B, que são aqueles produtos que só vende, que vendem pelo menos duas unidades nos últimos três meses, tá? Então aqui na minha farmácia para referência, eu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "77e3d2d0-c165-4f7d-9367-f3f6bf9daa97",
+          "excerpt": "E daqui existem os outros parâmetros que a gente vai falar um pouco lá na frente, o compras por agrupamento, mas como a gente vai ver um de cada vez, então vamo"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3bbf0647-b2cd-4720-8483-3f347d91de1b",
+          "excerpt": "sugerir comprar duas unidades, certo? Vamos ver outros itens aqui. Seleston elixi. Seleston elixi teve venda em agosto, em outubro, em dezembro. E como o sistem"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "e2a323e5-0e83-48e2-a2bf-2efabfd3752d",
+          "excerpt": "forma mais barata e ganhando pontos, outros benefícios, tá? Então, se você entende que existem esses grupos de OLs, então a gente precisa organizar o nosso cale"
+        }
+      ]
+    },
+    {
+      "id": "trier-genericos",
+      "category": "MEDICAMENTOS",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "6e707949-12aa-4612-87f1-3840342a88eb",
+          "excerpt": "olham para o valor de compra e acabam de olhar para o valor de faltas, né? E é essa gangorra que a gente dança, nem deixar faltar e nem comprar demais para se e"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "2d1e8c1e-2a97-46f3-93a7-2febfc339001",
+          "excerpt": "ter disciplina, né? Você pode ter todo aquele método, saber que tem que preencher a planilha, tal, tal, tal, mas se você não for todo dia lá conferir o dinheiro"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "950341ec-a5b5-4a72-a24a-d6827bd07339",
+          "excerpt": "que eu vou contar aqui para vocês hoje, o que a gente fez para estar numa cidade de 8.000 habitantes, crescendo 40% ao ano e tendo resultados fora da curva, man"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "65549ac6-73da-4c87-b2b6-59bc3999703b",
+          "excerpt": "Beleza? Para começar, né, a nossa farmácia começou em 1941 com meus bisavós Desidéria e Estevon. E vovó Desidéria era como se fosse a médica da cidade, né? Ness"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        }
+      ]
+    },
+    {
+      "id": "trier-similares-correlatos",
+      "category": "MEDICAMENTOS",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PARTIAL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "08f8789f-fd97-4c75-9f28-b104d20cbd0f",
+          "excerpt": "que pra gente funciona, mas eu tento reduzir o máximo essas encomendas, certo? Então, por dia elas representam cerca de cinco vendas, no máximo, e a gente tem m"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "85985796-3362-43b4-a697-b38835d752ff",
+          "excerpt": "entenderem. E ele dá 4,25, que é justamente esse estoque de segurança de quatro. Então, quando o estoque do Maxdex baixou de quatro, ele já me sinalizou: \"Sérgi"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "42263472-6d0a-447c-92b6-6ee4441e41d3",
+          "excerpt": "turma agora. Quem tiver interesse, segue lá o Instagram do Farmstock que a gente vai liberar mais informações. Então vamos ver aqui, por exemplo, esse Naproxeno"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "98b9ca4b-1a5a-417e-aecc-438ee3fdaa13",
+          "excerpt": "Webinar Trier: Aprenda a Comprar de Forma Inteligente! Com Sérgio Samuel Resumo do conteúdo: Nesta live, Sérgio Samuel apresenta a metodologia de gestão de comp"
+        }
+      ]
+    },
+    {
+      "id": "historia-origem",
+      "category": "HISTORIA",
+      "reviewStatus": "CONFIRMED",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "a3360aff-a4bb-4cca-b570-27230b65ce21",
+          "excerpt": "descobriu e eu tive que resolver esse problema com vovó na no hospital internada porque vovó era dona da farmácia, né? E aí eu conversei com meus tios, eu disse"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "bbf77923-cc6a-4af4-8a2e-72fc813162d3",
+          "excerpt": "e as minhas compras, né? No ponto financeiro, eu olho basicamente por faturamento CMV e contas a pagar. Então isso aqui são, lógico que tem vários indicadores, "
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "2de45d53-1688-44e2-8bfe-f8678acf20c3",
+          "excerpt": "acontece mensalmente ou bimestralmente, mas também se você errar a compra no dia, você só vai conseguir comprar novamente nesse preço no mês que vem. Beleza? El"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "df7b1d83-6ba3-4a3c-9596-03d30a245da3",
+          "excerpt": "vulgo babão, né? que eu sofri muito com os babões do meu concorrente no início, que eu não tinha experiência, então os caras levavam as oportunidades só pro meu"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "84064a48-0e11-4883-963b-b73d6effde5e",
+          "excerpt": "farmácia de comprar num dia e chegar no outro dia, no próximo dia útil, não faz sentido eu ter um estoque para 3 anos. Não faz sentido nem para se meses se não "
+        }
+      ]
+    },
+    {
+      "id": "historia-trajetoria",
+      "category": "HISTORIA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 0.5,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "338b4666-3d62-4b7b-8d29-71d8ff63779b",
+          "excerpt": "demanda mensal. Beleza? Então, todos os dias, se você tem PBM com reposição automática, marca aqui, desconsiderar as vendas do passeio de reposição automática, "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "976e727d-8ab0-465b-b0b4-50f17dabaf74",
+          "excerpt": "Profarma e Santa Cruz, que são os que têm integração no cot fácil, tem até outros dois, eu acho, Farma um, Nordeste Potiguá, aqui no Rio Grande do Norte e Acrip"
+        }
+      ]
+    },
+    {
+      "id": "historia-proposito",
+      "category": "HISTORIA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 0.333333,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "0cd58341-d368-433b-8708-52867986d393",
+          "excerpt": "chegaram para ela e disseram: \"Ó, dona Desidéria, se quiser a gente assuma as dívidas da senhora\". Certo? E assim eles fizeram, assumiram e colocaram meus tios "
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        }
+      ]
+    },
+    {
+      "id": "historia-aprendizado",
+      "category": "HISTORIA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "bbf77923-cc6a-4af4-8a2e-72fc813162d3",
+          "excerpt": "e as minhas compras, né? No ponto financeiro, eu olho basicamente por faturamento CMV e contas a pagar. Então isso aqui são, lógico que tem vários indicadores, "
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "a3360aff-a4bb-4cca-b570-27230b65ce21",
+          "excerpt": "descobriu e eu tive que resolver esse problema com vovó na no hospital internada porque vovó era dona da farmácia, né? E aí eu conversei com meus tios, eu disse"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "837ab3ab-7dc5-46a9-b72a-da0795e6c607",
+          "excerpt": "por 1,22 e meu concorrente, que tinha oito lojas não conseguiu comprar. Aí eu disse: \"Agora eu descobri o canal de concorrer com esse caba e comecei a virar rea"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "ea99e362-4721-4f38-9b25-828dfa2e4e97",
+          "excerpt": "lhe voltar: \"Ó, assista essa aula que eu lhe ensino como fazer o pedido no sistema, certo?\" Então vocês preenchem esse diagnóstico com calma, vai levar cerca de"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "df7b1d83-6ba3-4a3c-9596-03d30a245da3",
+          "excerpt": "vulgo babão, né? que eu sofri muito com os babões do meu concorrente no início, que eu não tinha experiência, então os caras levavam as oportunidades só pro meu"
+        }
+      ]
+    },
+    {
+      "id": "historia-apresentacao-metodo",
+      "category": "METODOLOGIA",
+      "reviewStatus": "CONFIRMED",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "976e727d-8ab0-465b-b0b4-50f17dabaf74",
+          "excerpt": "Profarma e Santa Cruz, que são os que têm integração no cot fácil, tem até outros dois, eu acho, Farma um, Nordeste Potiguá, aqui no Rio Grande do Norte e Acrip"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "8ab2d84b-7e91-4274-9bf6-246fb44f4912",
+          "excerpt": "os pedidos da mesma forma que os fornecedores são agrupados na nossa pesquisa de preço, na nossa cotação e nas nossas negociações, tá? Então, se você tem um for"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "9aaea9d1-082f-4b9c-930e-9b25f39aa735",
+          "excerpt": "naprooxeno do te genérico ou o naxotec da união química, tá? Então eu preciso entender quais produtos o meu cliente procura por preço e quais produtos o meu cli"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "f8fd8e1c-882e-4890-a7b9-5beb1c9b75cd",
+          "excerpt": "Pessoal, muito boa tarde para alguns. Boa noite, né, aqui já nesse finalzinho de dia. É um prazer tê-los todos aqui conosco. Eu sou Ricardo Balbino, diretor com"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4c310537-61cc-4375-8246-cbf7e6234b10",
+          "excerpt": "tentou comprar aqui pelo relatório de venda, já deu uma confusão do tamanho do mundo. Aí vocês começam a ver que aqui tem muita informação para se analisar. E p"
+        }
+      ]
+    },
+    {
+      "id": "historia-metodologia-diferencial",
+      "category": "METODOLOGIA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "bbf77923-cc6a-4af4-8a2e-72fc813162d3",
+          "excerpt": "e as minhas compras, né? No ponto financeiro, eu olho basicamente por faturamento CMV e contas a pagar. Então isso aqui são, lógico que tem vários indicadores, "
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "7cf19310-c496-46e0-bc0b-c3a88b3603db",
+          "excerpt": "reformar e tal, só que quando ele foi ver, a farmácia devia de contas atrasadas aproximadamente R$ 200.000, certo? juntando a Giota, juntando o banco, o imposto"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "d326512a-fefc-48df-9ed8-a19cc4bd8d59",
+          "excerpt": "depois do almoço que eu imagino que vocês estão aí, mas queriam estar numa redinha se balançando para descansar o almoço, né? A gente vai contar um pouco da his"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "837ab3ab-7dc5-46a9-b72a-da0795e6c607",
+          "excerpt": "por 1,22 e meu concorrente, que tinha oito lojas não conseguiu comprar. Aí eu disse: \"Agora eu descobri o canal de concorrer com esse caba e comecei a virar rea"
+        }
+      ]
+    },
+    {
+      "id": "ambigua-gestao-estoque",
+      "category": "AMBIGUA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "85985796-3362-43b4-a697-b38835d752ff",
+          "excerpt": "entenderem. E ele dá 4,25, que é justamente esse estoque de segurança de quatro. Então, quando o estoque do Maxdex baixou de quatro, ele já me sinalizou: \"Sérgi"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "51d54fa7-9310-4ab8-8d75-994e6e61d144",
+          "excerpt": "que para eu comprar uma quantidade saudável de Maxidex para passar um mês, eu só preciso comprar 14 unidades de Maxdex. Beleza? Vamos pegar mais um item aqui qu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d63e175-a0f3-453d-a31b-c9026c1124a1",
+          "excerpt": "- Sistema Trier - Gestão de compras em farmácias - Configuração do Trier - Curva ABC - Estoque de segurança - Cobertura de estoque - Demanda de produtos - Giro "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4b4d29ea-e228-480f-965c-522295c0e5c3",
+          "excerpt": "né? Até porque a gente faz pedido, a gente não diz assim: \"Bote R$ 500 de dipirona, né? A gente pede 200 cartelas de dipirona. A gente não pede, mande R$ 500 de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "98b9ca4b-1a5a-417e-aecc-438ee3fdaa13",
+          "excerpt": "Webinar Trier: Aprenda a Comprar de Forma Inteligente! Com Sérgio Samuel Resumo do conteúdo: Nesta live, Sérgio Samuel apresenta a metodologia de gestão de comp"
+        }
+      ]
+    },
+    {
+      "id": "ambigua-metodo-compras",
+      "category": "AMBIGUA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        }
+      ]
+    },
+    {
+      "id": "ambigua-pratica-farmacia",
+      "category": "AMBIGUA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "65549ac6-73da-4c87-b2b6-59bc3999703b",
+          "excerpt": "Beleza? Para começar, né, a nossa farmácia começou em 1941 com meus bisavós Desidéria e Estevon. E vovó Desidéria era como se fosse a médica da cidade, né? Ness"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "950341ec-a5b5-4a72-a24a-d6827bd07339",
+          "excerpt": "que eu vou contar aqui para vocês hoje, o que a gente fez para estar numa cidade de 8.000 habitantes, crescendo 40% ao ano e tendo resultados fora da curva, man"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "58fcaf30-eea1-4cde-94cf-99b390346cc8",
+          "excerpt": "Pessoal, se tiver alguém tentando falar, pode chamar no chat aqui que eu tô sem retorno de som, aí eu abro na hora que vocês forem falar, certo? Mas a gente vai"
+        }
+      ]
+    },
+    {
+      "id": "parafrase-repor-sem-faltar",
+      "category": "PARAFRASE",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "6ed52378-61fb-488d-b5eb-97ad01e6918e",
+          "excerpt": "20% dos produtos da farmácia geram 80% das vendas, tá? Então a curva A vocês podem colocar sem medo nenhum 80%, que é exatamente aqueles produtos chave que você"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "10319180-a522-4c8b-bb03-ff4056d2b7c0",
+          "excerpt": "não compram tudo que precisam por faltar na farmácia. Isso é uma média. E nessa média tá as as redes da Abra Farma. Então imagina aí, pegue quanto você fatura h"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "bf179fce-f211-4ff7-b199-c20cd7fb2559",
+          "excerpt": "tá? Que para mim e paraa maioria das farmácias que eu acompanhei considerado um produto importante na loja. Pode ser que para alguns de vocês que tem uma farmác"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "6e707949-12aa-4612-87f1-3840342a88eb",
+          "excerpt": "olham para o valor de compra e acabam de olhar para o valor de faltas, né? E é essa gangorra que a gente dança, nem deixar faltar e nem comprar demais para se e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "34abe726-d42e-46f7-a9df-ee786cea8ccf",
+          "excerpt": "fosse deixar os produtos com você junto, ó, um monte de produto que ia aparecer que eu não quero recomprar. A dera cald90, ele só vendeu um em agosto e um em de"
+        }
+      ]
+    },
+    {
+      "id": "parafrase-capital-parado",
+      "category": "PARAFRASE",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 0.5,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "da30fc02-411c-41ba-8c5d-70d1ee285bfd",
+          "excerpt": "comprar a enterogermina. A enterogermina só caiu na lista de pedidos quando ela baixou para três. Quando ela tinha quatro, ela ficou lá escondidinha sem encher "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "653b1124-d0cd-4dce-837e-22a16e7f2883",
+          "excerpt": "fazer um pedido mais otimizado, ela não é tão eficiente. Então eu já cancelo ela aqui por pelo simples motivo. Se você for abrir aqui, por exemplo, um pedido de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a57dfb9f-8b9b-4fae-81d2-64c54dae4a96",
+          "excerpt": "curva B, que são aqueles produtos que só vende, que vendem pelo menos duas unidades nos últimos três meses, tá? Então aqui na minha farmácia para referência, eu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "31400cd4-b2e1-4f52-bc69-ebd675ea7f66",
+          "excerpt": "Deixa eu pegar um produto que tenha muitos laboratórios pra gente analisar. Oesartana de 20, certo? Eu calculei Santaoli, né, Flumberto, né, Flberto? Não tá con"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "cd0dd326-e006-4dd9-a43f-a462c52647f5",
+          "excerpt": "realmente engajado para trazê-los para perto e fazer acontecer cada vez mais competição e mais respostas para que nós pequenos farmacistas consigamos acessar pr"
+        }
+      ]
+    },
+    {
+      "id": "parafrase-nascimento-negocio",
+      "category": "PARAFRASE",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "PASS",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": true,
+      "expectedSourceInTop3": true,
+      "expectedSourceInTop5": true,
+      "forbiddenSourceReturned": false,
+      "expectedTermCoverage": 1,
+      "reciprocalRank": 1,
+      "topResults": [
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "2de45d53-1688-44e2-8bfe-f8678acf20c3",
+          "excerpt": "acontece mensalmente ou bimestralmente, mas também se você errar a compra no dia, você só vai conseguir comprar novamente nesse preço no mês que vem. Beleza? El"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "4d398acf-c37e-4069-81a6-001d32d6ed64",
+          "excerpt": "Boa tarde, pessoal. Boa tarde. Vocês estão bem? De bucho cheio. Agora vocês vão ver o palestrante mais matuto desse dia de hoje, certo? Eu me chamo Sérgio Samue"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "653b1124-d0cd-4dce-837e-22a16e7f2883",
+          "excerpt": "fazer um pedido mais otimizado, ela não é tão eficiente. Então eu já cancelo ela aqui por pelo simples motivo. Se você for abrir aqui, por exemplo, um pedido de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "f8fd8e1c-882e-4890-a7b9-5beb1c9b75cd",
+          "excerpt": "Pessoal, muito boa tarde para alguns. Boa noite, né, aqui já nesse finalzinho de dia. É um prazer tê-los todos aqui conosco. Eu sou Ricardo Balbino, diretor com"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "e91771d2-d42c-43fc-8d9e-2a308efc7054",
+          "excerpt": "para ver se realmente a ferramenta de compras do seu sistema tá conseguindo entregar essas mesmas funções. E para quem já é cliente tri, não usa o compra dose c"
+        }
+      ]
+    },
+    {
+      "id": "sem-resposta-imposto-renda",
+      "category": "SEM_RESPOSTA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": true,
+      "expectedTermCoverage": 0.5,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "85985796-3362-43b4-a697-b38835d752ff",
+          "excerpt": "entenderem. E ele dá 4,25, que é justamente esse estoque de segurança de quatro. Então, quando o estoque do Maxdex baixou de quatro, ele já me sinalizou: \"Sérgi"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "51d54fa7-9310-4ab8-8d75-994e6e61d144",
+          "excerpt": "que para eu comprar uma quantidade saudável de Maxidex para passar um mês, eu só preciso comprar 14 unidades de Maxdex. Beleza? Vamos pegar mais um item aqui qu"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4b4d29ea-e228-480f-965c-522295c0e5c3",
+          "excerpt": "né? Até porque a gente faz pedido, a gente não diz assim: \"Bote R$ 500 de dipirona, né? A gente pede 200 cartelas de dipirona. A gente não pede, mande R$ 500 de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "c81ea3cd-a056-44e0-8638-66051134622c",
+          "excerpt": "A Cunha. Boa noite, pessoal. Para mim é uma honra imensa tá aqui com vocês hoje. Com certeza eu vou aprender muito mais do que ensinar, porque não sei se vocês "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        }
+      ]
+    },
+    {
+      "id": "sem-resposta-prescricao",
+      "category": "SEM_RESPOSTA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": true,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a3c30888-045f-49df-965e-182b9b0f8f58",
+          "excerpt": "não. É vergonhezo. Mas enfim, quando a gente levava o o Naproxen para lá, aí ele vinha aqui para dentro do pedido e esse pedido eu consigo exportar para Excel e"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "70cc2749-7a62-46c8-8a4e-4835f2d94f5a",
+          "excerpt": "produtos, não faz sentido tá tá gerando curva ABC para esses produtos que já estão parados faz muito tempo. E às vezes quando ele tá inativo, ele nem sugere par"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "9b129210-d9da-498f-a174-fafffcb25a3e",
+          "excerpt": "10 dias para quem quer comprar semanal. E a cobertura aí entra um detalhe importante para quem tem caixa sobrando. Se você vai comprar genérico só para 30 dias,"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "80e034d2-62e0-4fb7-87f2-e1ce180d5f50",
+          "excerpt": "cotação com 30 fornecedores. Então eu prefiro fazer a compra quinzenal. E pra compra quinzenal eu uso o estoque de segurança de 20 dias para genérico, para comp"
+        }
+      ]
+    },
+    {
+      "id": "sem-resposta-juridico",
+      "category": "SEM_RESPOSTA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": true,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "5f0b3a42-87c6-430d-b1e3-d75eab83cd58",
+          "excerpt": "aí a gente vai para disparar para cotação, certo? Então, deixa eu abrir aqui na outra aba no cota farma vocês conseguem importar o pedido. Como a gente já tá co"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "77d61754-59f3-4018-ba79-29561c691654",
+          "excerpt": "e aí já era bem corrido, né? Já dá para imaginar que a correria era grande para abastecer, para desenvolver ações de marketing, fazer tudo isso que a gente tant"
+        },
+        {
+          "sourceKey": "live:historia-farmstok",
+          "chunkId": "0cd58341-d368-433b-8708-52867986d393",
+          "excerpt": "chegaram para ela e disseram: \"Ó, dona Desidéria, se quiser a gente assuma as dívidas da senhora\". Certo? E assim eles fizeram, assumiram e colocaram meus tios "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "4d917dde-35c3-4ba2-aaa6-22c9b5b9862c",
+          "excerpt": "Para considerar o o cálculo, aí você leva em consideração qual é o quais são os dias de abertura da sua farmácia, tá? Então, se você só abre de segunda a sexta,"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "3b96a62c-4ebe-4004-a8a0-c98300bf0f6d",
+          "excerpt": "você também consegue remover. Vamos ver essa configuração que é interessante e para que vocês entendam como funcionam os parâmetros de compra aqui do estoque de"
+        }
+      ]
+    },
+    {
+      "id": "sem-resposta-cripto",
+      "category": "SEM_RESPOSTA",
+      "reviewStatus": "PENDING_MANUAL_REVIEW",
+      "status": "FAIL",
+      "resultsFound": 5,
+      "expectedSourceAtTop1": false,
+      "expectedSourceInTop3": false,
+      "expectedSourceInTop5": false,
+      "forbiddenSourceReturned": true,
+      "expectedTermCoverage": 0,
+      "reciprocalRank": 0,
+      "topResults": [
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "77e3d2d0-c165-4f7d-9367-f3f6bf9daa97",
+          "excerpt": "E daqui existem os outros parâmetros que a gente vai falar um pouco lá na frente, o compras por agrupamento, mas como a gente vai ver um de cada vez, então vamo"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "d3464e44-2cbc-4b52-b18c-168fdcf51f52",
+          "excerpt": "usando o relatório de vendas, porque é um erro muito comum e que eu vejo muito nas farmácias. Ó, aí, Lucas já falou, então, tem muita gente que tá fazendo, tá f"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "e2a323e5-0e83-48e2-a2bf-2efabfd3752d",
+          "excerpt": "forma mais barata e ganhando pontos, outros benefícios, tá? Então, se você entende que existem esses grupos de OLs, então a gente precisa organizar o nosso cale"
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "78ed04b0-5341-4f4e-9034-158065331e98",
+          "excerpt": "então escolhe dois dias. Se você quer acabar, quer comprar tudo que vai acabar na próxima semana, escolhe 7 dias. E se você quer comprar tudo que vai acabar no "
+        },
+        {
+          "sourceKey": "live:webinar-trier-compras-inteligentes",
+          "chunkId": "a9a52d9a-859b-431e-9baa-31eec18457fa",
+          "excerpt": "se você comprar só 30 cartelas de DFlex, comprar uma demanda para 30 dias, que é exatamente uma caixinha, né? No exemplo doflex, ele é fracionado, mas digamos q"
+        }
+      ]
+    }
+  ],
+  "sources": 2,
+  "chunks": 148,
+  "configuration": {
+    "candidateLimit": 500,
+    "resultLimit": 5,
+    "rankingPolicy": "text-search-v1"
+  }
+}

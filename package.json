@@ -18,6 +18,8 @@
     "knowledge:vector-search": "tsx scripts/vector-search-knowledge.ts",
     "knowledge:hybrid-search": "tsx scripts/hybrid-search-knowledge.ts",
     "knowledge:ask": "tsx scripts/ask-knowledge.ts",
+    "rag:evaluate": "tsx scripts/evaluate-rag.ts",
+    "rag:evaluate:compare": "tsx scripts/compare-rag-baselines.ts",
     "kommo:sync-lead": "tsx scripts/sync-kommo-lead.ts",
     "knowledge:embed": "tsx scripts/backfill-embeddings.ts",
     "prisma:generate": "prisma generate",

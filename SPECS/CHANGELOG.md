@@ -1,5 +1,28 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 016
+
+### Adicionado
+
+- Suíte local de avaliação RAG com 25 casos, schema Zod, CLI, relatórios e comparador de baselines.
+- Modos TEXT, HYBRID, VECTOR indisponível e ANSWER futuro com confirmação explícita.
+- Baseline TEXT v1 e métricas separadas entre 7 casos confirmados e 18 pendentes.
+- Testes unitários sem PostgreSQL real ou internet.
+
+### Confirmado
+
+- Avaliação somente leitura; nenhuma migration, escrita, embedding, chamada externa ou AnswerLog.
+- Estado real preservado em 2 fontes, 148 chunks e 0 embeddings.
+
+### Revisão incremental v2
+
+- Dataset revisado manualmente, com 20 casos confirmados e 5 pendentes.
+- `answerType` obrigatório: DIRECT, SYNTHESIS, METADATA, OUT_OF_SCOPE ou UNCERTAIN; notas manuais curtas opcionais.
+- Pergunta ampla de gestão reformulada; METADATA ignorado sem penalização e SYNTHESIS avaliada por cobertura agregada.
+- Relatório separado em métricas oficiais, exploratórias e por tipo de resposta.
+- Baseline v1 preservada e `text-baseline-v2.json` adicionada; mudanças refletem política/expectativas, não melhoria de busca.
+- Nenhum algoritmo de busca, schema, migration ou dado foi alterado; nenhuma chamada externa foi realizada.
+
 ## 21/07/2026 - Feature 015
 
 ### Adicionado

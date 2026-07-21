@@ -38,7 +38,7 @@
 
 ## Última atualização
 
-Data: 20/07/2026
+Data: 21/07/2026
 
 ## Funcionando
 
@@ -106,4 +106,17 @@ Data: 20/07/2026
 
 ## Próxima tarefa
 
-Implementar a Feature 011 de geração e backfill controlado de embeddings, sem conectar respostas por IA.
+Revisar manualmente os 18 casos pendentes da Feature 016 e, após backfill autorizado, repetir os baselines VECTOR e HYBRID.
+
+## Atualização Feature 016
+
+- Suíte RAG implementada com 25 casos, 7 confirmados e 18 pendentes de revisão manual.
+- Baseline TEXT v1: 15 PASS, 4 PARTIAL, 6 FAIL; Top-1 56%, Top-3 72% e MRR 0,643333.
+- HYBRID opera em `TEXT_ONLY`; VECTOR permanece `SKIPPED` porque existem zero embeddings.
+- PostgreSQL preservado com 2 fontes, 148 chunks e 0 embeddings; nenhuma escrita ou chamada externa.
+- Suíte automatizada com 230 testes passando.
+- Revisão manual v2 registrada: 20 casos confirmados, 5 pendentes e `answerType` obrigatório.
+- Distribuição v2: 13 DIRECT, 4 SYNTHESIS, 1 METADATA, 4 OUT_OF_SCOPE e 3 UNCERTAIN.
+- Baseline v1 preservada; baseline v2 gerada com 9 PASS, 9 PARTIAL, 6 FAIL e 1 METADATA SKIPPED.
+- Métricas oficiais confirmadas v2: 6 PASS, 7 PARTIAL, 6 FAIL; Top-1 47,4%, Top-3 63,2% e MRR 0,557.
+- Algoritmos textual, vetorial e híbrido permanecem inalterados; zero chamadas externas e zero escritas.

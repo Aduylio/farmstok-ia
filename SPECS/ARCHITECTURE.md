@@ -74,12 +74,12 @@ Aluno no WhatsApp
 
 src/
 ├── config/
-│   └── env.ts
+│ └── env.ts
 ├── modules/
-│   └── knowledge/
-│       ├── knowledge.routes.ts
-│       ├── knowledge.schemas.ts
-│       └── knowledge.service.ts
+│ └── knowledge/
+│ ├── knowledge.routes.ts
+│ ├── knowledge.schemas.ts
+│ └── knowledge.service.ts
 ├── app.ts
 └── server.ts
 
@@ -147,3 +147,12 @@ Serão responsáveis pelo acesso ao banco de dados.
 - `knowledge-search.utils.ts` concentra funções puras de texto, score e links temporais.
 - `knowledge-search.routes.ts` expõe `GET /api/knowledge/search` com validação Zod e erros seguros.
 - A estratégia é temporária e executada na aplicação; não usa pgvector, embeddings, SQL concatenado ou mecanismo externo.
+
+## Avaliação RAG
+
+- `src/modules/rag-evaluation` carrega casos versionados, executa buscas por dependências injetadas e calcula métricas reproduzíveis.
+- TEXT e HYBRID são avaliados por padrão; com zero embeddings, HYBRID registra `TEXT_ONLY` e VECTOR fica `SKIPPED`.
+- Dataset e baseline ficam em `SPECS/evaluations`; resultados guardam somente metadados e trechos curtos.
+- A suíte é somente leitura e não gera embeddings, respostas, logs de resposta ou chamadas externas.
+- A política v2 separa métricas oficiais confirmadas, exploração pendente e grupos DIRECT, SYNTHESIS, METADATA, OUT_OF_SCOPE e UNCERTAIN.
+- METADATA sem suporte é `SKIPPED` em TEXT/HYBRID; cobertura de SYNTHESIS é agregada no top 5.

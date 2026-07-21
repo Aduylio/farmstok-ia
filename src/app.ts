@@ -2,7 +2,7 @@ import Fastify from 'fastify';
 
 import { env } from './config/env.js';
 import { knowledgeIngestionRoutes } from './modules/knowledge-ingestion/knowledge-ingestion.routes.js';
-import { knowledgeRoutes } from './modules/knowledge/knowledge.routes.js';
+import { knowledgeAnswerRoutes } from './modules/knowledge-answer/knowledge-answer.routes.js';
 import { knowledgeSearchRoutes } from './modules/knowledge/knowledge-search.routes.js';
 import { knowledgeVectorSearchRoutes } from './modules/knowledge-vector-search/knowledge-vector-search.routes.js';
 import { kommoRoutes } from './modules/kommo/kommo.routes.js';
@@ -24,7 +24,7 @@ export function buildApp() {
     };
   });
 
-  app.register(knowledgeRoutes, {
+  app.register(knowledgeAnswerRoutes, {
     prefix: '/api/knowledge',
   });
 

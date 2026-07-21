@@ -1,5 +1,12 @@
 # Arquitetura
 
+## Orquestrador RAG (Feature 015)
+
+- `knowledge-answer` orquestra o service hibrido, contexto v1, provider abstrato e fontes validadas.
+- `ai` concentra prompt v1, schema estruturado e provider OpenAI via Responses API.
+- Modelo de resposta e configuravel e independente do modelo de embeddings.
+- Nenhuma persistencia de AnswerLog ate existir Conversation real no fluxo.
+
 ## Busca hibrida (Feature 014)
 
 - Orquestra os services textual e vetorial existentes, sem duplicar repositories ou SQL.

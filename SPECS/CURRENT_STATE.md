@@ -1,5 +1,12 @@
 # Estado atual do projeto
 
+## Feature 015
+
+- Mock de `/api/knowledge/ask` substituido por orquestrador RAG estruturado.
+- CLI `knowledge:ask` funciona em dry-run sem OpenAI.
+- Recuperacao atual permanece TEXT_ONLY por zero embeddings.
+- Nenhuma resposta real, chamada externa, escrita, schema ou migration nesta feature.
+
 ## Feature 014
 
 - Busca hibrida implementada com ranking explicavel e fallback textual.

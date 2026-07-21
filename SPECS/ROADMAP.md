@@ -1,5 +1,13 @@
 # Roadmap
 
+## Atualizacao Feature 015
+
+- [x] Implementar contexto RAG, prompt, provider abstrato e resposta estruturada.
+- [x] Substituir contrato mock de `/api/knowledge/ask`.
+- [x] Adicionar confianca deterministica e fontes verificadas.
+- [ ] Configurar modelo/chave e executar teste real controlado apos embeddings.
+- [ ] Calibrar prompt, modelo, contexto e confianca com avaliacoes reais.
+
 ## Atualizacao Feature 014
 
 - [x] Implementar busca hibrida preservando buscas individuais.

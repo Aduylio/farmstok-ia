@@ -1,5 +1,9 @@
 # Contratos da API
 
+## POST /api/knowledge/ask - RAG
+
+Recebe `{ question, sourceKey?, course?, type? }`. Retorna `{ answer, confidence, needsHuman, searchMode, sources }`; cada fonte contem chunkId, sourceKey, titulo, modulo, URL, horario e timestampUrl. Sem evidencia retorna fallback local com confidence 0 e humano. Entrada invalida: 400 `INVALID_REQUEST`; provider indisponivel: 503 `ANSWER_PROVIDER_UNAVAILABLE`; estrutura ou IDs invalidos: 502 `INVALID_PROVIDER_RESPONSE`; falha interna: 500 `INTERNAL_ERROR`.
+
 ## GET /api/knowledge/hybrid-search
 
 Combina os services textual e vetorial. Recebe `q`, `limit`, `sourceKey`, `course`, `type`, `minSimilarity`, `textWeight` e `vectorWeight`. Retorna `{ query, results, total, mode, reason }`. Sem embeddings, responde normalmente em `TEXT_ONLY` com `VECTOR_UNAVAILABLE`; entrada invalida retorna 400 `INVALID_REQUEST` e falha interna retorna 500 `INTERNAL_ERROR`.

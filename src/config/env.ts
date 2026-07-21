@@ -37,6 +37,9 @@ const envSchema = z.object({
     z.string().min(1).optional(),
   ),
 
+  OPENAI_ANSWER_MODEL: z.preprocess((value) => value === '' ? undefined : value, z.string().min(1).optional()),
+  KNOWLEDGE_ANSWER_MAX_CONTEXT_CHARS: z.coerce.number().int().min(1000).max(100000).default(12000),
+
   EMBEDDING_BATCH_SIZE: z.coerce.number().int().min(1).max(100).default(20),
 
   EMBEDDING_MAX_RETRIES: z.coerce.number().int().min(0).max(10).default(3),

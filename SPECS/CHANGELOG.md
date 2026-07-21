@@ -1,5 +1,17 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 015
+
+### Adicionado
+
+- Modulos `ai` e `knowledge-answer`, contexto/prompt v1 e provider OpenAI estruturado.
+- Orquestrador RAG, validacao de chunkIds, fontes deduplicadas e confianca ajustada.
+- Novo contrato de `/api/knowledge/ask` e CLI dry-run `knowledge:ask`.
+
+### Confirmado
+
+- Nenhuma chamada OpenAI/Kommo, resposta paga, escrita, AnswerLog ou migration.
+
 ## 21/07/2026 - Feature 014
 
 ### Adicionado

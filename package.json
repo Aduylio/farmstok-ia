@@ -17,6 +17,7 @@
     "knowledge:search": "tsx scripts/search-knowledge.ts",
     "knowledge:vector-search": "tsx scripts/vector-search-knowledge.ts",
     "knowledge:hybrid-search": "tsx scripts/hybrid-search-knowledge.ts",
+    "knowledge:ask": "tsx scripts/ask-knowledge.ts",
     "kommo:sync-lead": "tsx scripts/sync-kommo-lead.ts",
     "knowledge:embed": "tsx scripts/backfill-embeddings.ts",
     "prisma:generate": "prisma generate",

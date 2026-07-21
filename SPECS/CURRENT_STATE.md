@@ -120,3 +120,11 @@ Revisar manualmente os 18 casos pendentes da Feature 016 e, após backfill autor
 - Baseline v1 preservada; baseline v2 gerada com 9 PASS, 9 PARTIAL, 6 FAIL e 1 METADATA SKIPPED.
 - Métricas oficiais confirmadas v2: 6 PASS, 7 PARTIAL, 6 FAIL; Top-1 47,4%, Top-3 63,2% e MRR 0,557.
 - Algoritmos textual, vetorial e híbrido permanecem inalterados; zero chamadas externas e zero escritas.
+
+## Feature 017
+
+- Fundação interna de Students e Conversations implementada sem endpoint público ou migration.
+- Normalização brasileira E.164, courseAccess v1, autorização e resolução inbound futura implementadas.
+- Conversation AI é criada/reutilizada; HUMAN é protegido e transições reais são transacionais.
+- Scripts `demo:create-student` em dry-run e `db:conversation-check` somente leitura adicionados.
+- 272 testes em 26 arquivos aprovados; banco permanece sem Students, Conversations, eventos, Messages ou AnswerLogs.

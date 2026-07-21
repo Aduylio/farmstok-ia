@@ -4,6 +4,15 @@
 
 Feature 013 reutiliza `Conversation.mode`, `modeChangedAt`, `modeChangedBy=SYSTEM`, `kommoLeadId` e `ConversationEvent` existentes. Eventos usam os tipos reais `PAUSED` e `RESUMED`; metadata minima identifica `source=kommo`, lead e tag. Nenhum campo, enum ou migration foi adicionado.
 
+## Política operacional da Feature 017
+
+- `Student.phone` usa E.164 brasileiro sem `+`; unicidade permanece no banco.
+- `courseAccess` v1 aceita courses não vazio e activeUntil opcional em `YYYY-MM-DD`; ausência ou erro nega acesso.
+- ACTIVE pode usar o assistente; INACTIVE e BLOCKED não podem.
+- Conversation inicia em AI e mudanças reais geram ConversationEvent transacional.
+- O schema permite múltiplas Conversations por Student. O service reutiliza uma, mas a concorrência distribuída permanece risco até uma futura constraint baseada no conceito de conversa operacional.
+- Nenhuma migration foi necessária nesta feature.
+
 ## Metadados de embeddings (Feature 011)
 
 `KnowledgeChunkEmbedding.inputHash` identifica o texto exato da politica de embedding v1. Um embedding somente e atual quando `provider=openai`, `model=text-embedding-3-small`, `dimensions=1536` e o hash coincide. `inputTokens` registra a contagem por item somente quando o provider a fornece; a contagem agregada fica no resumo operacional.

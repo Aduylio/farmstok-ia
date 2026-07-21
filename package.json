@@ -12,6 +12,8 @@
     "typecheck": "tsc --noEmit",
     "db:check": "tsx scripts/db-check.ts",
     "db:vector-check": "tsx scripts/check-vector-infrastructure.ts",
+    "db:conversation-check": "tsx scripts/check-conversation-foundation.ts",
+    "demo:create-student": "tsx scripts/create-demo-student.ts",
     "knowledge:import": "tsx scripts/import-knowledge.ts",
     "knowledge:reprocess": "tsx scripts/reprocess-knowledge.ts",
     "knowledge:search": "tsx scripts/search-knowledge.ts",

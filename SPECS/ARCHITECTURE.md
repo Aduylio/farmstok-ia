@@ -156,3 +156,10 @@ Serão responsáveis pelo acesso ao banco de dados.
 - A suíte é somente leitura e não gera embeddings, respostas, logs de resposta ou chamadas externas.
 - A política v2 separa métricas oficiais confirmadas, exploração pendente e grupos DIRECT, SYNTHESIS, METADATA, OUT_OF_SCOPE e UNCERTAIN.
 - METADATA sem suporte é `SKIPPED` em TEXT/HYBRID; cobertura de SYNTHESIS é agregada no top 5.
+
+## Fundação de alunos e conversas (Feature 017)
+
+- `modules/students` concentra normalização E.164 brasileira, identidade, status e courseAccess v1.
+- `modules/conversations` concentra conversa operacional, vínculos externos, transições transacionais e autorização.
+- `resolveInboundConversation` prepara o futuro ingresso WhatsApp sem criar aluno, mensagem ou resposta.
+- Não há endpoint público; scripts locais são dry-run ou auditoria somente leitura.

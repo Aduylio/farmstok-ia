@@ -1,5 +1,20 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 017
+
+### Adicionado
+
+- Módulos internos `students` e `conversations`, telefone E.164 brasileiro e courseAccess v1.
+- Autorização por Student + Conversation e preparação segura do futuro ingresso WhatsApp.
+- Transições de modo transacionais, vínculos idempotentes e proteção HUMAN.
+- Scripts dry-run `demo:create-student` e somente leitura `db:conversation-check`.
+- Testes unitários sem PostgreSQL real, internet ou dados pessoais reais.
+
+### Confirmado
+
+- Nenhum endpoint público, WhatsApp, Message, AnswerLog, embedding, chamada OpenAI/Kommo ou migration.
+- Algoritmos RAG e integração Kommo existentes preservados.
+
 ## 21/07/2026 - Feature 016
 
 ### Adicionado

@@ -138,3 +138,13 @@
 - [x] Preservar baseline v1, gerar baseline v2 e comparar políticas.
 - [ ] Revisar manualmente os 5 casos ainda pendentes.
 - [ ] Repetir VECTOR e HYBRID após backfill autorizado.
+
+## Feature 017 — Alunos e conversas
+
+- [x] Normalizar telefones brasileiros e implementar serviços internos de Student.
+- [x] Implementar courseAccess v1 e autorização conservadora.
+- [x] Criar/reutilizar Conversation e proteger transições HUMAN.
+- [x] Preparar resolução inbound sem WhatsApp, mensagens ou respostas.
+- [x] Adicionar dry-run de demonstração e auditoria agregada.
+- [ ] Definir constraint para uma conversa operacional por Student antes de concorrência real.
+- [ ] Executar criação de aluno demo apenas mediante autorização explícita.

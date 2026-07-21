@@ -1,5 +1,12 @@
 # Estado atual do projeto
 
+## Feature 014
+
+- Busca hibrida implementada com ranking explicavel e fallback textual.
+- Estado real permanece com 2 fontes, 148 chunks e zero embeddings.
+- `knowledge:hybrid-search` opera em `TEXT_ONLY` sem OpenAI.
+- Nenhuma chamada externa, escrita, schema ou migration nesta feature.
+
 ## Feature 013
 
 - Integracao Kommo preparada, mas sem credenciais ou chamadas reais.

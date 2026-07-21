@@ -6,6 +6,7 @@ import { knowledgeRoutes } from './modules/knowledge/knowledge.routes.js';
 import { knowledgeSearchRoutes } from './modules/knowledge/knowledge-search.routes.js';
 import { knowledgeVectorSearchRoutes } from './modules/knowledge-vector-search/knowledge-vector-search.routes.js';
 import { kommoRoutes } from './modules/kommo/kommo.routes.js';
+import { knowledgeHybridSearchRoutes } from './modules/knowledge-hybrid-search/knowledge-hybrid-search.routes.js';
 
 export function buildApp() {
   const app = Fastify({
@@ -40,6 +41,8 @@ export function buildApp() {
   app.register(knowledgeVectorSearchRoutes, {
     prefix: '/api/knowledge',
   });
+
+  app.register(knowledgeHybridSearchRoutes, { prefix: '/api/knowledge' });
 
   app.register(kommoRoutes);
 

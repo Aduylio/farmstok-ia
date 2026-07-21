@@ -1,5 +1,18 @@
 # Histórico de mudanças
 
+## 21/07/2026 - Feature 014
+
+### Adicionado
+
+- Modulo, endpoint e CLI de busca hibrida.
+- Ranking por scores normalizados, pesos configuraveis e bonus de dupla correspondencia.
+- Fallback `TEXT_ONLY` quando nao ha embeddings, sem dependencia da OpenAI.
+- Testes unitarios de formula, modos, filtros, ordenacao, rota e CLI.
+
+### Confirmado
+
+- Buscas individuais preservadas; nenhuma chamada externa, escrita ou migration.
+
 ## 21/07/2026 - Feature 013
 
 ### Adicionado

@@ -1,5 +1,9 @@
 # Contratos da API
 
+## GET /api/knowledge/hybrid-search
+
+Combina os services textual e vetorial. Recebe `q`, `limit`, `sourceKey`, `course`, `type`, `minSimilarity`, `textWeight` e `vectorWeight`. Retorna `{ query, results, total, mode, reason }`. Sem embeddings, responde normalmente em `TEXT_ONLY` com `VECTOR_UNAVAILABLE`; entrada invalida retorna 400 `INVALID_REQUEST` e falha interna retorna 500 `INTERNAL_ERROR`.
+
 ## POST /webhooks/kommo
 
 Webhook operacional form-urlencoded para eventos `leads[add]`, `leads[update]` e `leads[status]`. Deduplica ate 20 IDs, consulta o lead atualizado e retorna `{ accepted, processed, updated, ignored }`. Pode receber segredo pela URL (`?secret=`) configurada no Kommo ou pelo header `x-kommo-webhook-secret`. Payload invalido: 400 `INVALID_REQUEST`; segredo incorreto: 401 `UNAUTHORIZED_WEBHOOK`; falha de sincronizacao: 502 `KOMMO_SYNC_FAILED`.

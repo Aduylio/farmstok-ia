@@ -1,5 +1,12 @@
 # Arquitetura
 
+## Busca hibrida (Feature 014)
+
+- Orquestra os services textual e vetorial existentes, sem duplicar repositories ou SQL.
+- Normaliza score textual, combina por `chunkId` com pesos 0.4/0.6 e bonus 0.05.
+- Zero embeddings mantem fallback textual e nao instancia provider OpenAI.
+- Busca textual, vetorial e hibrida permanecem endpoints independentes.
+
 ## Sincronizacao Kommo (Feature 013)
 
 - Kommo emite mudancas; PostgreSQL continua sendo a fonte operacional do modo.

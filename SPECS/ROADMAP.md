@@ -1,5 +1,12 @@
 # Roadmap
 
+## Atualizacao Feature 014
+
+- [x] Implementar busca hibrida preservando buscas individuais.
+- [x] Implementar normalizacao, pesos, bonus e fallback textual.
+- [ ] Calibrar pesos e similaridade apos o backfill.
+- [ ] Avaliar RRF/reranking somente com dados e perguntas reais.
+
 ## Atualizacao Feature 013
 
 - [x] Preparar cliente e webhook Kommo para sincronizar modo por `IA_PAUSADA`.
